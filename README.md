@@ -1,4 +1,4 @@
-👋 Hey, I'm Lokanath Meher
+##👋 Hey, I'm Lokanath Meher
 
 🎓 B.Tech Student (2nd Year)  
 🛡 Aspiring Cybersecurity Analyst  
@@ -13,7 +13,7 @@ Currently diving deep into cybersecurity fundamentals, networking practice throu
 
 ---
 
-🔍 My Focus Areas
+##🔍 My Focus Areas
 
 • Cybersecurity fundamentals & ethical hacking basics  
 • Networking concepts & hands-on practice (TryHackMe labs & problem solving)  
@@ -23,7 +23,7 @@ Currently diving deep into cybersecurity fundamentals, networking practice throu
 
 ---
 
-⚙️ Tech & Environment
+##⚙️ Tech & Environment
 
 • Operating Systems: Linux, Kali Linux (Beginner)  
 • Programming: Python, JavaScript, Node.js, C++  
@@ -33,7 +33,7 @@ Currently diving deep into cybersecurity fundamentals, networking practice throu
 
 ---
 
-🚀 2026 Mission
+##🚀 2026 Mission
 
 • Strengthen core cybersecurity concepts  
 • Build small security-focused projects  
@@ -43,10 +43,11 @@ Currently diving deep into cybersecurity fundamentals, networking practice throu
 
 ---
 
-📫 Connect With Me
+##📫 Connect With Me
 
 📧 Email: (meherlokanath314@gmail.com)  
-🌐 GitHub: https://github.com/lokanathmeher19
+🌐 GitHub: https://github.com/lokanathmeher19 
+
 ---
 
 🔥 “Secure the system. Break the limits. Keep learning.”
