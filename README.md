@@ -1,6 +1,6 @@
 👋 Hey, I'm Lokanath Meher
 
-🎓 B.Tech Student(@nd Year) 
+🎓 B.Tech Student(2nd Year) 
 🛡 Aspiring Cybersecurity Analyst  
 💻 Kali | parrot Linux Beginner (Hands-on Labs)  
 🌐 Full Stack Web Development Learner  
