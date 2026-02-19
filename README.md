@@ -25,8 +25,6 @@ Currently diving deep into cybersecurity fundamentals, networking practice throu
 
 ⚙️ Tech & Environment
 
-⚙️ Tech & Environment
-
 • Operating Systems: Linux, Kali Linux (Beginner)  
 • Programming: Python, JavaScript, Node.js, C++  
 • Web Stack: HTML, CSS, JS (Frontend) | Backend fundamentals  
@@ -52,8 +50,6 @@ Currently diving deep into cybersecurity fundamentals, networking practice throu
 ---
 
 🔥 “Secure the system. Break the limits. Keep learning.”
-
-
 
 
 
