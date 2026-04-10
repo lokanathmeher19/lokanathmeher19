@@ -50,21 +50,11 @@
   <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png">
 </div>
 
-## 🏆 GitHub Achievements
-
-<div align="center">
-  <a href="https://github.com/ryo-ma/github-profile-trophy">
-    <img src="https://github-profile-trophy.vercel.app/?username=lokanathmeher19&theme=onedark&no-frame=true&margin-w=15" alt="Trophies" />
-  </a>
-</div>
-
-<br>
 
 ## 📊 Development Analytics
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=lokanathmeher19&show_icons=true&theme=onedark&hide_border=true&rank_icon=github" alt="GitHub Stats" width="48%" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=lokanathmeher19&theme=onedark&hide_border=true" alt="Streak Stats" width="48%" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=lokanathmeher19&theme=onedark&hide_border=true" alt="Streak Stats" />
 </div>
 
 <br>
