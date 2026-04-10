@@ -27,11 +27,11 @@ I am a dedicated **Full Stack Web Developer** and emerging **Cybersecurity Analy
 My technical journey is driven by analytical problem-solving and an appetite for continuous learning. Whether I am architecting reliable database schemas, designing intuitive frontend interfaces, or analyzing network vulnerabilities within simulated environments, I focus on delivering clean, maintainable, and highly secure code.
 
 ### ⚡ Quick Facts
-- 🔭 I’m currently refining an **AI-driven Movie Recommendation Engine**.
-- 🌱 I’m intensely focused on mastering **Full Stack Architectures**.
-- 👯 I’m looking to collaborate on **Open Source Security Tools**.
-- 🤔 I’m eager to learn more about **Cloud Computing & Penetration Testing**.
-- 💬 Ask me about **JavaScript, Backend Logic, or Networking Basics**.
+- 🔭 I’m currently refining **TruthGuard_AI** and my **Cybersecurity_Project** tools.
+- 🌱 I’m intensely focused on mastering **Python, JavaScript, and Secure Full Stack Architecture**.
+- 👯 I’m looking to collaborate on **Open Source Web Dev & Security projects**.
+- 🤔 I’m eager to learn more about **Machine Learning & Advanced Penetration Testing**.
+- 💬 Ask me about **JavaScript, Python Backend Logic, or Networking Basics**.
 
 ---
 
@@ -69,19 +69,31 @@ My technical journey is driven by analytical problem-solving and an appetite for
 
 ---
 
-## 💻 Featured Builds
+## 💻 Featured Real World Builds
 
 <table align="center" width="100%">
 <tr>
 <td width="50%" align="center">
-  <h3>🎬 StreamRec AI</h3>
-  <p><em>An intelligent AI movie recommendation engine utilizing content-based filtering and a premium UI interface.</em></p>
-  <img src="https://skillicons.dev/icons?i=js,html,css" height="40" />
+  <h3><a href="https://github.com/lokanathmeher19/TruthGuard_AI">🛡️ TruthGuard_AI</a></h3>
+  <p><em>An AI-powered Python application repository focused on high-level security verification and data processing.</em></p>
+  <img src="https://skillicons.dev/icons?i=python,linux" height="35" />
 </td>
 <td width="50%" align="center">
-  <h3>🤖 Nexus Chatbot</h3>
-  <p><em>A dynamic conversational web agent featuring real-time interactions, context awareness, and session history management.</em></p>
-  <img src="https://skillicons.dev/icons?i=js,nodejs" height="40" />
+  <h3><a href="https://github.com/lokanathmeher19/golf-charity-app">🏌️ Golf Charity App</a></h3>
+  <p><em>A functional front-end web application deployed live on Vercel, demonstrating modern UI/UX mechanics.</em></p>
+  <img src="https://skillicons.dev/icons?i=js,html,css" height="35" />
+</td>
+</tr>
+<tr>
+<td width="50%" align="center">
+  <h3><a href="https://github.com/lokanathmeher19/Cybersecurity_Project">🔐 Cybersecurity_Project</a></h3>
+  <p><em>A dedicated repository exploring network defense mechanics, cryptographic concepts, and scripting.</em></p>
+  <img src="https://skillicons.dev/icons?i=py,kali" height="35" />
+</td>
+<td width="50%" align="center">
+  <h3><a href="https://github.com/lokanathmeher19/Internetspeed_Test">⚡ Internetspeed_Test</a></h3>
+  <p><em>A highly responsive custom network speed analyzer application engineered entirely via TypeScript.</em></p>
+  <img src="https://skillicons.dev/icons?i=ts,nodejs" height="35" />
 </td>
 </tr>
 </table>
