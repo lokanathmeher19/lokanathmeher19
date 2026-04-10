@@ -69,10 +69,10 @@ My technical journey is driven by analytical problem-solving and an appetite for
 
 ---
 
-## 💡 Daily Inspiration
+## 🚀 Global Profile Status
 
 <div align="center">
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="Inspirational Quote" width="80%" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=lokanathmeher19&theme=tokyonight" alt="Profile Details" />
 </div>
 
 ---
