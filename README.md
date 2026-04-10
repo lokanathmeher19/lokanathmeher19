@@ -62,11 +62,7 @@ My technical journey is driven by analytical problem-solving and an appetite for
 
 ## 📊 Analytics & Impact
 
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=lokanathmeher19&theme=tokyonight&no-frame=true&no-bg=true&margin-w=15" alt="Trophies" />
-</div>
 
-<br/>
 
 <div align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=lokanathmeher19&theme=tokyonight&hide_border=true&background=0D1117" alt="Streak Stats" width="50%" />
