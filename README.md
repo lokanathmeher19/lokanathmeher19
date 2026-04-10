@@ -69,34 +69,28 @@ My technical journey is driven by analytical problem-solving and an appetite for
 
 ---
 
-## 💻 Featured Real World Builds
+## ⚙️ System.Identity
 
-<table align="center" width="100%">
-<tr>
-<td width="50%" align="center">
-  <h3><a href="https://github.com/lokanathmeher19/TruthGuard_AI">🛡️ TruthGuard_AI</a></h3>
-  <p><em>An AI-powered Python application repository focused on high-level security verification and data processing.</em></p>
-  <img src="https://skillicons.dev/icons?i=python,linux" height="35" />
-</td>
-<td width="50%" align="center">
-  <h3><a href="https://github.com/lokanathmeher19/golf-charity-app">🏌️ Golf Charity App</a></h3>
-  <p><em>A functional front-end web application deployed live on Vercel, demonstrating modern UI/UX mechanics.</em></p>
-  <img src="https://skillicons.dev/icons?i=js,html,css" height="35" />
-</td>
-</tr>
-<tr>
-<td width="50%" align="center">
-  <h3><a href="https://github.com/lokanathmeher19/Cybersecurity_Project">🔐 Cybersecurity_Project</a></h3>
-  <p><em>A dedicated repository exploring network defense mechanics, cryptographic concepts, and scripting.</em></p>
-  <img src="https://skillicons.dev/icons?i=py,kali" height="35" />
-</td>
-<td width="50%" align="center">
-  <h3><a href="https://github.com/lokanathmeher19/Internetspeed_Test">⚡ Internetspeed_Test</a></h3>
-  <p><em>A highly responsive custom network speed analyzer application engineered entirely via TypeScript.</em></p>
-  <img src="https://skillicons.dev/icons?i=ts,nodejs" height="35" />
-</td>
-</tr>
-</table>
+```python
+class LokanathMeher:
+    def __init__(self):
+        self.alias = "Web Dev & Cyber Analyst"
+        self.status = "B.Tech (2nd Year)"
+        self.core_languages = ["JavaScript", "Python", "TypeScript", "C++"]
+        self.primary_directive = "Security-by-Design Architecture"
+
+    def execute_daily_routine(self):
+        return {
+            1: "Architecting scalable backend databases",
+            2: "Designing clean, responsive UI frameworks",
+            3: "Executing offensive security labs (TryHackMe)",
+            4: "Debugging and continuous learning"
+        }
+
+if __name__ == "__main__":
+    profile = LokanathMeher()
+    profile.execute_daily_routine()
+```
 
 ---
 
