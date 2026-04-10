@@ -69,28 +69,23 @@ My technical journey is driven by analytical problem-solving and an appetite for
 
 ---
 
-## ⚙️ System.Identity
+## 💡 Daily Inspiration
 
-```python
-class LokanathMeher:
-    def __init__(self):
-        self.alias = "Web Dev & Cyber Analyst"
-        self.status = "B.Tech (2nd Year)"
-        self.core_languages = ["JavaScript", "Python", "TypeScript", "C++"]
-        self.primary_directive = "Security-by-Design Architecture"
+<div align="center">
+  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="Inspirational Quote" width="80%" />
+</div>
 
-    def execute_daily_routine(self):
-        return {
-            1: "Architecting scalable backend databases",
-            2: "Designing clean, responsive UI frameworks",
-            3: "Executing offensive security labs (TryHackMe)",
-            4: "Debugging and continuous learning"
-        }
+---
 
-if __name__ == "__main__":
-    profile = LokanathMeher()
-    profile.execute_daily_routine()
-```
+## 🐍 Contribution Snake
+
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/lokanathmeher19/lokanathmeher19/output/dist/github-contribution-grid-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/lokanathmeher19/lokanathmeher19/output/dist/github-contribution-grid-snake.svg">
+    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/lokanathmeher19/lokanathmeher19/output/dist/github-contribution-grid-snake-dark.svg">
+  </picture>
+</div>
 
 ---
 
