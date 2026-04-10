@@ -14,6 +14,8 @@
   <a href="mailto:meherlokanath314@gmail.com" target="_blank"><img src="https://img.shields.io/badge/Email-Contact_Me-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
   <a href="https://github.com/lokanathmeher19/" target="_blank"><img src="https://img.shields.io/badge/GitHub-Profile-181717?style=for-the-badge&logo=github&logoColor=white" alt="Github" /></a>
   <a href="https://www.linkedin.com/in/lokanath-meher-a79506353/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  <br/><br/>
+  <img src="https://komarev.com/ghpvc/?username=lokanathmeher19&label=Profile%20Views&color=0e75b6&style=flat-square" alt="visitor badge" />
 </div>
 
 <br/>
@@ -23,6 +25,13 @@
 I am a dedicated **Full Stack Web Developer** and emerging **Cybersecurity Analyst**, currently pursuing my B.Tech degree. My expertise lies in bridging the gap between seamless user experiences and robust, secure backend architectures. I strongly advocate for a "security-by-design" approach in modern software development.
 
 My technical journey is driven by analytical problem-solving and an appetite for continuous learning. Whether I am architecting reliable database schemas, designing intuitive frontend interfaces, or analyzing network vulnerabilities within simulated environments, I focus on delivering clean, maintainable, and highly secure code.
+
+### ⚡ Quick Facts
+- 🔭 I’m currently refining an **AI-driven Movie Recommendation Engine**.
+- 🌱 I’m intensely focused on mastering **Full Stack Architectures**.
+- 👯 I’m looking to collaborate on **Open Source Security Tools**.
+- 🤔 I’m eager to learn more about **Cloud Computing & Penetration Testing**.
+- 💬 Ask me about **JavaScript, Backend Logic, or Networking Basics**.
 
 ---
 
@@ -54,6 +63,25 @@ My technical journey is driven by analytical problem-solving and an appetite for
 - **Security:** Ethical Hacking, Kali Linux, Parrot OS
 - **Tools:** Git, GitHub, VS Code, Postman
 
+</td>
+</tr>
+</table>
+
+---
+
+## 💻 Featured Builds
+
+<table align="center" width="100%">
+<tr>
+<td width="50%" align="center">
+  <h3>🎬 StreamRec AI</h3>
+  <p><em>An intelligent AI movie recommendation engine utilizing content-based filtering and a premium UI interface.</em></p>
+  <img src="https://skillicons.dev/icons?i=js,html,css" height="40" />
+</td>
+<td width="50%" align="center">
+  <h3>🤖 Nexus Chatbot</h3>
+  <p><em>A dynamic conversational web agent featuring real-time interactions, context awareness, and session history management.</em></p>
+  <img src="https://skillicons.dev/icons?i=js,nodejs" height="40" />
 </td>
 </tr>
 </table>
