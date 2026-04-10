@@ -1,10 +1,10 @@
+<img src="https://capsule-render.vercel.app/api?type=waving&color=00FF99&height=200&section=header&text=Lokanath%20Meher&fontSize=50&fontAlignY=38&animation=twinkling&fontColor=ffffff" width="100%"/>
+
 <div align="center">
-  
-  # Hi there, I'm Lokanath Meher! 👋
   
   <p align="center">
     <a href="https://github.com/lokanathmeher19">
-      <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=24&pause=1000&color=00FF99&center=true&vCenter=true&width=500&lines=Full+Stack+Web+Developer;Cybersecurity+Enthusiast;B.Tech+(2nd+Year)+Student;Tech+Explorer" alt="Typing SVG" />
+      <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=24&pause=1000&color=00FF99&center=true&vCenter=true&width=600&lines=Full+Stack+Web+Developer;Cybersecurity+Enthusiast;Problem+Solver;B.Tech+(2nd+Year)+Student" alt="Typing SVG" />
     </a>
   </p>
 
@@ -29,54 +29,38 @@
 
 ---
 
-### ⚙️ Tech Stack & Tools
+### 🏆 GitHub Trophies
 
 <div align="center">
-
-**Development**<br>
-<img src="https://img.shields.io/badge/-JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
-<img src="https://img.shields.io/badge/-Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
-<img src="https://img.shields.io/badge/-HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
-<img src="https://img.shields.io/badge/-CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
-<img src="https://img.shields.io/badge/-Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js" />
-<img src="https://img.shields.io/badge/-C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++" />
-
-<br/><br/>
-**Databases**<br>
-<img src="https://img.shields.io/badge/-MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
-<img src="https://img.shields.io/badge/-MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
-
-<br/><br/>
-**Security & OS**<br>
-<img src="https://img.shields.io/badge/-Kali_Linux-557C94?style=for-the-badge&logo=kali-linux&logoColor=white" alt="Kali Linux" />
-<img src="https://img.shields.io/badge/-Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux" />
-
-<br/><br/>
-**Tools & Platforms**<br>
-<img src="https://img.shields.io/badge/-Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
-<img src="https://img.shields.io/badge/-GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-
+  <img src="https://github-profile-trophy.vercel.app/?username=lokanathmeher19&theme=tokyonight&no-frame=true&no-bg=true&margin-w=15" alt="Trophies" />
 </div>
 
 ---
 
-### 🚀 2026 Mission Checkpoints
-- 🏗️ Build and deploy real-world, highly interactive full-stack applications.
-- 🛡️ Integrate secure coding practices and defensive architecture.
-- 🔄 Strengthen understanding of advanced web capabilities and state management.
-- 🤝 Contribute to open-source software and developer communities.
-- ⚡ Continuously improve automation, scripting, and problem-solving efficiency.
+### ⚙️ Tech Stack & Tools
+
+<div align="center">
+  <p align="center">
+    <a href="https://skillicons.dev">
+      <img src="https://skillicons.dev/icons?i=html,css,js,nodejs,py,cpp,mongodb,mysql,git,github,linux,bash&theme=dark&perline=6" alt="Tech Stack" />
+    </a>
+  </p>
+</div>
 
 ---
 
 ### 📊 GitHub Stats
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=lokanathmeher19&show_icons=true&theme=tokyonight&hide_border=true" alt="Lokanath's GitHub Stats" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=lokanathmeher19&theme=tokyonight&hide_border=true" alt="Lokanath's GitHub Streak" />
+  <p align="center">
+    <img src="https://github-readme-stats.vercel.app/api?username=lokanathmeher19&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="GitHub Stats" />
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=lokanathmeher19&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="Top Languages" />
+  </p>
+  <p align="center">
+    <img src="https://github-readme-streak-stats.herokuapp.com/?user=lokanathmeher19&theme=tokyonight&hide_border=true&background=0D1117" alt="GitHub Streak" />
+  </p>
 </div>
 
 <br>
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=00FF99&height=100&section=footer"/>
-</div>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=00FF99&height=100&section=footer" width="100%"/>
