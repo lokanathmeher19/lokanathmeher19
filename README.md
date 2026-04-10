@@ -37,9 +37,28 @@ My technical journey is driven by analytical problem-solving and an appetite for
 
 ## 🛠️ Technical Arsenal
 
-<div align="center">
-  <img src="https://skillicons.dev/icons?i=js,python,cpp,html,css,nodejs,express,mysql,mongodb,kali,linux,git,github,vscode,postman&perline=15" alt="Skill Icons" />
-</div>
+<table align="center" width="100%">
+  <tr>
+    <td align="center" width="50%">
+      <h3>👨‍💻 Programming & Scripts</h3>
+      <img src="https://skillicons.dev/icons?i=js,ts,python,cpp,bash,powershell,c" />
+    </td>
+    <td align="center" width="50%">
+      <h3>🎨 Frontend & Design</h3>
+      <img src="https://skillicons.dev/icons?i=html,css,react,tailwind,bootstrap,figma,vite" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <h3>⚙️ Backend & Storage</h3>
+      <img src="https://skillicons.dev/icons?i=nodejs,express,mysql,mongodb,postgres,nginx,firebase" />
+    </td>
+    <td align="center" width="50%">
+      <h3>🛡️ Security & DevOps</h3>
+      <img src="https://skillicons.dev/icons?i=kali,linux,git,github,vscode,postman,docker,aws,vercel" />
+    </td>
+  </tr>
+</table>
 
 <br/>
 
@@ -56,12 +75,12 @@ My technical journey is driven by analytical problem-solving and an appetite for
 </td>
 <td width="45%" valign="top">
 
-### 🛡️ Core Domains
-- **Languages:** JavaScript, Python, C++
-- **Frontend:** HTML5, CSS3, React *(Learning)*
-- **Backend:** Node.js, Express, MongoDB, MySQL
-- **Security:** Ethical Hacking, Kali Linux, Parrot OS
-- **Tools:** Git, GitHub, VS Code, Postman
+### 🏆 Academic & Training Focus
+- **Degree Status:** B.Tech (2nd Year Student)
+- **Institution:** Gandhi Institute of Excellent Technocrats (GIET), Bhubaneswar
+- **Fellowship:** NxtWave's CCBP 4.0 Academy Developer
+- **Active Pathway:** Advanced Full Stack Web Architectures
+- **Security Goals:** Offensive Security / Ethical Hacking
 
 </td>
 </tr>
