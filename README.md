@@ -1,37 +1,32 @@
 <div align="center">
-  
-# Lokanath Meher
-### Software Engineer | Full Stack Developer | Cybersecurity Analyst
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=220&section=header&text=Lokanath%20Meher&fontSize=70&fontColor=ffffff&fontAlignY=35&desc=Software%20Engineer%20|%20Cybersecurity%20Analyst&descAlignY=55&descSize=20&animation=twinkling"/>
+</div>
 
-*Crafting secure, scalable, and high-performance web applications.*
+<div align="center">
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=22&pause=1000&color=2F80ED&center=true&vCenter=true&width=600&lines=Full+Stack+Web+Developer;Cybersecurity+Enthusiast;Building+Secure+Architectures;Continuous+Learner" alt="Typing SVG" />
+  </a>
+</div>
 
-<a href="mailto:meherlokanath314@gmail.com"><img src="https://img.shields.io/badge/Email-Contact_Me-00599C?style=flat-square&logo=gmail&logoColor=white" /></a>
-<a href="https://github.com/lokanathmeher19"><img src="https://img.shields.io/badge/GitHub-Profile-181717?style=flat-square&logo=github&logoColor=white" /></a>
-<!-- Update with your LinkedIn profile link when ready! -->
-<a href="#"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white" /></a>
+<br/>
 
+<div align="center">
+  <a href="mailto:meherlokanath314@gmail.com"><img src="https://img.shields.io/badge/Email-Contact_Me-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+  <a href="https://github.com/lokanathmeher19"><img src="https://img.shields.io/badge/GitHub-Profile-181717?style=for-the-badge&logo=github&logoColor=white" alt="Github" /></a>
+  <a href="#"><img src="https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
 </div>
 
 <br/>
 
 ## 👨‍💻 Professional Summary
 
-I am a dedicated **Full Stack Web Developer** and emerging **Cybersecurity Analyst**, currently pursuing my B.Tech degree (2nd Year). My expertise lies in bridging the gap between seamless user experiences and robust, secure backend architectures. I strongly advocate for a "security-by-design" approach in modern software development.
+I am a dedicated **Full Stack Web Developer** and emerging **Cybersecurity Analyst**, currently pursuing my B.Tech degree. My expertise lies in bridging the gap between seamless user experiences and robust, secure backend architectures. I strongly advocate for a "security-by-design" approach in modern software development.
 
-My technical journey is driven by analytical problem-solving and an appetite for continuous learning. Whether I am architecting reliable database schemas, designing intuitive frontend interfaces, or analyzing network vulnerabilities within TryHackMe lab environments, I focus on delivering clean, maintainable, and secure code.
+My technical journey is driven by analytical problem-solving and an appetite for continuous learning. Whether I am architecting reliable database schemas, designing intuitive frontend interfaces, or analyzing network vulnerabilities within simulated environments, I focus on delivering clean, maintainable, and highly secure code.
 
 ---
 
-## 🛠️ Technical Competencies
-
-| **Domain** | **Technologies & Tools** |
-| :--- | :--- |
-| **Languages** | JavaScript, Python, C++, HTML5, CSS3 |
-| **Backend & Databases** | Node.js, Express.js, MongoDB, MySQL |
-| **Cybersecurity** | Linux (Kali, Parrot OS), Networking fundamentals, Penetration Testing |
-| **Development Tools** | Git, GitHub, VS Code, Postman |
-
-<br/>
+## 🛠️ Technical Arsenal
 
 <div align="center">
   <img src="https://skillicons.dev/icons?i=js,python,cpp,html,css,nodejs,express,mysql,mongodb,kali,linux,git,github,vscode,postman&perline=15" alt="Skill Icons" />
@@ -39,26 +34,51 @@ My technical journey is driven by analytical problem-solving and an appetite for
 
 <br/>
 
----
+<table align="center" width="100%">
+<tr>
+<td width="55%" valign="top">
 
-## 🚀 Strategic Objectives & Focus Areas
+### 🚀 Strategic Objectives
+- **Enterprise Development:** Deploy secure, production-ready full-stack applications.
+- **Security Integration:** Implement rigorous secure coding practices against modern web threats.
+- **Open Source:** Actively contribute to tools that strengthen the developer community.
+- **System Architecture:** Master CI/CD pipelines, automated testing, and cloud deployments.
 
-- **Enterprise Development:** Architect and deploy secure, production-ready full-stack applications.
-- **Security Integration:** Implement rigorous secure coding practices to mitigate vulnerabilities against modern web threats (e.g., OWASP Top 10).
-- **Open Source:** Actively contribute to open-source tools and frameworks that strengthen the developer community ecosystem.
-- **Continuous Improvement:** Master CI/CD pipelines, automated testing processes, and scalable cloud architecture.
+</td>
+<td width="45%" valign="top">
+
+### 🛡️ Core Domains
+- **Languages:** JavaScript, Python, C++
+- **Frontend:** HTML5, CSS3, React *(Learning)*
+- **Backend:** Node.js, Express, MongoDB, MySQL
+- **Security:** Ethical Hacking, Kali Linux, Parrot OS
+- **Tools:** Git, GitHub, VS Code, Postman
+
+</td>
+</tr>
+</table>
 
 ---
 
 ## 📊 Analytics & Impact
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=lokanathmeher19&show_icons=true&theme=github_dark&hide_border=true&bg_color=0D1117" width="48%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=lokanathmeher19&layout=compact&theme=github_dark&hide_border=true&bg_color=0D1117" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api?username=lokanathmeher19&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=lokanathmeher19&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117" width="48%" />
+</div>
+
+<br/>
+
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=lokanathmeher19&theme=tokyo-night&hide_border=true&bg_color=0D1117" width="100%" />
 </div>
 
 <br/>
 
 <div align="center">
   <em>Looking forward to collaborating on impactful and resilient digital solutions.</em>
+</div>
+
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=100&section=footer"/>
 </div>
