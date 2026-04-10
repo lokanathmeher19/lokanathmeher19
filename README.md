@@ -69,11 +69,20 @@ My technical journey is driven by analytical problem-solving and an appetite for
 
 ---
 
-## 🚀 Global Profile Status
+## 😄 Error 404: Sleep Not Found
 
 <div align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=lokanathmeher19&theme=tokyonight" alt="Profile Details" />
+  <img src="https://readme-jokes.vercel.app/api?theme=tokyonight&hideBorder=true" alt="Jokes Card" />
 </div>
+
+<br/>
+
+## 🎯 Current Operational Focus
+
+- 🧠 **Penetration Testing (WAPT)**: Analyzing modern web vulnerabilities and defensive strategies.
+- 🔧 **Architecture Optimization**: Exploring secure, automated CI/CD deployment flows.
+- 📚 **Algorithmic Mastery**: Expanding Data Structures proficiency in Python and C++.
+- 🌐 **Emerging Tech**: Researching AI integrations and modern Web3 security protocols.
 
 ---
 
