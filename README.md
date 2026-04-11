@@ -1,72 +1,78 @@
-<h1 align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=30&pause=1000&color=00FF00&center=true&vCenter=true&width=800&lines=%3E_init_system...;%3E_fetching_profile...;%3E_Hello,+World!;%3E_I'm+Lokanath+Meher" alt="Typing SVG" />
-</h1>
-
+<!-- HEADER BANNER -->
 <div align="center">
-  <p><b>[ Full Stack Developer || Cybersecurity Analyst ]</b></p>
-  <i>"Code like a builder, test like an attacker."</i>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=250&section=header&text=Lokanath%20Meher&fontSize=70&fontAlignY=35&fontColor=ffffff&desc=Software%20Engineer%20%E2%80%A2%20Full%20Stack%20Developer&descSize=22&descAlignY=55" />
+</div>
+
+<!-- TYPING ANIMATION -->
+<div align="center">
+  <a href="https://github.com/lokanathmeher19">
+    <img src="https://readme-typing-svg.herokuapp.com?font=Inter&weight=600&size=20&pause=1000&color=8A2BE2&center=true&vCenter=true&width=700&lines=Building+Scalable+Full+Stack+Web+Applications;Crafting+Modern,+Interactive+User+Interfaces;Architecting+Robust+Backend+Systems" alt="Typing SVG" />
+  </a>
 </div>
 
 <br/>
 
-### 📁 `~/about/profile.json`
-
-```json
-{
-  "name": "Lokanath Meher",
-  "education": "B.Tech Undergraduate",
-  "location": "India",
-  "roles": [
-    "Full Stack Developer",
-    "Cybersecurity Enthusiast"
-  ],
-  "mission": "Breaking systems to understand vulnerabilities, building them back infinitely stronger.",
-  "current_project": "TruthGuard_AI",
-  "learning_focus": [
-    "Advanced Web Application Penetration Testing (WAPT)",
-    "AWS Cloud Architecture",
-    "AI/ML Integrations"
-  ]
-}
-```
-
----
-
-### 🛠️ `~/tools/arsenal.sh`
-
+<!-- CONNECT BADGES -->
 <div align="center">
-  <br/>
-  <a href="https://skillicons.dev" target="_blank">
-    <img src="https://skillicons.dev/icons?i=linux,kali,bash,git,docker,vscode&theme=dark" alt="DevOps & Security" />
-    <br/>
-    <img src="https://skillicons.dev/icons?i=js,python,cpp,html,css,react,nextjs,tailwind&theme=dark" alt="Languages & Frontend" />
-    <br/>
-    <img src="https://skillicons.dev/icons?i=nodejs,express,mysql,mongodb,aws,postman&theme=dark" alt="Backend & Cloud" />
+  <a href="https://www.linkedin.com/in/lokanath-meher-a79506353/" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+  <a href="mailto:meherlokanath314@gmail.com" target="_blank">
+    <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+  </a>
+  <a href="https://github.com/lokanathmeher19" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
   </a>
 </div>
 
 ---
 
-### 📊 `~/logs/telemetry.log`
+### 👨‍💻 About Me
 
-<details open>
-<summary><b>[+] View GitHub Threat/Activity Metrics</b></summary>
-<br/>
+I am a passionate **Software Engineer** and **Full Stack Developer** dedicated to building high-performance, accessible, and scalable web applications. I specialize in bridging the gap between elegant frontend architectures and resilient backend systems.
 
-<table align="center">
-  <tr>
-    <td align="center" width="50%">
-      <img src="https://github-readme-stats.vercel.app/api?username=lokanathmeher19&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="GitHub Stats" />
-    </td>
-    <td align="center" width="50%">
-      <img src="https://github-readme-streak-stats.herokuapp.com/?user=lokanathmeher19&theme=tokyonight&hide_border=true&background=0D1117" alt="Streak Stats" />
-    </td>
-  </tr>
-</table>
+- 🚀 **Currently Building:** Expanding core features and architecture in `TruthGuard_AI`.
+- 🧠 **Technical Focus:** Component-driven UI development, RESTful API design, and Database optimization.
+- 🎓 **Background:** B.Tech Undergraduate constantly pushing technological boundaries.
+- 🌱 **Learning:** Deepening expertise in Cloud Infrastructure (AWS) and Modern Systems Architecture.
+
+---
+
+### 💻 Technology Playground
 
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=lokanathmeher19&theme=tokyo-night&hide_border=true&bg_color=0D1117" width="100%" alt="Activity Graph" />
+  <br/>
+  <b>Frontend Engineering</b><br><br>
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=react,nextjs,js,html,css,tailwind&theme=dark" alt="Frontend Frameworks" />
+  </a>
+  <br/><br><br>
+  
+  <b>Backend & Databases</b><br><br>
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=nodejs,express,mysql,mongodb,python,cpp&theme=dark" alt="Backend Technologies" />
+  </a>
+  <br/><br><br>
+  
+  <b>Tools & Infrastructure</b><br><br>
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=aws,docker,git,linux,bash,kali,postman,vscode&theme=dark" alt="Cloud and Infrastructure" />
+  </a>
+  <br/>
 </div>
+
+---
+
+### 📊 Developer Analytics
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=lokanathmeher19&show_icons=true&hide_border=true&title_color=8A2BE2&text_color=9CA3AF&icon_color=8A2BE2&bg_color=0D1117" alt="GitHub Stats" width="48%" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=lokanathmeher19&hide_border=true&title_color=8A2BE2&text_color=9CA3AF&icon_color=8A2BE2&sideNums=9CA3AF&sideLabels=9CA3AF&ring=8A2BE2&fire=8A2BE2&currStreakLabel=8A2BE2&currStreakNum=9CA3AF&background=0D1117" alt="Streak Stats" width="48%" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=lokanathmeher19&theme=github-dark&hide_border=true&bg_color=0D1117&color=9CA3AF&line=8A2BE2&point=ffffff" width="100%" alt="Activity Graph" />
+</p>
 
 <div align="center">
   <picture>
@@ -76,20 +82,10 @@
   </picture>
 </div>
 
-</details>
-
 ---
-
-### 🔗 `~/network/connections`
-
-<div align="center">
-  <a href="https://www.linkedin.com/in/lokanath-meher-a79506353/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
-  <a href="https://github.com/lokanathmeher19"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a>
-  <a href="mailto:meherlokanath314@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
-</div>
 
 <br/>
 
 <div align="center">
-  <img src="https://komarev.com/ghpvc/?username=lokanathmeher19&label=PING%20COUNT&color=00FF00&style=for-the-badge" alt="visitor badge" />
+  <img src="https://komarev.com/ghpvc/?username=lokanathmeher19&label=Profile%20Views&color=8A2BE2&style=for-the-badge" alt="visitor badge" />
 </div>
