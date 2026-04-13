@@ -82,12 +82,12 @@ I am a passionate **B.Tech Undergraduate** who thrives on transforming complex p
 
 <div align="center">
 
-  <img src="https://github-readme-stats.vercel.app/api?username=lokanathmeher19&show_icons=true&hide_border=true&bg_color=0D1117&title_color=8A2BE2&text_color=9CA3AF&icon_color=00E5FF" alt="GitHub Stats" width="48%" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=lokanathmeher19&hide_border=true&title_color=8A2BE2&text_color=9CA3AF&icon_color=00E5FF&sideNums=9CA3AF&sideLabels=9CA3AF&ring=8A2BE2&fire=00E5FF&currStreakLabel=8A2BE2&currStreakNum=9CA3AF&background=0D1117" alt="Streak Stats" width="48%" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=lokanathmeher19&theme=tokyonight" alt="GitHub Stats" width="48%" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=lokanathmeher19&hide_border=true&title_color=7AA2F7&text_color=9CA3AF&icon_color=BB9AF7&sideNums=9CA3AF&sideLabels=9CA3AF&ring=BB9AF7&fire=7AA2F7&currStreakLabel=BB9AF7&currStreakNum=9CA3AF&background=1A1B27" alt="Streak Stats" width="48%" />
 
   <br><br>
 
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=lokanathmeher19&hide_border=true&layout=compact&bg_color=0D1117&title_color=8A2BE2&text_color=9CA3AF" alt="Top Languages" width="48%" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=lokanathmeher19&theme=tokyonight" alt="Top Languages" width="48%" />
   
   <br><br>
 
