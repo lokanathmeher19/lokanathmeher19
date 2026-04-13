@@ -82,33 +82,21 @@ I am a passionate **B.Tech Undergraduate** who thrives on transforming complex p
 
 <div align="center">
 
-  <table>
-    <tr>
-      <td width="50%" align="center">
-        <img src="https://github-readme-stats.vercel.app/api?username=lokanathmeher19&show_icons=true&hide_border=true&bg_color=0D1117&title_color=8A2BE2&text_color=9CA3AF&icon_color=00E5FF" alt="GitHub Stats" width="100%" />
-      </td>
-      <td width="50%" align="center">
-        <img src="https://github-readme-streak-stats.herokuapp.com/?user=lokanathmeher19&hide_border=true&title_color=8A2BE2&text_color=9CA3AF&icon_color=00E5FF&sideNums=9CA3AF&sideLabels=9CA3AF&ring=8A2BE2&fire=00E5FF&currStreakLabel=8A2BE2&currStreakNum=9CA3AF&background=0D1117" alt="Streak Stats" width="100%" />
-      </td>
-    </tr>
-  </table>
+  <img src="https://github-readme-stats.vercel.app/api?username=lokanathmeher19&show_icons=true&hide_border=true&bg_color=0D1117&title_color=8A2BE2&text_color=9CA3AF&icon_color=00E5FF" alt="GitHub Stats" width="48%" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=lokanathmeher19&hide_border=true&title_color=8A2BE2&text_color=9CA3AF&icon_color=00E5FF&sideNums=9CA3AF&sideLabels=9CA3AF&ring=8A2BE2&fire=00E5FF&currStreakLabel=8A2BE2&currStreakNum=9CA3AF&background=0D1117" alt="Streak Stats" width="48%" />
 
-  <br>
+  <br><br>
 
-  <table>
-    <tr>
-      <td width="50%" align="center" valign="middle">
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=lokanathmeher19&hide_border=true&layout=compact&bg_color=0D1117&title_color=8A2BE2&text_color=9CA3AF" alt="Top Languages" width="100%" />
-      </td>
-      <td width="50%" align="center" valign="middle">
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/lokanathmeher19/lokanathmeher19/output/github-contribution-grid-snake-dark.svg">
-          <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/lokanathmeher19/lokanathmeher19/output/github-contribution-grid-snake.svg">
-          <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/lokanathmeher19/lokanathmeher19/output/github-contribution-grid-snake-dark.svg" width="90%">
-        </picture>
-      </td>
-    </tr>
-  </table>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=lokanathmeher19&hide_border=true&layout=compact&bg_color=0D1117&title_color=8A2BE2&text_color=9CA3AF" alt="Top Languages" width="48%" />
+  
+  <br><br>
+
+  <!-- Contribution Graph -->
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/lokanathmeher19/lokanathmeher19/output/github-contribution-grid-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/lokanathmeher19/lokanathmeher19/output/github-contribution-grid-snake.svg">
+    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/lokanathmeher19/lokanathmeher19/output/github-contribution-grid-snake-dark.svg" width="90%">
+  </picture>
 
 </div>
 
