@@ -60,16 +60,8 @@
 ### 📊 GitHub Analytics
 
 <div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=lokanathmeher19&amp;show_icons=true&amp;theme=transparent&amp;hide_border=true&amp;title_color=58A6FF&amp;icon_color=58A6FF&amp;text_color=C9D1D9">
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=lokanathmeher19&amp;show_icons=true&amp;theme=transparent&amp;hide_border=true&amp;title_color=0969DA&amp;icon_color=0969DA&amp;text_color=24292F">
-    <img alt="GitHub Stats" src="https://github-readme-stats.vercel.app/api?username=lokanathmeher19&amp;show_icons=true&amp;theme=transparent&amp;hide_border=true&amp;title_color=58A6FF&amp;icon_color=58A6FF&amp;text_color=C9D1D9" height="150" />
-  </picture>
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=lokanathmeher19&amp;layout=compact&amp;theme=transparent&amp;hide_border=true&amp;title_color=58A6FF&amp;text_color=C9D1D9">
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=lokanathmeher19&amp;layout=compact&amp;theme=transparent&amp;hide_border=true&amp;title_color=0969DA&amp;text_color=24292F">
-    <img alt="Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=lokanathmeher19&amp;layout=compact&amp;theme=transparent&amp;hide_border=true&amp;title_color=58A6FF&amp;text_color=C9D1D9" height="150" />
-  </picture>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=lokanathmeher19&theme=tokyonight&v=1" alt="GitHub Stats" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=lokanathmeher19&theme=tokyonight&v=1" alt="Top Languages" />
 </div>
 
 ---
