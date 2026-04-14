@@ -1,9 +1,13 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=150&section=header&text=Lokanath%20Meher&fontSize=40&animation=fadeIn&fontAlignY=38&desc=B.Tech%20Student%20%7C%20Software%20Developer&descAlignY=60&descAlign=50" width="100%" alt="Header Banner"/>
+  <h1 align="center">Lokanath Meher</h1>
+  <h3 align="center">Full Stack & Software Developer</h3>
+  
+  <p align="center">
+    Building robust, scalable, and secure applications. <br />
+    Always exploring cutting-edge technologies in modern web development.
+  </p>
 
-  <h3>Building robust applications and securing digital infrastructures</h3>
-
-  <p>
+  <p align="center">
     <a href="https://linkedin.com/in/lokanath-meher-a79506353"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
     <a href="mailto:meherlokanath314@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
     <a href="https://github.com/lokanathmeher19"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
@@ -12,66 +16,52 @@
 
 ---
 
-### 👨‍💻 About Me
+### 👨‍💻 Professional Summary
 
 - 🎓 Currently pursuing my **B.Tech** degree.
-- 💻 **Full Stack & Software Developer** focused on creating robust, scalable, and secure applications.
-- 🌱 I’m currently diving deeper into **Cloud Architecture & Advanced React Patterns**.
-- 👯 I’m looking to collaborate on **Open Source Projects** and **Innovative Security Tools**.
-- 💡 Constantly exploring cutting-edge technologies in modern web development.
-- 🏆 Participated as a Finalist/Submitter in the **Smart India Hackathon (SIH)**.
+- 🌱 Actively designing **Cloud Architectures**, advancing in **React Patterns**, and studying security tools.
+- 👯 Open to collaborating on **Open Source Projects** and enterprise-grade web applications.
+- 🏆 Recognized as a Finalist/Submitter in the **Smart India Hackathon (SIH)**.
 
 ---
 
-### 🛠️ Tech Stack
+### 🛠️ Technical Arsenal
 
-**Languages & Core:**
+**Languages & Core**
 <br/>
 <img src="https://skillicons.dev/icons?i=js,ts,python,java,cpp,html,css" />
 <br/><br/>
 
-**Frontend:**
+**Frontend Development**
 <br/>
 <img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,redux,bootstrap,vite" />
 <br/><br/>
 
-**Backend & Databases:**
+**Backend & Databases**
 <br/>
 <img src="https://skillicons.dev/icons?i=nodejs,express,mysql,mongodb,postgres,firebase" />
 <br/><br/>
 
-**Tools, Cloud & Security:**
+**DevOps, Tools & Infrastructure**
 <br/>
 <img src="https://skillicons.dev/icons?i=aws,docker,linux,kali,git,bash,vscode,github,postman" />
 
 ---
 
-### 🚀 Featured Projects
+### 🚀 Selected Projects
 
-| Project | Description | Stack |
-|---------|-------------|-------|
-| **[TruthGuard_AI](https://github.com/lokanathmeher19/TruthGuard_AI)** | Next-gen AI architecture focused on core data metrics. | `Python` |
-| **[golf-charity-app](https://github.com/lokanathmeher19/golf-charity-app)** | A web application developed for charity, deployed on Vercel. | `JavaScript` |
-| **[Internetspeed_Test](https://github.com/lokanathmeher19/Internetspeed_Test)** | Application for accurately testing internet speed metrics. | `TypeScript` |
-| **[sambalpuriHUB](https://github.com/lokanathmeher19/sambalpuriHUB)** | Web platform focused on regional specific content. | `TypeScript` |
-
----
-
-### 📊 Analytics & Impact
-
-<div align="center">
-  <img src="https://img.shields.io/github/followers/lokanathmeher19?label=Followers&style=for-the-badge&color=0A66C2&logo=github" alt="Followers" />
-  <img src="https://img.shields.io/github/stars/lokanathmeher19?label=Total%20Stars&style=for-the-badge&color=0A66C2&logo=github" alt="Stars" />
-  <br/><br/>
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/lokanathmeher19/lokanathmeher19/output/github-contribution-grid-snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/lokanathmeher19/lokanathmeher19/output/github-contribution-grid-snake.svg">
-    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/lokanathmeher19/lokanathmeher19/output/github-contribution-grid-snake-dark.svg" width="90%">
-  </picture>
-</div>
+| Project | Description | Primary Technology |
+|---------|-------------|--------------------|
+| **[TruthGuard_AI](https://github.com/lokanathmeher19/TruthGuard_AI)** | Advanced AI architecture focused on core data validation and analysis metrics. | `Python` |
+| **[Golf Charity App](https://github.com/lokanathmeher19/golf-charity-app)** | A functional web application developed out of charity initiatives, deployed on Vercel. | `JavaScript` |
+| **[Internet Speed Test](https://github.com/lokanathmeher19/Internetspeed_Test)** | Application software engineered for accurately evaluating internet speed metrics. | `TypeScript` |
+| **[SambalpuriHUB](https://github.com/lokanathmeher19/sambalpuriHUB)** | Full-stack platform focused on regional specific content structure and delivery. | `TypeScript` |
 
 ---
 
+<br/>
+
+<!-- Small Footer Banner -->
 <div align="center">
-  <img src="https://komarev.com/ghpvc/?username=lokanathmeher19&label=Profile+Views&color=blue&style=flat" alt="Visitor Count" />
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&height=120&section=footer&text=Clean%20Code.%20Robust%20Systems.&fontSize=30&animation=fadeIn" width="100%" alt="Footer Banner"/>
 </div>
