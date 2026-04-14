@@ -26,22 +26,22 @@
 
 **Languages & Core:**
 <br/>
-<img src="https://skillicons.dev/icons?i=js,python,cpp,html,css" />
+<img src="https://skillicons.dev/icons?i=js,ts,python,java,cpp,html,css" />
 <br/><br/>
 
 **Frontend:**
 <br/>
-<img src="https://skillicons.dev/icons?i=react,nextjs,tailwind" />
+<img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,redux,bootstrap,vite" />
 <br/><br/>
 
 **Backend & Databases:**
 <br/>
-<img src="https://skillicons.dev/icons?i=nodejs,express,mysql,mongodb" />
+<img src="https://skillicons.dev/icons?i=nodejs,express,mysql,mongodb,postgres,firebase" />
 <br/><br/>
 
 **Tools, Cloud & Security:**
 <br/>
-<img src="https://skillicons.dev/icons?i=aws,docker,linux,kali,git,bash" />
+<img src="https://skillicons.dev/icons?i=aws,docker,linux,kali,git,bash,vscode,github,postman" />
 
 ---
 
