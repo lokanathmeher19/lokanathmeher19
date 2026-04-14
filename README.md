@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=250&section=header&text=Lokanath%20Meher&fontSize=50&animation=fadeIn&fontAlignY=38&desc=B.Tech%20Student%20%7C%20Full%20Stack%20Developer%20%7C%20Cybersecurity%20Analyst&descAlignY=51&descAlign=50" width="100%" alt="Header Banner"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=250&section=header&text=Lokanath%20Meher&fontSize=50&animation=fadeIn&fontAlignY=38&desc=B.Tech%20Student%20%7C%20Full%20Stack%20Developer%20%7C%20Software%20Developer&descAlignY=51&descAlign=50" width="100%" alt="Header Banner"/>
 
   <h3>Building robust applications and securing digital infrastructures</h3>
 
@@ -16,7 +16,7 @@
 
 - 🎓 Currently pursuing my **B.Tech** degree.
 - 💻 **Full Stack Developer** with a passion for building scalable web applications.
-- 🛡️ **Cybersecurity Analyst** with a keen interest in protecting systems and networks.
+- 💻 **Software Developer** focused on creating efficient and reliable software solutions.
 - 💡 Constantly learning and exploring new technologies in web development and security.
 - 🏆 Participated as a Finalist/Submitter in the **Smart India Hackathon (SIH)**.
 
@@ -49,8 +49,10 @@
 
 | Project | Description | Stack |
 |---------|-------------|-------|
-| **TruthGuard_AI** | Next-gen AI architecture verifying core data integrity automatically. | `React`, `Node.js` |
-| **Horizon Dashboard** | Real-time network security scanning and visualization mapped to UI modules. | `Next.js`, `AWS` |
+| **[TruthGuard_AI](https://github.com/lokanathmeher19/TruthGuard_AI)** | Next-gen AI architecture focused on core data metrics. | `Python` |
+| **[golf-charity-app](https://github.com/lokanathmeher19/golf-charity-app)** | A web application developed for charity, deployed on Vercel. | `JavaScript` |
+| **[Internetspeed_Test](https://github.com/lokanathmeher19/Internetspeed_Test)** | Application for accurately testing internet speed metrics. | `TypeScript` |
+| **[sambalpuriHUB](https://github.com/lokanathmeher19/sambalpuriHUB)** | Web platform focused on regional specific content. | `TypeScript` |
 
 ---
 
