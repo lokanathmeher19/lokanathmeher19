@@ -57,14 +57,6 @@
 
 ---
 
-### 🏆 GitHub Trophies
-
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=lokanathmeher19&theme=radical&column=7&margin-w=15&margin-h=15&no-frame=true&no-bg=true" alt="lokanathmeher19 Trophies" />
-</div>
-
----
-
 ### 📊 GitHub Stats
 
 <div align="center">
