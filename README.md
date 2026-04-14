@@ -57,20 +57,23 @@
 
 ---
 
-### 📊 GitHub Stats
+### 📊 GitHub Analytics
 
 <div align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=lokanathmeher19&theme=radical" alt="GitHub Stats" />
-  <br/><br/>
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/lokanathmeher19/lokanathmeher19/output/github-contribution-grid-snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/lokanathmeher19/lokanathmeher19/output/github-contribution-grid-snake.svg">
-    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/lokanathmeher19/lokanathmeher19/output/github-contribution-grid-snake-dark.svg" width="90%">
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=lokanathmeher19&show_icons=true&theme=transparent&hide_border=true&title_color=58A6FF&icon_color=58A6FF&text_color=C9D1D9">
+    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=lokanathmeher19&show_icons=true&theme=transparent&hide_border=true&title_color=0969DA&icon_color=0969DA&text_color=24292F">
+    <img alt="GitHub Stats" src="https://github-readme-stats.vercel.app/api?username=lokanathmeher19&show_icons=true&theme=transparent&hide_border=true&title_color=58A6FF&icon_color=58A6FF&text_color=C9D1D9" height="165" />
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=lokanathmeher19&layout=compact&theme=transparent&hide_border=true&title_color=58A6FF&text_color=C9D1D9">
+    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=lokanathmeher19&layout=compact&theme=transparent&hide_border=true&title_color=0969DA&text_color=24292F">
+    <img alt="Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=lokanathmeher19&layout=compact&theme=transparent&hide_border=true&title_color=58A6FF&text_color=C9D1D9" height="165" />
   </picture>
 </div>
 
 ---
 
 <div align="center">
-  <img src="https://komarev.com/ghpvc/?username=lokanathmeher19&label=Profile+Views&color=blue&style=flat" alt="Visitor Count" />
+  <img src="https://komarev.com/ghpvc/?username=lokanathmeher19&label=Profile+Views&color=58A6FF&style=flat" alt="Visitor Count" />
 </div>
