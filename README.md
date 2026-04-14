@@ -15,9 +15,10 @@
 ### 👨‍💻 About Me
 
 - 🎓 Currently pursuing my **B.Tech** degree.
-- 💻 **Full Stack Developer** with a passion for building scalable web applications.
-- 💻 **Software Developer** focused on creating efficient and reliable software solutions.
-- 💡 Constantly learning and exploring new technologies in web development and security.
+- 💻 **Full Stack & Software Developer** focused on creating robust, scalable, and secure applications.
+- 🌱 I’m currently diving deeper into **Cloud Architecture & Advanced React Patterns**.
+- 👯 I’m looking to collaborate on **Open Source Projects** and **Innovative Security Tools**.
+- 💡 Constantly exploring cutting-edge technologies in modern web development.
 - 🏆 Participated as a Finalist/Submitter in the **Smart India Hackathon (SIH)**.
 
 ---
@@ -56,11 +57,22 @@
 
 ---
 
+### 🏆 GitHub Trophies
+
+<div align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=lokanathmeher19&theme=radical&column=7&margin-w=15&margin-h=15&no-frame=true&no-bg=true" alt="lokanathmeher19 Trophies" />
+</div>
+
+---
+
 ### 📊 GitHub Stats
 
 <div align="center">
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=lokanathmeher19&theme=radical" alt="GitHub Stats" width="48%" />
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=lokanathmeher19&theme=radical&hide_border=true" alt="GitHub Streak" width="48%" />
+  <br/><br/>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=lokanathmeher19&theme=radical" alt="Language Distribution" width="48%" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=lokanathmeher19&theme=radical" alt="Most Commited Language" width="48%" />
   <br/><br/>
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/lokanathmeher19/lokanathmeher19/output/github-contribution-grid-snake-dark.svg">
