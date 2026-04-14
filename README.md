@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=250&section=header&text=Lokanath%20Meher&fontSize=50&animation=fadeIn&fontAlignY=38&desc=B.Tech%20Student%20%7C%20Full%20Stack%20Developer%20%7C%20Software%20Developer&descAlignY=51&descAlign=50" width="100%" alt="Header Banner"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=150&section=header&text=Lokanath%20Meher&fontSize=40&animation=fadeIn&fontAlignY=38&desc=B.Tech%20Student%20%7C%20Software%20Developer&descAlignY=60&descAlign=50" width="100%" alt="Header Banner"/>
 
   <h3>Building robust applications and securing digital infrastructures</h3>
 
@@ -57,10 +57,11 @@
 
 ---
 
-### 📊 GitHub Stats
+### 📊 Analytics & Impact
 
 <div align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=lokanathmeher19&theme=radical" alt="GitHub Stats" />
+  <img src="https://img.shields.io/github/followers/lokanathmeher19?label=Followers&style=for-the-badge&color=0A66C2&logo=github" alt="Followers" />
+  <img src="https://img.shields.io/github/stars/lokanathmeher19?label=Total%20Stars&style=for-the-badge&color=0A66C2&logo=github" alt="Stars" />
   <br/><br/>
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/lokanathmeher19/lokanathmeher19/output/github-contribution-grid-snake-dark.svg">
