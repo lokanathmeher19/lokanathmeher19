@@ -50,13 +50,6 @@
 
 <div align="center">
   <a href="https://github.com/lokanathmeher19">
-    <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=lokanathmeher19&theme=tokyonight" alt="GitHub Stats" />
-  </a>
-  <a href="https://github.com/lokanathmeher19">
-    <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=lokanathmeher19&theme=tokyonight" alt="Top Languages" />
-  </a>
-  <br/><br/>
-  <a href="https://github.com/lokanathmeher19">
     <img src="https://streak-stats.demolab.com?user=lokanathmeher19&theme=tokyonight" alt="GitHub Streak" />
   </a>
 </div>
