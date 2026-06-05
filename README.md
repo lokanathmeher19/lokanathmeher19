@@ -15,7 +15,7 @@
 ### 👨‍💻 About Me
 
 - 🎓 Currently pursuing my **B.Tech** degree.
-- 💻 **Full Stack & Software Developer** focused on creating robust, scalable, and secure applications.
+- 💻 **MERN Full Stack & Software Developer** focused on creating robust, scalable, and secure applications.
 - 🌱 I’m currently diving deeper into **Cloud Architecture & Advanced React Patterns**.
 - 👯 I’m looking to collaborate on **Open Source Projects** and **Innovative Security Tools**.
 - 💡 Constantly exploring cutting-edge technologies in modern web development.
