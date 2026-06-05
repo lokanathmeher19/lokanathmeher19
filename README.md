@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=250&section=header&text=Lokanath%20Meher&fontSize=50&animation=fadeIn&fontAlignY=38&desc=B.Tech%20Student%20%7C%20Full%20Stack%20Developer%20%7C%20Software%20Developer&descAlignY=51&descAlign=50" width="100%" alt="Header Banner"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=250&section=header&text=Lokanath%20Meher&fontSize=50&animation=fadeIn&fontAlignY=38&desc=B.Tech%20Student%20%7C%20MERN%20Full%20Stack%20%26%20Software%20Developer&descAlignY=51&descAlign=50" width="100%" alt="Header Banner"/>
 
   <h3>Building robust applications and securing digital infrastructures</h3>
 
@@ -50,6 +50,14 @@
 
 <div align="center">
   <a href="https://github.com/lokanathmeher19">
+    <img src="https://github-profile-trophy.vercel.app/?username=lokanathmeher19&theme=tokyonight&column=7" alt="GitHub Trophies" />
+  </a>
+</div>
+
+<br/>
+
+<div align="center">
+  <a href="https://github.com/lokanathmeher19">
     <img src="https://streak-stats.demolab.com?user=lokanathmeher19&theme=tokyonight" alt="GitHub Streak" />
   </a>
 </div>
@@ -76,5 +84,11 @@
 ---
 
 <div align="center">
-  <img src="https://komarev.com/ghpvc/?username=lokanathmeher19&label=Profile+Views&color=58A6FF&style=flat" alt="Visitor Count" />
+  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="Dynamic Quote" />
+</div>
+
+---
+
+<div align="center">
+  <img src="https://komarev.com/ghpvc/?username=lokanathmeher19&label=Profile+Views&color=7aa2f7&style=flat" alt="Visitor Count" />
 </div>
