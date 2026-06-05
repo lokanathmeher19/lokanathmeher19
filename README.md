@@ -58,26 +58,6 @@
 
 ---
 
-### 🚀 Featured Projects
-
-<div align="center">
-  <a href="https://github.com/lokanathmeher19/TruthGuard_AI">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=lokanathmeher19&repo=TruthGuard_AI&theme=tokyonight" alt="TruthGuard_AI" />
-  </a>
-  <a href="https://github.com/lokanathmeher19/golf-charity-app">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=lokanathmeher19&repo=golf-charity-app&theme=tokyonight" alt="golf-charity-app" />
-  </a>
-  <br/>
-  <a href="https://github.com/lokanathmeher19/Internetspeed_Test">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=lokanathmeher19&repo=Internetspeed_Test&theme=tokyonight" alt="Internetspeed_Test" />
-  </a>
-  <a href="https://github.com/lokanathmeher19/sambalpuriHUB">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=lokanathmeher19&repo=sambalpuriHUB&theme=tokyonight" alt="sambalpuriHUB" />
-  </a>
-</div>
-
----
-
 ### 📊 GitHub Analytics
 
 <div align="center">
@@ -87,11 +67,30 @@
   <a href="https://github.com/lokanathmeher19">
     <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=lokanathmeher19&layout=compact&theme=tokyonight" alt="Top Languages" />
   </a>
-  <br/>
+  <br/><br/>
   <a href="https://github.com/lokanathmeher19">
-    <img src="https://github-readme-streak-stats.herokuapp.com/?user=lokanathmeher19&theme=tokyonight" alt="GitHub Streak" />
+    <img src="https://streak-stats.demolab.com?user=lokanathmeher19&theme=tokyonight" alt="GitHub Streak" />
   </a>
 </div>
+
+<br/>
+
+<div align="center">
+  <a href="https://github.com/lokanathmeher19">
+    <img src="https://github-readme-activity-graph.vercel.app/graph?username=lokanathmeher19&theme=tokyo-night" alt="Lokanath's GitHub Activity Graph" width="100%" />
+  </a>
+</div>
+
+---
+
+### 🚀 Featured Projects
+
+| Project | Description | Stack |
+|---------|-------------|-------|
+| **[TruthGuard_AI](https://github.com/lokanathmeher19/TruthGuard_AI)** | Next-gen AI architecture focused on core data metrics. | `Python` |
+| **[golf-charity-app](https://github.com/lokanathmeher19/golf-charity-app)** | A web application developed for charity, deployed on Vercel. | `JavaScript` |
+| **[Internetspeed_Test](https://github.com/lokanathmeher19/Internetspeed_Test)** | Application for accurately testing internet speed metrics. | `TypeScript` |
+| **[sambalpuriHUB](https://github.com/lokanathmeher19/sambalpuriHUB)** | Web platform focused on regional specific content. | `TypeScript` |
 
 ---
 
