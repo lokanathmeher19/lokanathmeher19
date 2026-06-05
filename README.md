@@ -50,10 +50,10 @@
 
 <div align="center">
   <a href="https://github.com/lokanathmeher19">
-    <img src="https://github-readme-stats.vercel.app/api?username=lokanathmeher19&show_icons=true&theme=tokyonight&count_private=true" alt="Lokanath's GitHub Stats" />
+    <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=lokanathmeher19&theme=tokyonight" alt="GitHub Stats" />
   </a>
   <a href="https://github.com/lokanathmeher19">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=lokanathmeher19&layout=compact&theme=tokyonight" alt="Top Languages" />
+    <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=lokanathmeher19&theme=tokyonight" alt="Top Languages" />
   </a>
   <br/><br/>
   <a href="https://github.com/lokanathmeher19">
