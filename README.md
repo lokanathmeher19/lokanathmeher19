@@ -50,23 +50,11 @@
 
 <div align="center">
   <a href="https://github.com/lokanathmeher19">
-    <img src="https://github-profile-trophy.vercel.app/?username=lokanathmeher19&theme=tokyonight&column=7" alt="GitHub Trophies" />
+    <img src="https://img.shields.io/github/followers/lokanathmeher19?label=Followers&style=for-the-badge&color=7aa2f7&logo=github&logoColor=white" alt="Followers" />
   </a>
-</div>
-
-<br/>
-
-<div align="center">
+  &nbsp;&nbsp;
   <a href="https://github.com/lokanathmeher19">
-    <img src="https://streak-stats.demolab.com?user=lokanathmeher19&theme=tokyonight" alt="GitHub Streak" />
-  </a>
-</div>
-
-<br/>
-
-<div align="center">
-  <a href="https://github.com/lokanathmeher19">
-    <img src="https://github-readme-activity-graph.vercel.app/graph?username=lokanathmeher19&theme=tokyo-night" alt="Lokanath's GitHub Activity Graph" width="100%" />
+    <img src="https://img.shields.io/github/stars/lokanathmeher19?label=Total%20Stars&style=for-the-badge&color=7aa2f7&logo=github&logoColor=white" alt="Total Stars" />
   </a>
 </div>
 
@@ -80,12 +68,6 @@
 | **[golf-charity-app](https://github.com/lokanathmeher19/golf-charity-app)** | A web application developed for charity, deployed on Vercel. | `JavaScript` |
 | **[Internetspeed_Test](https://github.com/lokanathmeher19/Internetspeed_Test)** | Application for accurately testing internet speed metrics. | `TypeScript` |
 | **[sambalpuriHUB](https://github.com/lokanathmeher19/sambalpuriHUB)** | Web platform focused on regional specific content. | `TypeScript` |
-
----
-
-<div align="center">
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="Dynamic Quote" />
-</div>
 
 ---
 
