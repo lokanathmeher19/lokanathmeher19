@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=250&section=header&text=Lokanath%20Meher&fontSize=50&animation=fadeIn&fontAlignY=38&desc=B.Tech%20Student%20%7C%20MERN%20Full%20Stack%20%26%20Software%20Developer&descAlignY=51&descAlign=50" width="100%" alt="Header Banner"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=250&section=header&text=Lokanath%20Meher&fontSize=50&animation=fadeIn&fontAlignY=38&desc=B.Tech%20Student%20%7C%20MERN%20Full%20Stack%20and%20Software%20Developer&descAlignY=51&descAlign=50" width="100%" alt="Header Banner"/>
 
   <h3>Building robust applications and securing digital infrastructures</h3>
 
