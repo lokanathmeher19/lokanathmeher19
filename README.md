@@ -52,5 +52,9 @@
   <a href="https://github.com/lokanathmeher19">
     <img src="https://streak-stats.demolab.com?user=lokanathmeher19&theme=tokyonight" alt="GitHub Streak" />
   </a>
+  
+  <br/><br/>
+  
+  <img src="https://activity-graph.herokuapp.com/graph?username=lokanathmeher19&theme=tokyo-night&hide_border=true" alt="GitHub Contribution Graph" />
 </div>
 
