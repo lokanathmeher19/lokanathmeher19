@@ -50,17 +50,6 @@
 
 <div align="center">
   <a href="https://github.com/lokanathmeher19">
-    <img src="https://github-readme-stats.vercel.app/api?username=lokanathmeher19&show_icons=true&theme=tokyonight" alt="GitHub Stats" />
-  </a>
-  <a href="https://github.com/lokanathmeher19">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=lokanathmeher19&layout=compact&theme=tokyonight" alt="Top Languages" />
-  </a>
-</div>
-
-<br/>
-
-<div align="center">
-  <a href="https://github.com/lokanathmeher19">
     <img src="https://streak-stats.demolab.com?user=lokanathmeher19&theme=tokyonight" alt="GitHub Streak" />
   </a>
 </div>
