@@ -67,17 +67,6 @@
 
 ---
 
-### 🚀 Featured Projects
-
-| Project | Description | Stack |
-|---------|-------------|-------|
-| **[TruthGuard_AI](https://github.com/lokanathmeher19/TruthGuard_AI)** | Next-gen AI architecture focused on core data metrics. | `Python` |
-| **[golf-charity-app](https://github.com/lokanathmeher19/golf-charity-app)** | A web application developed for charity, deployed on Vercel. | `JavaScript` |
-| **[Internetspeed_Test](https://github.com/lokanathmeher19/Internetspeed_Test)** | Application for accurately testing internet speed metrics. | `TypeScript` |
-| **[sambalpuriHUB](https://github.com/lokanathmeher19/sambalpuriHUB)** | Web platform focused on regional specific content. | `TypeScript` |
-
----
-
 ### 📫 Let's Connect
 
 <div align="center">
