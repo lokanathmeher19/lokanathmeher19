@@ -65,20 +65,3 @@
   </a>
 </div>
 
----
-
-### 📫 Let's Connect
-
-<div align="center">
-  <p>I'm always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
-  <p>
-    <a href="mailto:meherlokanath314@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
-    <a href="https://linkedin.com/in/lokanath-meher-a79506353"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-  </p>
-</div>
-
-<br/>
-
-<div align="center">
-  <img src="https://komarev.com/ghpvc/?username=lokanathmeher19&label=Profile+Views&color=7aa2f7&style=flat" alt="Visitor Count" />
-</div>
