@@ -53,12 +53,3 @@
     <img src="https://streak-stats.demolab.com?user=lokanathmeher19&theme=tokyonight" alt="GitHub Streak" />
   </a>
   
-  <br/><br/>
-  
-  <img src="https://github-readme-stats.vercel.app/api?username=lokanathmeher19&theme=tokyonight&hide_border=true&show_icons=true" alt="GitHub Stats" />
-  
-  <br/><br/>
-  
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=lokanathmeher19&theme=tokyonight&hide_border=true&layout=compact" alt="Top Languages" />
-</div>
-
