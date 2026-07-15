@@ -55,6 +55,10 @@
   
   <br/><br/>
   
-  <img src="https://activity-graph.herokuapp.com/graph?username=lokanathmeher19&theme=tokyo-night&hide_border=true" alt="GitHub Contribution Graph" />
+  <img src="https://github-readme-stats.vercel.app/api?username=lokanathmeher19&theme=tokyonight&hide_border=true&show_icons=true" alt="GitHub Stats" />
+  
+  <br/><br/>
+  
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=lokanathmeher19&theme=tokyonight&hide_border=true&layout=compact" alt="Top Languages" />
 </div>
 
