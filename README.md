@@ -19,7 +19,7 @@
 - 🌱 I’m currently diving deeper into **Cloud Architecture & Advanced React Patterns**.
 - 👯 I’m looking to collaborate on **Open Source Projects** and **Innovative Security Tools**.
 - 💡 Constantly exploring cutting-edge technologies in modern web development.
-- 🏆 Participated as a Finalist/Submitter in the **Smart India Hackathon (SIH)**.
+- 🏆 Participated in the **Smart India Hackathon (SIH)**.
 
 ---
 
