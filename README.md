@@ -1,55 +1,13 @@
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=250&section=header&text=Lokanath%20Meher&fontSize=50&animation=fadeIn&fontAlignY=38&desc=B.Tech%20Student%20%7C%20MERN%20Full%20Stack%20and%20Software%20Developer&descAlignY=51&descAlign=50" width="100%" alt="Header Banner"/>
+<p align="center">
 
-  <h3>Building robust applications and securing digital infrastructures</h3>
+<code>lokanath@github ~ $ ./contributions.sh</code>
 
-  <p>
-    <a href="https://linkedin.com/in/lokanath-meher-a79506353"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-    <a href="mailto:meherlokanath314@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
-    <a href="https://github.com/lokanathmeher19"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
-  </p>
-</div>
+<br><br>
 
----
+<img
+  src="./contrib-heatmap.svg"
+  width="900"
+  alt="GitHub contribution heatmap"
+/>
 
-### 👨‍💻 About Me
-
-- 🎓 Currently pursuing my **B.Tech** degree.
-- 💻 **MERN Full Stack & Software Developer** focused on creating robust, scalable, and secure applications.
-- 🌱 I’m currently diving deeper into **Cloud Architecture & Advanced React Patterns**.
-- 👯 I’m looking to collaborate on **Open Source Projects** and **Innovative Security Tools**.
-- 💡 Constantly exploring cutting-edge technologies in modern web development.
-- 🏆 Participated in the **Smart India Hackathon (SIH)**.
-
----
-
-### 🛠️ Tech Stack
-
-**Languages & Core:**
-<br/>
-<img src="https://skillicons.dev/icons?i=js,ts,python,java,cpp,html,css" />
-<br/><br/>
-
-**Frontend:**
-<br/>
-<img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,redux,bootstrap,vite" />
-<br/><br/>
-
-**Backend & Databases:**
-<br/>
-<img src="https://skillicons.dev/icons?i=nodejs,express,mysql,mongodb,postgres,firebase" />
-<br/><br/>
-
-**Tools, Cloud & Security:**
-<br/>
-<img src="https://skillicons.dev/icons?i=aws,docker,linux,kali,git,bash,vscode,github,postman" />
-
----
-
-### 📊 GitHub Analytics
-
-<div align="center">
-  <a href="https://github.com/lokanathmeher19">
-    <img src="https://streak-stats.demolab.com?user=lokanathmeher19&theme=tokyonight" alt="GitHub Streak" />
-  </a>
-  
+</p>
