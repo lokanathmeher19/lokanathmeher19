@@ -1,7 +1,7 @@
 <p align="center">
   <img
     src="./wordmark.svg"
-    width=650"
+    width=600"
     alt="lokanathmeher19 terminal wordmark"
   />
 </p>
