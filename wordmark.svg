@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="900"
+     height="220"
+     viewBox="0 0 900 220">
+
+  <text
+    x="450"
+    y="45"
+    text-anchor="middle"
+    font-family="Consolas, 'Courier New', monospace"
+    font-size="22"
+    font-weight="bold"
+    fill="#c9d1d9">
+    lokanathmeher19@github ~ $ ./wordmark.sh
+  </text>
+
+  <text
+    x="450"
+    y="105"
+    text-anchor="middle"
+    font-family="Consolas, 'Courier New', monospace"
+    font-size="46"
+    font-weight="bold"
+    fill="#c9d1d9">
+    lokanathmeher19
+  </text>
+
+  <text
+    x="450"
+    y="145"
+    text-anchor="middle"
+    font-family="Consolas, 'Courier New', monospace"
+    font-size="16"
+    fill="#8b949e">
+    CSE Student  |  Full-Stack Developer  |  DevOps Enthusiast
+  </text>
+
+  <text
+    x="450"
+    y="190"
+    text-anchor="middle"
+    font-family="Consolas, 'Courier New', monospace"
+    font-size="15"
+    fill="#8b949e">
+    $ whoami → lokanathmeher19
+  </text>
+
+  <rect
+    x="700"
+    y="70"
+    width="4"
+    height="43"
+    fill="#58a6ff">
+    <animate
+      attributeName="opacity"
+      values="1;0;1"
+      dur="0.8s"
+      repeatCount="indefinite"/>
+  </rect>
+
+</svg>
