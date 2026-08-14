@@ -25,29 +25,27 @@ USERNAME = "lokanathmeher19"
 # SVG SETTINGS
 # ============================================================
 
+# Wide enough for the complete 53-week GitHub graph
 SVG_WIDTH = 1200
 SVG_HEIGHT = 330
 
 LEFT = 55
 TOP = 85
 
-# Smaller cells so ALL 53 weeks fit.
+# Compact cells so every week is visible
 CELL_SIZE = 16
 CELL_GAP = 4
 
 COLUMNS = 53
 ROWS = 7
 
-# 53 weeks × 7 days
-COLUMNS = 53
-ROWS = 7
-
-# Width of the complete heatmap
+# Exact width of 53 columns
 HEATMAP_WIDTH = (
     COLUMNS * CELL_SIZE
     + (COLUMNS - 1) * CELL_GAP
 )
 
+# Exact height of 7 rows
 HEATMAP_HEIGHT = (
     ROWS * CELL_SIZE
     + (ROWS - 1) * CELL_GAP
@@ -74,13 +72,10 @@ LEVEL_COLORS = {
 # ANIMATION
 # ============================================================
 
-# One complete animation cycle.
+# Complete animation repeats every 3 seconds
 ANIMATION_CYCLE = 3.0
 
-# How long the row takes to reveal.
-REVEAL_TIME = 0.75
-
-# Delay between rows.
+# Each row starts slightly after the previous row
 ROW_DELAY = 0.08
 
 
@@ -167,17 +162,15 @@ def build_contribution_map(data):
 
 
 # ============================================================
-# COLOR FROM CONTRIBUTION LEVEL
+# COLOR
 # ============================================================
 
 def get_color(level, count):
 
-    # Prefer the stored GitHub level.
     if level in LEVEL_COLORS:
 
         return LEVEL_COLORS[level]
 
-    # Fallback based on contribution count.
     if count <= 0:
 
         return LEVEL_COLORS["NONE"]
@@ -198,14 +191,10 @@ def get_color(level, count):
 
 
 # ============================================================
-# FIND WEEK START
+# FIND SUNDAY
 # ============================================================
 
 def sunday_on_or_before(date):
-
-    # Python:
-    # Monday = 0
-    # Sunday = 6
 
     days_since_sunday = (
         (date.weekday() + 1) % 7
@@ -241,7 +230,6 @@ def build_grid(contribution_map):
         last_date
     )
 
-    # We want exactly 53 columns.
     weeks = []
 
     current_sunday = first_sunday
@@ -282,7 +270,7 @@ def build_grid(contribution_map):
             days=7
         )
 
-    # Pad to exactly 53 weeks.
+    # Make sure there are exactly 53 weeks
     while len(weeks) < COLUMNS:
 
         empty_week = []
@@ -357,6 +345,7 @@ def svg_header(total_contributions):
     width="{SVG_WIDTH}"
     height="{SVG_HEIGHT}"
     viewBox="0 0 {SVG_WIDTH} {SVG_HEIGHT}"
+    preserveAspectRatio="xMidYMid meet"
     role="img"
     aria-label="GitHub contribution heatmap for {html.escape(USERNAME)}"
 >
@@ -404,9 +393,8 @@ def svg_header(total_contributions):
 
 </style>
 
-<!-- ========================================================
-     COMMAND
-     ======================================================== -->
+
+<!-- Terminal command -->
 
 <text
     x="{SVG_WIDTH / 2}"
@@ -421,7 +409,7 @@ def svg_header(total_contributions):
 
 
 # ============================================================
-# BUILD MONTH SVG
+# MONTH LABELS
 # ============================================================
 
 def build_month_svg(weeks):
@@ -440,6 +428,11 @@ def build_month_svg(weeks):
             * (CELL_SIZE + CELL_GAP)
         )
 
+        # Prevent last month label from going
+        # outside the SVG.
+        if x > SVG_WIDTH - 35:
+            x = SVG_WIDTH - 35
+
         parts.append(
             f"""
 <text
@@ -456,7 +449,7 @@ def build_month_svg(weeks):
 
 
 # ============================================================
-# BUILD WEEKDAY SVG
+# WEEKDAY LABELS
 # ============================================================
 
 def build_weekday_svg():
@@ -504,13 +497,6 @@ def build_heatmap_svg(weeks):
 
     for row in range(ROWS):
 
-        # ----------------------------------------------------
-        # Create a clip path for THIS row.
-        #
-        # It reveals from left → right.
-        # It repeats every 3 seconds.
-        # ----------------------------------------------------
-
         clip_id = f"rowClip{row}"
 
         row_y = (
@@ -519,9 +505,8 @@ def build_heatmap_svg(weeks):
             * (CELL_SIZE + CELL_GAP)
         )
 
-        row_delay = (
-            row * ROW_DELAY
-        )
+        # Small delay for each row
+        row_delay = row * ROW_DELAY
 
         parts.append(
             f"""
@@ -536,16 +521,8 @@ def build_heatmap_svg(weeks):
 
         <animate
             attributeName="width"
-            values="
-                0;
-                {HEATMAP_WIDTH};
-                {HEATMAP_WIDTH}
-            "
-            keyTimes="
-                0;
-                0.25;
-                1
-            "
+            values="0;{HEATMAP_WIDTH};{HEATMAP_WIDTH}"
+            keyTimes="0;0.25;1"
             begin="{row_delay:.2f}s"
             dur="{ANIMATION_CYCLE:.2f}s"
             repeatCount="indefinite"
@@ -556,10 +533,6 @@ def build_heatmap_svg(weeks):
 </clipPath>
 """
         )
-
-        # ----------------------------------------------------
-        # Put all cells of this row inside the clip.
-        # ----------------------------------------------------
 
         parts.append(
             f"""
@@ -629,7 +602,7 @@ def build_heatmap_svg(weeks):
 
 
 # ============================================================
-# BUILD TOTAL
+# TOTAL
 # ============================================================
 
 def build_total_svg(total):
@@ -652,7 +625,7 @@ def build_total_svg(total):
 
 
 # ============================================================
-# BUILD LEGEND
+# LEGEND
 # ============================================================
 
 def build_legend_svg():
@@ -663,10 +636,7 @@ def build_legend_svg():
         + 43
     )
 
-    start_x = (
-        SVG_WIDTH
-        - 310
-    )
+    start_x = SVG_WIDTH - 310
 
     parts = []
 
@@ -727,7 +697,7 @@ def build_legend_svg():
 
 
 # ============================================================
-# FOOTER COMMAND
+# FOOTER
 # ============================================================
 
 def build_footer():
@@ -750,7 +720,7 @@ def build_footer():
 
 
 # ============================================================
-# MAIN SVG GENERATOR
+# GENERATE SVG
 # ============================================================
 
 def generate_svg(data):
@@ -776,37 +746,30 @@ def generate_svg(data):
 
     svg = []
 
-    # Header
     svg.append(
         svg_header(total)
     )
 
-    # Month labels
     svg.append(
         build_month_svg(weeks)
     )
 
-    # Weekday labels
     svg.append(
         build_weekday_svg()
     )
 
-    # Heatmap cells
     svg.append(
         build_heatmap_svg(weeks)
     )
 
-    # Total contributions
     svg.append(
         build_total_svg(total)
     )
 
-    # Legend
     svg.append(
         build_legend_svg()
     )
 
-    # Footer
     svg.append(
         build_footer()
     )
@@ -890,6 +853,10 @@ def main():
 
     print(
         f"Grid: {COLUMNS} weeks x {ROWS} days"
+    )
+
+    print(
+        f"Heatmap width: {HEATMAP_WIDTH}px"
     )
 
     print(
