@@ -1,7 +1,8 @@
 from pathlib import Path
-import json
 from datetime import datetime, timedelta
+import json
 import html
+import math
 
 
 # ============================================================
@@ -15,518 +16,112 @@ OUTPUT_FILE = ROOT / "contrib-heatmap.svg"
 
 
 # ============================================================
-# SVG SETTINGS
+# USER
 # ============================================================
 
-CELL_SIZE = 14
+USERNAME = "lokanathmeher19"
+
+
+# ============================================================
+# SVG CANVAS
+# ============================================================
+
+# IMPORTANT:
+# The previous version was too narrow.
+# This wider canvas prevents the right side from being cut off.
+
+SVG_WIDTH = 1200
+SVG_HEIGHT = 255
+
+
+# ============================================================
+# HEATMAP GRID
+# ============================================================
+
+CELL_SIZE = 16
 CELL_GAP = 4
 
-CELL_RADIUS = 3
+LEFT_MARGIN = 60
+TOP_MARGIN = 72
 
-LEFT_LABEL = 38
-TOP_LABEL = 32
+DAY_ROWS = 7
+MAX_WEEKS = 53
 
-BOTTOM_SPACE = 42
 
-TEXT_COLOR = "#8b949e"
-COUNT_COLOR = "#c9d1d9"
+# ============================================================
+# COLORS
+# ============================================================
 
-FONT = (
-    "'Cascadia Code', "
-    "'Cascadia Mono', "
-    "'Consolas', "
-    "'Courier New', "
-    "monospace"
+TEXT_COLOR = "#c9d1d9"
+MUTED_COLOR = "#8b949e"
+
+LEVEL_COLORS = [
+    "#161b22",  # 0
+    "#0e4429",  # 1
+    "#006d32",  # 2
+    "#26a641",  # 3
+    "#39d353",  # 4
+]
+
+
+# ============================================================
+# FONT
+# ============================================================
+
+FONT_FAMILY = (
+    '"Cascadia Code", '
+    '"Cascadia Mono", '
+    '"Consolas", '
+    '"Courier New", '
+    'monospace'
 )
 
 
-# GitHub-like contribution colors
-
-COLORS = {
-    0: "#161b22",
-    1: "#0e4429",
-    2: "#006d32",
-    3: "#26a641",
-    4: "#39d353",
-}
-
-
 # ============================================================
-# LOAD DATA
+# HELPERS
 # ============================================================
 
-def load_data():
+def parse_date(value):
 
-    if not DATA_FILE.exists():
+    return datetime.strptime(
+        value,
+        "%Y-%m-%d"
+    ).date()
 
-        print(
-            f"ERROR: Contribution file not found:\n"
-            f"{DATA_FILE}"
-        )
 
-        return None
+def sunday_start(date_value):
 
-    try:
+    days_from_sunday = (
+        date_value.weekday() + 1
+    ) % 7
 
-        with open(
-            DATA_FILE,
-            "r",
-            encoding="utf-8"
-        ) as file:
-
-            data = json.load(file)
-
-    except Exception as error:
-
-        print("ERROR: Could not read contributions.json")
-        print(error)
-
-        return None
-
-    contributions = data.get(
-        "contributions",
-        []
+    return date_value - timedelta(
+        days=days_from_sunday
     )
 
-    if not contributions:
 
-        print("ERROR: No contribution data found.")
-
-        return None
-
-    return data
-
-
-# ============================================================
-# LEVEL CALCULATION
-# ============================================================
-
-def get_level(count, maximum):
+def color_for_count(count):
 
     if count <= 0:
-        return 0
+        return LEVEL_COLORS[0]
 
-    if maximum <= 0:
-        return 0
+    if count <= 2:
+        return LEVEL_COLORS[1]
 
-    ratio = count / maximum
+    if count <= 5:
+        return LEVEL_COLORS[2]
 
-    if ratio <= 0.25:
-        return 1
+    if count <= 9:
+        return LEVEL_COLORS[3]
 
-    if ratio <= 0.50:
-        return 2
-
-    if ratio <= 0.75:
-        return 3
-
-    return 4
+    return LEVEL_COLORS[4]
 
 
-# ============================================================
-# BUILD WEEKS
-# ============================================================
+def esc(value):
 
-def build_calendar(contributions):
-
-    days = []
-
-    for item in contributions:
-
-        try:
-
-            date = datetime.strptime(
-                item["date"],
-                "%Y-%m-%d"
-            ).date()
-
-            count = int(
-                item.get("count", 0)
-            )
-
-            days.append(
-                {
-                    "date": date,
-                    "count": max(0, count)
-                }
-            )
-
-        except Exception:
-            continue
-
-    if not days:
-        return [], 0
-
-    days.sort(
-        key=lambda x: x["date"]
+    return html.escape(
+        str(value)
     )
-
-    maximum = max(
-        day["count"]
-        for day in days
-    )
-
-    # --------------------------------------------------------
-    # Start on Sunday.
-    # --------------------------------------------------------
-
-    first_date = days[0]["date"]
-
-    start = (
-        first_date
-        - timedelta(
-            days=(first_date.weekday() + 1) % 7
-        )
-    )
-
-    # --------------------------------------------------------
-    # End on Saturday.
-    # --------------------------------------------------------
-
-    last_date = days[-1]["date"]
-
-    end = (
-        last_date
-        + timedelta(
-            days=6 - (
-                (last_date.weekday() + 1) % 7
-            )
-        )
-    )
-
-    # --------------------------------------------------------
-    # Create dictionary.
-    # --------------------------------------------------------
-
-    lookup = {
-        day["date"]: day["count"]
-        for day in days
-    }
-
-    weeks = []
-
-    current = start
-
-    while current <= end:
-
-        week = []
-
-        for row in range(7):
-
-            date = current + timedelta(
-                days=row
-            )
-
-            count = lookup.get(
-                date,
-                0
-            )
-
-            week.append(
-                {
-                    "date": date,
-                    "count": count
-                }
-            )
-
-        weeks.append(week)
-
-        current += timedelta(days=7)
-
-    return weeks, maximum
-
-
-# ============================================================
-# MONTH LABELS
-# ============================================================
-
-def build_month_labels(
-    weeks,
-    x_start
-):
-
-    labels = []
-
-    previous_month = None
-
-    for index, week in enumerate(weeks):
-
-        # Check the first day of each week.
-        date = week[0]["date"]
-
-        month = date.month
-
-        if month != previous_month:
-
-            labels.append(
-                {
-                    "name": date.strftime("%b"),
-                    "x": x_start
-                    + index
-                    * (
-                        CELL_SIZE
-                        + CELL_GAP
-                    )
-                }
-            )
-
-            previous_month = month
-
-    return labels
-
-
-# ============================================================
-# SVG
-# ============================================================
-
-def create_svg(
-    data,
-    weeks,
-    maximum
-):
-
-    username = data.get(
-        "username",
-        "lokanathmeher19"
-    )
-
-    total = data.get(
-        "total_contributions",
-        0
-    )
-
-    columns = len(weeks)
-
-    grid_width = (
-        columns
-        * (CELL_SIZE + CELL_GAP)
-        - CELL_GAP
-    )
-
-    grid_height = (
-        7
-        * (CELL_SIZE + CELL_GAP)
-        - CELL_GAP
-    )
-
-    width = (
-        LEFT_LABEL
-        + grid_width
-        + 10
-    )
-
-    height = (
-        TOP_LABEL
-        + grid_height
-        + BOTTOM_SPACE
-    )
-
-    x_start = LEFT_LABEL
-
-    y_start = TOP_LABEL
-
-    svg = []
-
-    svg.append(
-        '<?xml version="1.0" encoding="UTF-8"?>'
-    )
-
-    svg.append(
-        f'''
-<svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="{width}"
-    height="{height}"
-    viewBox="0 0 {width} {height}"
-    role="img"
-    aria-label="{html.escape(username)} GitHub contribution heatmap"
->
-'''
-    )
-
-    # --------------------------------------------------------
-    # CSS
-    # --------------------------------------------------------
-
-    svg.append(
-        f'''
-<style>
-
-.month {{
-    font-family: {FONT};
-    font-size: 11px;
-    fill: {TEXT_COLOR};
-}}
-
-.day {{
-    font-family: {FONT};
-    font-size: 11px;
-    fill: {TEXT_COLOR};
-}}
-
-.count {{
-    font-family: {FONT};
-    font-size: 13px;
-    font-weight: 700;
-    fill: {COUNT_COLOR};
-}}
-
-.cell {{
-    stroke: none;
-}}
-
-</style>
-'''
-    )
-
-    # --------------------------------------------------------
-    # Month labels
-    # --------------------------------------------------------
-
-    month_labels = build_month_labels(
-        weeks,
-        x_start
-    )
-
-    for month in month_labels:
-
-        svg.append(
-            f'''
-<text
-    x="{month["x"]}"
-    y="14"
-    class="month"
->
-    {html.escape(month["name"])}
-</text>
-'''
-        )
-
-    # --------------------------------------------------------
-    # Day labels
-    # --------------------------------------------------------
-
-    day_names = {
-        1: "Mon",
-        3: "Wed",
-        5: "Fri"
-    }
-
-    for row, name in day_names.items():
-
-        y = (
-            y_start
-            + row
-            * (
-                CELL_SIZE
-                + CELL_GAP
-            )
-            + CELL_SIZE
-            - 2
-        )
-
-        svg.append(
-            f'''
-<text
-    x="0"
-    y="{y}"
-    class="day"
->
-    {name}
-</text>
-'''
-        )
-
-    # --------------------------------------------------------
-    # Contribution cells
-    # --------------------------------------------------------
-
-    for column, week in enumerate(weeks):
-
-        x = (
-            x_start
-            + column
-            * (
-                CELL_SIZE
-                + CELL_GAP
-            )
-        )
-
-        for row, day in enumerate(week):
-
-            y = (
-                y_start
-                + row
-                * (
-                    CELL_SIZE
-                    + CELL_GAP
-                )
-            )
-
-            count = day["count"]
-
-            level = get_level(
-                count,
-                maximum
-            )
-
-            color = COLORS[level]
-
-            date_text = day[
-                "date"
-            ].strftime(
-                "%Y-%m-%d"
-            )
-
-            svg.append(
-                f'''
-<rect
-    x="{x}"
-    y="{y}"
-    width="{CELL_SIZE}"
-    height="{CELL_SIZE}"
-    rx="{CELL_RADIUS}"
-    fill="{color}"
-    class="cell"
->
-    <title>
-        {html.escape(date_text)}: {count} contributions
-    </title>
-</rect>
-'''
-            )
-
-    # --------------------------------------------------------
-    # Total contributions
-    # --------------------------------------------------------
-
-    total_y = (
-        y_start
-        + grid_height
-        + 30
-    )
-
-    svg.append(
-        f'''
-<text
-    x="{x_start}"
-    y="{total_y}"
-    class="count"
->
-    {total:,} contributions in the last year
-</text>
-'''
-    )
-
-    # --------------------------------------------------------
-    # Close SVG
-    # --------------------------------------------------------
-
-    svg.append(
-        "</svg>"
-    )
-
-    return "\n".join(svg)
 
 
 # ============================================================
@@ -541,83 +136,599 @@ def main():
     print("==========================================")
     print()
 
-    data = load_data()
+    # --------------------------------------------------------
+    # Check data file
+    # --------------------------------------------------------
 
-    if data is None:
+    if not DATA_FILE.exists():
+
+        print(
+            "ERROR: contributions.json not found."
+        )
+
+        print()
+        print(
+            f"Expected:"
+        )
+
+        print(
+            DATA_FILE
+        )
+
         return
+
+    # --------------------------------------------------------
+    # Load JSON
+    # --------------------------------------------------------
+
+    with open(
+        DATA_FILE,
+        "r",
+        encoding="utf-8"
+    ) as file:
+
+        data = json.load(file)
 
     username = data.get(
         "username",
-        "lokanathmeher19"
+        USERNAME
+    )
+
+    total = int(
+        data.get(
+            "total_contributions",
+            0
+        )
+    )
+
+    contribution_list = data.get(
+        "contributions",
+        []
+    )
+
+    if not contribution_list:
+
+        print(
+            "ERROR: No contribution data found."
+        )
+
+        return
+
+    # --------------------------------------------------------
+    # Convert JSON to dictionary
+    # --------------------------------------------------------
+
+    contributions = {}
+
+    for item in contribution_list:
+
+        date_string = item.get(
+            "date"
+        )
+
+        if not date_string:
+            continue
+
+        try:
+
+            date_value = parse_date(
+                date_string
+            )
+
+        except ValueError:
+
+            continue
+
+        count = int(
+            item.get(
+                "count",
+                0
+            )
+        )
+
+        contributions[
+            date_value
+        ] = count
+
+    if not contributions:
+
+        print(
+            "ERROR: Contribution list is empty."
+        )
+
+        return
+
+    # --------------------------------------------------------
+    # Find complete date range
+    # --------------------------------------------------------
+
+    first_date = min(
+        contributions.keys()
+    )
+
+    last_date = max(
+        contributions.keys()
+    )
+
+    # Start on Sunday
+    grid_start = sunday_start(
+        first_date
+    )
+
+    # Move to the end of the final week
+    grid_end = grid_start
+
+    while grid_end < last_date:
+
+        grid_end += timedelta(
+            days=7
+        )
+
+    # Number of weeks
+    total_days = (
+        grid_end - grid_start
+    ).days + 1
+
+    weeks = math.ceil(
+        total_days / 7
+    )
+
+    weeks = min(
+        weeks,
+        MAX_WEEKS
     )
 
     print(
         f"Loading real data for @{username}..."
     )
 
-    weeks, maximum = build_calendar(
-        data["contributions"]
+    print(
+        f"Real contributions: {total}"
     )
 
-    if not weeks:
+    print(
+        f"Grid: {weeks} weeks x 7 days"
+    )
 
-        print(
-            "ERROR: Could not build contribution calendar."
+    # --------------------------------------------------------
+    # Calculate grid size
+    # --------------------------------------------------------
+
+    grid_width = (
+        weeks * CELL_SIZE
+        + (weeks - 1) * CELL_GAP
+    )
+
+    grid_height = (
+        DAY_ROWS * CELL_SIZE
+        + (DAY_ROWS - 1) * CELL_GAP
+    )
+
+    RIGHT_MARGIN = 60
+
+    required_width = (
+        LEFT_MARGIN
+        + grid_width
+        + RIGHT_MARGIN
+    )
+
+    # Safety check
+    final_width = max(
+        SVG_WIDTH,
+        required_width
+    )
+
+    # --------------------------------------------------------
+    # Start SVG
+    # --------------------------------------------------------
+
+    svg = []
+
+    svg.append(
+        '<?xml version="1.0" encoding="UTF-8"?>'
+    )
+
+    svg.append(
+        f'''
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="100%"
+    height="{SVG_HEIGHT}"
+    viewBox="0 0 {final_width} {SVG_HEIGHT}"
+    preserveAspectRatio="xMidYMid meet"
+    role="img"
+    aria-label="GitHub contribution heatmap for {esc(username)}"
+>
+'''
+    )
+
+    # --------------------------------------------------------
+    # Styles
+    # --------------------------------------------------------
+
+    svg.append(
+        f'''
+<style>
+
+.title {{
+    font-family: {FONT_FAMILY};
+    font-size: 18px;
+    font-weight: 700;
+    fill: {TEXT_COLOR};
+}}
+
+.month {{
+    font-family: {FONT_FAMILY};
+    font-size: 12px;
+    fill: {MUTED_COLOR};
+}}
+
+.day {{
+    font-family: {FONT_FAMILY};
+    font-size: 12px;
+    fill: {MUTED_COLOR};
+}}
+
+.total {{
+    font-family: {FONT_FAMILY};
+    font-size: 16px;
+    font-weight: 700;
+    fill: {TEXT_COLOR};
+}}
+
+.legend {{
+    font-family: {FONT_FAMILY};
+    font-size: 11px;
+    fill: {MUTED_COLOR};
+}}
+
+.cell {{
+    rx: 3;
+    ry: 3;
+}}
+
+</style>
+'''
+    )
+
+    # ========================================================
+    # TOP COMMAND
+    # ========================================================
+
+    svg.append(
+        f'''
+<text
+    x="{final_width / 2:.2f}"
+    y="28"
+    text-anchor="middle"
+    class="title"
+>
+    {esc(username)}@github ~ $ ./contributions.sh
+</text>
+'''
+    )
+
+    # ========================================================
+    # MONTH LABELS
+    # ========================================================
+
+    previous_month = None
+
+    for week in range(weeks):
+
+        week_date = (
+            grid_start
+            + timedelta(
+                days=week * 7
+            )
         )
 
-        return
+        month = week_date.month
 
-    svg = create_svg(
-        data,
-        weeks,
-        maximum
+        if month == previous_month:
+            continue
+
+        previous_month = month
+
+        x = (
+            LEFT_MARGIN
+            + week
+            * (CELL_SIZE + CELL_GAP)
+        )
+
+        svg.append(
+            f'''
+<text
+    x="{x}"
+    y="52"
+    class="month"
+>
+    {week_date.strftime("%b")}
+</text>
+'''
+        )
+
+    # ========================================================
+    # DAY LABELS
+    # ========================================================
+
+    day_labels = {
+        1: "Mon",
+        3: "Wed",
+        5: "Fri"
+    }
+
+    for row, label in day_labels.items():
+
+        y = (
+            TOP_MARGIN
+            + row
+            * (CELL_SIZE + CELL_GAP)
+            + 12
+        )
+
+        svg.append(
+            f'''
+<text
+    x="8"
+    y="{y}"
+    class="day"
+>
+    {label}
+</text>
+'''
+        )
+
+    # ========================================================
+    # ANIMATED HEATMAP
+    #
+    # Each row wipes from LEFT -> RIGHT.
+    #
+    # Row 0 starts first.
+    # Row 1 starts slightly later.
+    # Row 2 starts after that.
+    # ...
+    #
+    # This produces the same terminal-style
+    # progressive animation.
+    # ========================================================
+
+    for row in range(DAY_ROWS):
+
+        row_y = (
+            TOP_MARGIN
+            + row
+            * (CELL_SIZE + CELL_GAP)
+        )
+
+        clip_id = (
+            f"heatmapRow{row}"
+        )
+
+        # ----------------------------------------------------
+        # Clip path
+        # ----------------------------------------------------
+
+        svg.append(
+            f'''
+<clipPath id="{clip_id}">
+    <rect
+        x="{LEFT_MARGIN}"
+        y="{row_y}"
+        width="0"
+        height="{CELL_SIZE}"
+    >
+
+        <animate
+            attributeName="width"
+            from="0"
+            to="{grid_width}"
+            begin="{row * 0.12:.2f}s"
+            dur="1.10s"
+            fill="freeze"
+        />
+
+    </rect>
+</clipPath>
+'''
+        )
+
+        # ----------------------------------------------------
+        # Row group
+        # ----------------------------------------------------
+
+        svg.append(
+            f'''
+<g clip-path="url(#{clip_id})">
+'''
+        )
+
+        # ----------------------------------------------------
+        # Cells
+        # ----------------------------------------------------
+
+        for week in range(weeks):
+
+            current_date = (
+                grid_start
+                + timedelta(
+                    days=week * 7 + row
+                )
+            )
+
+            count = contributions.get(
+                current_date,
+                0
+            )
+
+            # Outside actual data range
+            if (
+                current_date < first_date
+                or current_date > last_date
+            ):
+
+                count = 0
+
+            x = (
+                LEFT_MARGIN
+                + week
+                * (CELL_SIZE + CELL_GAP)
+            )
+
+            color = color_for_count(
+                count
+            )
+
+            svg.append(
+                f'''
+<rect
+    x="{x}"
+    y="{row_y}"
+    width="{CELL_SIZE}"
+    height="{CELL_SIZE}"
+    class="cell"
+    fill="{color}"
+>
+    <title>
+        {current_date.isoformat()}: {count} contributions
+    </title>
+</rect>
+'''
+            )
+
+        svg.append(
+            "</g>"
+        )
+
+    # ========================================================
+    # TOTAL CONTRIBUTIONS
+    # ========================================================
+
+    total_y = (
+        TOP_MARGIN
+        + grid_height
+        + 38
     )
 
+    svg.append(
+        f'''
+<text
+    x="{LEFT_MARGIN}"
+    y="{total_y}"
+    class="total"
+>
+    {total} contributions in the last year
+</text>
+'''
+    )
+
+    # ========================================================
+    # LEGEND
+    # ========================================================
+
+    legend_width = 170
+
+    legend_x = (
+        final_width
+        - legend_width
+    )
+
+    svg.append(
+        f'''
+<text
+    x="{legend_x - 25}"
+    y="{total_y}"
+    text-anchor="end"
+    class="legend"
+>
+    Less
+</text>
+'''
+    )
+
+    for index, color in enumerate(
+        LEVEL_COLORS
+    ):
+
+        x = (
+            legend_x
+            + index * 22
+        )
+
+        svg.append(
+            f'''
+<rect
+    x="{x}"
+    y="{total_y - 13}"
+    width="16"
+    height="16"
+    rx="3"
+    ry="3"
+    fill="{color}"
+/>
+'''
+        )
+
+    svg.append(
+        f'''
+<text
+    x="{legend_x + 5 * 22 + 8}"
+    y="{total_y}"
+    class="legend"
+>
+    More
+</text>
+'''
+    )
+
+    # ========================================================
+    # CLOSE SVG
+    # ========================================================
+
+    svg.append(
+        "</svg>"
+    )
+
+    # ========================================================
+    # WRITE FILE
+    # ========================================================
+
     OUTPUT_FILE.write_text(
-        svg,
+        "\n".join(svg),
         encoding="utf-8"
     )
 
     print()
-    print("SUCCESS!")
+    print("==========================================")
+    print(" SUCCESS")
+    print("==========================================")
     print()
+    print(
+        f"Output: {OUTPUT_FILE}"
+    )
     print(
         f"Username: {username}"
     )
-
     print(
-        f"Contributions: "
-        f"{data.get('total_contributions', 0):,}"
+        f"Contributions: {total}"
     )
-
     print(
-        f"Weeks rendered: {len(weeks)}"
+        f"Weeks: {weeks}"
     )
-
     print()
-    print(
-        f"Output:"
-    )
-
-    print(
-        OUTPUT_FILE
-    )
-
+    print("Background: TRANSPARENT")
+    print("Border: NONE")
+    print("Terminal frame: NONE")
+    print("Animation: ROW-BY-ROW")
+    print("Direction: LEFT -> RIGHT")
     print()
-    print(
-        "Background: TRANSPARENT"
-    )
-
-    print(
-        "Border: NONE"
-    )
-
-    print(
-        "Terminal frame: NONE"
-    )
-
+    print("All columns visible.")
     print()
 
+
+# ============================================================
+# RUN
+# ============================================================
 
 if __name__ == "__main__":
     main()
