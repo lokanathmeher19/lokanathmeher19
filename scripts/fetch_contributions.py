@@ -3,6 +3,7 @@ import json
 import requests
 from datetime import datetime, timedelta, timezone
 
+
 USERNAME = "lokanathmeher19"
 
 TOKEN = os.getenv("GITHUB_TOKEN")
@@ -12,6 +13,7 @@ if not TOKEN:
 
 
 API_URL = "https://api.github.com/graphql"
+
 
 QUERY = """
 query($login: String!, $from: DateTime!, $to: DateTime!) {
@@ -38,9 +40,9 @@ query($login: String!, $from: DateTime!, $to: DateTime!) {
 
 def fetch_contributions():
 
-    print("=" * 42)
+    print("=" * 50)
     print(" GitHub Contribution Fetcher")
-    print("=" * 42)
+    print("=" * 50)
 
     print()
     print(f"Username: {USERNAME}")
@@ -49,7 +51,6 @@ def fetch_contributions():
 
     today = datetime.now(timezone.utc)
 
-    # GitHub profile calendar = approximately one year
     start = today - timedelta(days=370)
 
     variables = {
@@ -86,9 +87,14 @@ def fetch_contributions():
     user = result["data"]["user"]
 
     if user is None:
-        raise RuntimeError(f"GitHub user '{USERNAME}' not found")
+        raise RuntimeError(
+            f"GitHub user '{USERNAME}' not found"
+        )
 
-    calendar = user["contributionsCollection"]["contributionCalendar"]
+    calendar = (
+        user["contributionsCollection"]
+        ["contributionCalendar"]
+    )
 
     contributions = []
 
@@ -104,8 +110,10 @@ def fetch_contributions():
 
     data = {
         "username": USERNAME,
-        "total_contributions": calendar["totalContributions"],
-        "updated_at": datetime.now(timezone.utc).isoformat(),
+        "total_contributions":
+            calendar["totalContributions"],
+        "updated_at":
+            datetime.now(timezone.utc).isoformat(),
         "contributions": contributions,
     }
 
@@ -128,10 +136,16 @@ def fetch_contributions():
     print("SUCCESS!")
     print()
     print(f"Username: {USERNAME}")
-    print(f"Real contributions: {calendar['totalContributions']}")
-    print(f"Days downloaded: {len(contributions)}")
+    print(
+        f"Real contributions: "
+        f"{calendar['totalContributions']}"
+    )
+    print(
+        f"Days downloaded: "
+        f"{len(contributions)}"
+    )
     print()
-    print(f"Saved to:")
+    print("Saved to:")
     print(os.path.abspath(output_file))
 
 
