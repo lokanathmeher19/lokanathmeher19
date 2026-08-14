@@ -1,9 +1,3 @@
-<!-- =========================================================
-     LOKANATH MEHER — GITHUB PROFILE README
-     ========================================================= -->
-
-<!-- ==================== WORDMARK ==================== -->
-
 <p align="center">
   <img
     src="./wordmark.svg"
@@ -14,8 +8,6 @@
 
 <br>
 
-<!-- ==================== PROFILE ==================== -->
-
 <table width="100%" border="0" cellspacing="0" cellpadding="10">
   <tr>
 
@@ -23,7 +15,7 @@
       <img
         src="./avi-ascii.svg"
         width="100%"
-        alt="ASCII portrait of Lokanath Meher"
+        alt="ASCII portrait"
       />
     </td>
 
@@ -31,16 +23,12 @@
 
       <h2>lokanathmeher19</h2>
 
-      <p>
-        <b>CSE Student</b>
-      </p>
+      <p><b>CSE Student</b></p>
 
       <p>
         Full-Stack Developer<br>
         DevOps Enthusiast
       </p>
-
-      <br>
 
       <p>
         <code>lokanathmeher19@github ~ $ whoami</code>
@@ -61,8 +49,6 @@
 
 <br>
 
-<!-- ==================== CONTRIBUTIONS ==================== -->
-
 <p align="center">
   <code>lokanathmeher19@github ~ $ ./contributions.sh</code>
 </p>
@@ -77,8 +63,6 @@
 
 <br>
 
-<!-- ==================== INFO CARD ==================== -->
-
 <p align="center">
   <img
     src="./info-card.svg"
@@ -88,8 +72,6 @@
 </p>
 
 <br>
-
-<!-- ==================== TECH STACK ==================== -->
 
 <h2 align="center">Tech Stack</h2>
 
@@ -134,8 +116,6 @@
 
 <br>
 
-<!-- ==================== CONNECT ==================== -->
-
 <h2 align="center">Connect With Me</h2>
 
 <p align="center">
@@ -157,8 +137,6 @@
 </p>
 
 <br>
-
-<!-- ==================== FOOTER ==================== -->
 
 <p align="center">
   <code>lokanathmeher19@github ~ $ ./links.sh</code>
