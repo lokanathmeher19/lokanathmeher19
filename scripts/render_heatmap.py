@@ -1,8 +1,7 @@
 from pathlib import Path
-from datetime import datetime, timedelta
 import json
+from datetime import datetime, timedelta
 import html
-import math
 
 
 # ============================================================
@@ -23,105 +22,800 @@ USERNAME = "lokanathmeher19"
 
 
 # ============================================================
-# SVG CANVAS
+# SVG SETTINGS
 # ============================================================
-
-# IMPORTANT:
-# The previous version was too narrow.
-# This wider canvas prevents the right side from being cut off.
 
 SVG_WIDTH = 1200
-SVG_HEIGHT = 255
+SVG_HEIGHT = 330
 
+LEFT = 55
+TOP = 85
 
-# ============================================================
-# HEATMAP GRID
-# ============================================================
-
+# Smaller cells so ALL 53 weeks fit.
 CELL_SIZE = 16
 CELL_GAP = 4
 
-LEFT_MARGIN = 60
-TOP_MARGIN = 72
+COLUMNS = 53
+ROWS = 7
 
-DAY_ROWS = 7
-MAX_WEEKS = 53
+# 53 weeks × 7 days
+COLUMNS = 53
+ROWS = 7
+
+# Width of the complete heatmap
+HEATMAP_WIDTH = (
+    COLUMNS * CELL_SIZE
+    + (COLUMNS - 1) * CELL_GAP
+)
+
+HEATMAP_HEIGHT = (
+    ROWS * CELL_SIZE
+    + (ROWS - 1) * CELL_GAP
+)
 
 
 # ============================================================
 # COLORS
 # ============================================================
 
-TEXT_COLOR = "#c9d1d9"
-MUTED_COLOR = "#8b949e"
+TEXT_COLOR = "#8b949e"
+TITLE_COLOR = "#c9d1d9"
 
-LEVEL_COLORS = [
-    "#161b22",  # 0
-    "#0e4429",  # 1
-    "#006d32",  # 2
-    "#26a641",  # 3
-    "#39d353",  # 4
-]
-
-
-# ============================================================
-# FONT
-# ============================================================
-
-FONT_FAMILY = (
-    '"Cascadia Code", '
-    '"Cascadia Mono", '
-    '"Consolas", '
-    '"Courier New", '
-    'monospace'
-)
+LEVEL_COLORS = {
+    "NONE": "#161b22",
+    "FIRST_QUARTILE": "#0e4429",
+    "SECOND_QUARTILE": "#006d32",
+    "THIRD_QUARTILE": "#26a641",
+    "FOURTH_QUARTILE": "#39d353",
+}
 
 
 # ============================================================
-# HELPERS
+# ANIMATION
 # ============================================================
 
-def parse_date(value):
+# One complete animation cycle.
+ANIMATION_CYCLE = 3.0
 
-    return datetime.strptime(
-        value,
-        "%Y-%m-%d"
-    ).date()
+# How long the row takes to reveal.
+REVEAL_TIME = 0.75
 
-
-def sunday_start(date_value):
-
-    days_from_sunday = (
-        date_value.weekday() + 1
-    ) % 7
-
-    return date_value - timedelta(
-        days=days_from_sunday
-    )
+# Delay between rows.
+ROW_DELAY = 0.08
 
 
-def color_for_count(count):
+# ============================================================
+# LOAD DATA
+# ============================================================
 
+def load_data():
+
+    if not DATA_FILE.exists():
+
+        print("ERROR: contributions.json not found.")
+
+        return None
+
+    try:
+
+        with open(
+            DATA_FILE,
+            "r",
+            encoding="utf-8"
+        ) as file:
+
+            data = json.load(file)
+
+    except Exception as error:
+
+        print(
+            f"ERROR reading contributions.json: {error}"
+        )
+
+        return None
+
+    return data
+
+
+# ============================================================
+# PARSE CONTRIBUTIONS
+# ============================================================
+
+def build_contribution_map(data):
+
+    contribution_map = {}
+
+    for item in data.get("contributions", []):
+
+        date_string = item.get("date")
+
+        if not date_string:
+            continue
+
+        try:
+
+            date = datetime.strptime(
+                date_string,
+                "%Y-%m-%d"
+            ).date()
+
+        except ValueError:
+
+            continue
+
+        count = item.get("count", 0)
+
+        try:
+
+            count = int(count)
+
+        except (ValueError, TypeError):
+
+            count = 0
+
+        level = item.get(
+            "level",
+            "NONE"
+        )
+
+        contribution_map[date] = {
+            "count": count,
+            "level": level
+        }
+
+    return contribution_map
+
+
+# ============================================================
+# COLOR FROM CONTRIBUTION LEVEL
+# ============================================================
+
+def get_color(level, count):
+
+    # Prefer the stored GitHub level.
+    if level in LEVEL_COLORS:
+
+        return LEVEL_COLORS[level]
+
+    # Fallback based on contribution count.
     if count <= 0:
-        return LEVEL_COLORS[0]
 
-    if count <= 2:
-        return LEVEL_COLORS[1]
+        return LEVEL_COLORS["NONE"]
 
-    if count <= 5:
-        return LEVEL_COLORS[2]
+    if count <= 3:
+
+        return LEVEL_COLORS["FIRST_QUARTILE"]
+
+    if count <= 6:
+
+        return LEVEL_COLORS["SECOND_QUARTILE"]
 
     if count <= 9:
-        return LEVEL_COLORS[3]
 
-    return LEVEL_COLORS[4]
+        return LEVEL_COLORS["THIRD_QUARTILE"]
+
+    return LEVEL_COLORS["FOURTH_QUARTILE"]
 
 
-def esc(value):
+# ============================================================
+# FIND WEEK START
+# ============================================================
 
-    return html.escape(
-        str(value)
+def sunday_on_or_before(date):
+
+    # Python:
+    # Monday = 0
+    # Sunday = 6
+
+    days_since_sunday = (
+        (date.weekday() + 1) % 7
     )
+
+    return date - timedelta(
+        days=days_since_sunday
+    )
+
+
+# ============================================================
+# BUILD 53 × 7 GRID
+# ============================================================
+
+def build_grid(contribution_map):
+
+    if not contribution_map:
+
+        return [], None
+
+    all_dates = sorted(
+        contribution_map.keys()
+    )
+
+    first_date = all_dates[0]
+    last_date = all_dates[-1]
+
+    first_sunday = sunday_on_or_before(
+        first_date
+    )
+
+    last_sunday = sunday_on_or_before(
+        last_date
+    )
+
+    # We want exactly 53 columns.
+    weeks = []
+
+    current_sunday = first_sunday
+
+    while (
+        current_sunday <= last_sunday
+        and len(weeks) < COLUMNS
+    ):
+
+        week = []
+
+        for row in range(ROWS):
+
+            date = (
+                current_sunday
+                + timedelta(days=row)
+            )
+
+            value = contribution_map.get(
+                date,
+                {
+                    "count": 0,
+                    "level": "NONE"
+                }
+            )
+
+            week.append(
+                {
+                    "date": date,
+                    "count": value["count"],
+                    "level": value["level"]
+                }
+            )
+
+        weeks.append(week)
+
+        current_sunday += timedelta(
+            days=7
+        )
+
+    # Pad to exactly 53 weeks.
+    while len(weeks) < COLUMNS:
+
+        empty_week = []
+
+        for row in range(ROWS):
+
+            empty_week.append(
+                {
+                    "date": None,
+                    "count": 0,
+                    "level": "NONE"
+                }
+            )
+
+        weeks.append(empty_week)
+
+    return weeks[:COLUMNS], first_sunday
+
+
+# ============================================================
+# MONTH LABELS
+# ============================================================
+
+def build_month_labels(weeks):
+
+    labels = []
+
+    previous_month = None
+
+    for column, week in enumerate(weeks):
+
+        valid_dates = [
+            item["date"]
+            for item in week
+            if item["date"] is not None
+        ]
+
+        if not valid_dates:
+            continue
+
+        date = valid_dates[0]
+
+        month_key = (
+            date.year,
+            date.month
+        )
+
+        if month_key != previous_month:
+
+            labels.append(
+                {
+                    "column": column,
+                    "name": date.strftime("%b")
+                }
+            )
+
+            previous_month = month_key
+
+    return labels
+
+
+# ============================================================
+# SVG HEADER
+# ============================================================
+
+def svg_header(total_contributions):
+
+    return f"""<?xml version="1.0" encoding="UTF-8"?>
+
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="{SVG_WIDTH}"
+    height="{SVG_HEIGHT}"
+    viewBox="0 0 {SVG_WIDTH} {SVG_HEIGHT}"
+    role="img"
+    aria-label="GitHub contribution heatmap for {html.escape(USERNAME)}"
+>
+
+<style>
+
+    .terminal {{
+        font-family:
+            "Cascadia Code",
+            "Cascadia Mono",
+            "Consolas",
+            "Courier New",
+            monospace;
+    }}
+
+    .command {{
+        fill: {TITLE_COLOR};
+        font-size: 18px;
+        font-weight: 700;
+    }}
+
+    .month {{
+        fill: {TEXT_COLOR};
+        font-size: 12px;
+        font-weight: 500;
+    }}
+
+    .weekday {{
+        fill: {TEXT_COLOR};
+        font-size: 12px;
+        font-weight: 500;
+    }}
+
+    .total {{
+        fill: {TITLE_COLOR};
+        font-size: 17px;
+        font-weight: 700;
+    }}
+
+    .legend {{
+        fill: {TEXT_COLOR};
+        font-size: 12px;
+        font-weight: 500;
+    }}
+
+</style>
+
+<!-- ========================================================
+     COMMAND
+     ======================================================== -->
+
+<text
+    x="{SVG_WIDTH / 2}"
+    y="35"
+    text-anchor="middle"
+    class="terminal command"
+>
+    {html.escape(USERNAME)}@github ~ $ ./contributions.sh
+</text>
+
+"""
+
+
+# ============================================================
+# BUILD MONTH SVG
+# ============================================================
+
+def build_month_svg(weeks):
+
+    parts = []
+
+    labels = build_month_labels(
+        weeks
+    )
+
+    for label in labels:
+
+        x = (
+            LEFT
+            + label["column"]
+            * (CELL_SIZE + CELL_GAP)
+        )
+
+        parts.append(
+            f"""
+<text
+    x="{x}"
+    y="63"
+    class="terminal month"
+>
+    {html.escape(label["name"])}
+</text>
+"""
+        )
+
+    return "".join(parts)
+
+
+# ============================================================
+# BUILD WEEKDAY SVG
+# ============================================================
+
+def build_weekday_svg():
+
+    parts = []
+
+    labels = {
+        1: "Mon",
+        3: "Wed",
+        5: "Fri"
+    }
+
+    for row, label in labels.items():
+
+        y = (
+            TOP
+            + row
+            * (CELL_SIZE + CELL_GAP)
+            + CELL_SIZE
+            - 2
+        )
+
+        parts.append(
+            f"""
+<text
+    x="0"
+    y="{y}"
+    class="terminal weekday"
+>
+    {label}
+</text>
+"""
+        )
+
+    return "".join(parts)
+
+
+# ============================================================
+# BUILD HEATMAP
+# ============================================================
+
+def build_heatmap_svg(weeks):
+
+    parts = []
+
+    for row in range(ROWS):
+
+        # ----------------------------------------------------
+        # Create a clip path for THIS row.
+        #
+        # It reveals from left → right.
+        # It repeats every 3 seconds.
+        # ----------------------------------------------------
+
+        clip_id = f"rowClip{row}"
+
+        row_y = (
+            TOP
+            + row
+            * (CELL_SIZE + CELL_GAP)
+        )
+
+        row_delay = (
+            row * ROW_DELAY
+        )
+
+        parts.append(
+            f"""
+<clipPath id="{clip_id}">
+
+    <rect
+        x="{LEFT}"
+        y="{row_y}"
+        width="0"
+        height="{CELL_SIZE + 2}"
+    >
+
+        <animate
+            attributeName="width"
+            values="
+                0;
+                {HEATMAP_WIDTH};
+                {HEATMAP_WIDTH}
+            "
+            keyTimes="
+                0;
+                0.25;
+                1
+            "
+            begin="{row_delay:.2f}s"
+            dur="{ANIMATION_CYCLE:.2f}s"
+            repeatCount="indefinite"
+        />
+
+    </rect>
+
+</clipPath>
+"""
+        )
+
+        # ----------------------------------------------------
+        # Put all cells of this row inside the clip.
+        # ----------------------------------------------------
+
+        parts.append(
+            f"""
+<g clip-path="url(#{clip_id})">
+"""
+        )
+
+        for column in range(COLUMNS):
+
+            item = weeks[column][row]
+
+            count = item["count"]
+            level = item["level"]
+
+            color = get_color(
+                level,
+                count
+            )
+
+            x = (
+                LEFT
+                + column
+                * (CELL_SIZE + CELL_GAP)
+            )
+
+            y = row_y
+
+            date = item["date"]
+
+            if date is None:
+
+                date_text = ""
+
+            else:
+
+                date_text = (
+                    f"{date.strftime('%Y-%m-%d')}"
+                    f": {count} contributions"
+                )
+
+            safe_title = html.escape(
+                date_text
+            )
+
+            parts.append(
+                f"""
+<rect
+    x="{x}"
+    y="{y}"
+    width="{CELL_SIZE}"
+    height="{CELL_SIZE}"
+    rx="4"
+    fill="{color}"
+>
+    <title>{safe_title}</title>
+</rect>
+"""
+            )
+
+        parts.append(
+            """
+</g>
+"""
+        )
+
+    return "".join(parts)
+
+
+# ============================================================
+# BUILD TOTAL
+# ============================================================
+
+def build_total_svg(total):
+
+    y = (
+        TOP
+        + HEATMAP_HEIGHT
+        + 48
+    )
+
+    return f"""
+<text
+    x="{LEFT}"
+    y="{y}"
+    class="terminal total"
+>
+    {total:,} contributions in the last year
+</text>
+"""
+
+
+# ============================================================
+# BUILD LEGEND
+# ============================================================
+
+def build_legend_svg():
+
+    y = (
+        TOP
+        + HEATMAP_HEIGHT
+        + 43
+    )
+
+    start_x = (
+        SVG_WIDTH
+        - 310
+    )
+
+    parts = []
+
+    parts.append(
+        f"""
+<text
+    x="{start_x}"
+    y="{y}"
+    class="terminal legend"
+>
+    Less
+</text>
+"""
+    )
+
+    colors = [
+        LEVEL_COLORS["NONE"],
+        LEVEL_COLORS["FIRST_QUARTILE"],
+        LEVEL_COLORS["SECOND_QUARTILE"],
+        LEVEL_COLORS["THIRD_QUARTILE"],
+        LEVEL_COLORS["FOURTH_QUARTILE"]
+    ]
+
+    for index, color in enumerate(colors):
+
+        x = (
+            start_x
+            + 40
+            + index * 25
+        )
+
+        parts.append(
+            f"""
+<rect
+    x="{x}"
+    y="{y - 13}"
+    width="17"
+    height="17"
+    rx="4"
+    fill="{color}"
+/>
+"""
+        )
+
+    parts.append(
+        f"""
+<text
+    x="{start_x + 180}"
+    y="{y}"
+    class="terminal legend"
+>
+    More
+</text>
+"""
+    )
+
+    return "".join(parts)
+
+
+# ============================================================
+# FOOTER COMMAND
+# ============================================================
+
+def build_footer():
+
+    y = (
+        TOP
+        + HEATMAP_HEIGHT
+        + 105
+    )
+
+    return f"""
+<text
+    x="{LEFT}"
+    y="{y}"
+    class="terminal legend"
+>
+    {html.escape(USERNAME)}@github ~ $
+</text>
+"""
+
+
+# ============================================================
+# MAIN SVG GENERATOR
+# ============================================================
+
+def generate_svg(data):
+
+    total = data.get(
+        "total_contributions",
+        0
+    )
+
+    contribution_map = (
+        build_contribution_map(data)
+    )
+
+    weeks, first_sunday = build_grid(
+        contribution_map
+    )
+
+    if not weeks:
+
+        raise RuntimeError(
+            "No contribution data found."
+        )
+
+    svg = []
+
+    # Header
+    svg.append(
+        svg_header(total)
+    )
+
+    # Month labels
+    svg.append(
+        build_month_svg(weeks)
+    )
+
+    # Weekday labels
+    svg.append(
+        build_weekday_svg()
+    )
+
+    # Heatmap cells
+    svg.append(
+        build_heatmap_svg(weeks)
+    )
+
+    # Total contributions
+    svg.append(
+        build_total_svg(total)
+    )
+
+    # Legend
+    svg.append(
+        build_legend_svg()
+    )
+
+    # Footer
+    svg.append(
+        build_footer()
+    )
+
+    svg.append(
+        "\n</svg>\n"
+    )
+
+    return "".join(svg)
 
 
 # ============================================================
@@ -136,150 +830,25 @@ def main():
     print("==========================================")
     print()
 
-    # --------------------------------------------------------
-    # Check data file
-    # --------------------------------------------------------
-
-    if not DATA_FILE.exists():
-
-        print(
-            "ERROR: contributions.json not found."
-        )
-
-        print()
-        print(
-            f"Expected:"
-        )
-
-        print(
-            DATA_FILE
-        )
-
-        return
-
-    # --------------------------------------------------------
-    # Load JSON
-    # --------------------------------------------------------
-
-    with open(
-        DATA_FILE,
-        "r",
-        encoding="utf-8"
-    ) as file:
-
-        data = json.load(file)
-
-    username = data.get(
-        "username",
-        USERNAME
-    )
-
-    total = int(
-        data.get(
-            "total_contributions",
-            0
-        )
-    )
-
-    contribution_list = data.get(
-        "contributions",
-        []
-    )
-
-    if not contribution_list:
-
-        print(
-            "ERROR: No contribution data found."
-        )
-
-        return
-
-    # --------------------------------------------------------
-    # Convert JSON to dictionary
-    # --------------------------------------------------------
-
-    contributions = {}
-
-    for item in contribution_list:
-
-        date_string = item.get(
-            "date"
-        )
-
-        if not date_string:
-            continue
-
-        try:
-
-            date_value = parse_date(
-                date_string
-            )
-
-        except ValueError:
-
-            continue
-
-        count = int(
-            item.get(
-                "count",
-                0
-            )
-        )
-
-        contributions[
-            date_value
-        ] = count
-
-    if not contributions:
-
-        print(
-            "ERROR: Contribution list is empty."
-        )
-
-        return
-
-    # --------------------------------------------------------
-    # Find complete date range
-    # --------------------------------------------------------
-
-    first_date = min(
-        contributions.keys()
-    )
-
-    last_date = max(
-        contributions.keys()
-    )
-
-    # Start on Sunday
-    grid_start = sunday_start(
-        first_date
-    )
-
-    # Move to the end of the final week
-    grid_end = grid_start
-
-    while grid_end < last_date:
-
-        grid_end += timedelta(
-            days=7
-        )
-
-    # Number of weeks
-    total_days = (
-        grid_end - grid_start
-    ).days + 1
-
-    weeks = math.ceil(
-        total_days / 7
-    )
-
-    weeks = min(
-        weeks,
-        MAX_WEEKS
-    )
-
     print(
-        f"Loading real data for @{username}..."
+        f"Loading real data for @{USERNAME}..."
+    )
+
+    data = load_data()
+
+    if data is None:
+        return
+
+    contribution_count = len(
+        data.get(
+            "contributions",
+            []
+        )
+    )
+
+    total = data.get(
+        "total_contributions",
+        0
     )
 
     print(
@@ -287,448 +856,69 @@ def main():
     )
 
     print(
-        f"Grid: {weeks} weeks x 7 days"
+        f"Days loaded: {contribution_count}"
     )
 
-    # --------------------------------------------------------
-    # Calculate grid size
-    # --------------------------------------------------------
+    try:
 
-    grid_width = (
-        weeks * CELL_SIZE
-        + (weeks - 1) * CELL_GAP
-    )
+        svg = generate_svg(data)
 
-    grid_height = (
-        DAY_ROWS * CELL_SIZE
-        + (DAY_ROWS - 1) * CELL_GAP
-    )
+    except Exception as error:
 
-    RIGHT_MARGIN = 60
-
-    required_width = (
-        LEFT_MARGIN
-        + grid_width
-        + RIGHT_MARGIN
-    )
-
-    # Safety check
-    final_width = max(
-        SVG_WIDTH,
-        required_width
-    )
-
-    # --------------------------------------------------------
-    # Start SVG
-    # --------------------------------------------------------
-
-    svg = []
-
-    svg.append(
-        '<?xml version="1.0" encoding="UTF-8"?>'
-    )
-
-    svg.append(
-        f'''
-<svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="100%"
-    height="{SVG_HEIGHT}"
-    viewBox="0 0 {final_width} {SVG_HEIGHT}"
-    preserveAspectRatio="xMidYMid meet"
-    role="img"
-    aria-label="GitHub contribution heatmap for {esc(username)}"
->
-'''
-    )
-
-    # --------------------------------------------------------
-    # Styles
-    # --------------------------------------------------------
-
-    svg.append(
-        f'''
-<style>
-
-.title {{
-    font-family: {FONT_FAMILY};
-    font-size: 18px;
-    font-weight: 700;
-    fill: {TEXT_COLOR};
-}}
-
-.month {{
-    font-family: {FONT_FAMILY};
-    font-size: 12px;
-    fill: {MUTED_COLOR};
-}}
-
-.day {{
-    font-family: {FONT_FAMILY};
-    font-size: 12px;
-    fill: {MUTED_COLOR};
-}}
-
-.total {{
-    font-family: {FONT_FAMILY};
-    font-size: 16px;
-    font-weight: 700;
-    fill: {TEXT_COLOR};
-}}
-
-.legend {{
-    font-family: {FONT_FAMILY};
-    font-size: 11px;
-    fill: {MUTED_COLOR};
-}}
-
-.cell {{
-    rx: 3;
-    ry: 3;
-}}
-
-</style>
-'''
-    )
-
-    # ========================================================
-    # TOP COMMAND
-    # ========================================================
-
-    svg.append(
-        f'''
-<text
-    x="{final_width / 2:.2f}"
-    y="28"
-    text-anchor="middle"
-    class="title"
->
-    {esc(username)}@github ~ $ ./contributions.sh
-</text>
-'''
-    )
-
-    # ========================================================
-    # MONTH LABELS
-    # ========================================================
-
-    previous_month = None
-
-    for week in range(weeks):
-
-        week_date = (
-            grid_start
-            + timedelta(
-                days=week * 7
-            )
+        print()
+        print(
+            f"ERROR: {error}"
         )
 
-        month = week_date.month
-
-        if month == previous_month:
-            continue
-
-        previous_month = month
-
-        x = (
-            LEFT_MARGIN
-            + week
-            * (CELL_SIZE + CELL_GAP)
-        )
-
-        svg.append(
-            f'''
-<text
-    x="{x}"
-    y="52"
-    class="month"
->
-    {week_date.strftime("%b")}
-</text>
-'''
-        )
-
-    # ========================================================
-    # DAY LABELS
-    # ========================================================
-
-    day_labels = {
-        1: "Mon",
-        3: "Wed",
-        5: "Fri"
-    }
-
-    for row, label in day_labels.items():
-
-        y = (
-            TOP_MARGIN
-            + row
-            * (CELL_SIZE + CELL_GAP)
-            + 12
-        )
-
-        svg.append(
-            f'''
-<text
-    x="8"
-    y="{y}"
-    class="day"
->
-    {label}
-</text>
-'''
-        )
-
-    # ========================================================
-    # ANIMATED HEATMAP
-    #
-    # Each row wipes from LEFT -> RIGHT.
-    #
-    # Row 0 starts first.
-    # Row 1 starts slightly later.
-    # Row 2 starts after that.
-    # ...
-    #
-    # This produces the same terminal-style
-    # progressive animation.
-    # ========================================================
-
-    for row in range(DAY_ROWS):
-
-        row_y = (
-            TOP_MARGIN
-            + row
-            * (CELL_SIZE + CELL_GAP)
-        )
-
-        clip_id = (
-            f"heatmapRow{row}"
-        )
-
-        # ----------------------------------------------------
-        # Clip path
-        # ----------------------------------------------------
-
-        svg.append(
-            f'''
-<clipPath id="{clip_id}">
-    <rect
-        x="{LEFT_MARGIN}"
-        y="{row_y}"
-        width="0"
-        height="{CELL_SIZE}"
-    >
-
-        <animate
-            attributeName="width"
-            from="0"
-            to="{grid_width}"
-            begin="{row * 0.12:.2f}s"
-            dur="1.10s"
-            fill="freeze"
-        />
-
-    </rect>
-</clipPath>
-'''
-        )
-
-        # ----------------------------------------------------
-        # Row group
-        # ----------------------------------------------------
-
-        svg.append(
-            f'''
-<g clip-path="url(#{clip_id})">
-'''
-        )
-
-        # ----------------------------------------------------
-        # Cells
-        # ----------------------------------------------------
-
-        for week in range(weeks):
-
-            current_date = (
-                grid_start
-                + timedelta(
-                    days=week * 7 + row
-                )
-            )
-
-            count = contributions.get(
-                current_date,
-                0
-            )
-
-            # Outside actual data range
-            if (
-                current_date < first_date
-                or current_date > last_date
-            ):
-
-                count = 0
-
-            x = (
-                LEFT_MARGIN
-                + week
-                * (CELL_SIZE + CELL_GAP)
-            )
-
-            color = color_for_count(
-                count
-            )
-
-            svg.append(
-                f'''
-<rect
-    x="{x}"
-    y="{row_y}"
-    width="{CELL_SIZE}"
-    height="{CELL_SIZE}"
-    class="cell"
-    fill="{color}"
->
-    <title>
-        {current_date.isoformat()}: {count} contributions
-    </title>
-</rect>
-'''
-            )
-
-        svg.append(
-            "</g>"
-        )
-
-    # ========================================================
-    # TOTAL CONTRIBUTIONS
-    # ========================================================
-
-    total_y = (
-        TOP_MARGIN
-        + grid_height
-        + 38
-    )
-
-    svg.append(
-        f'''
-<text
-    x="{LEFT_MARGIN}"
-    y="{total_y}"
-    class="total"
->
-    {total} contributions in the last year
-</text>
-'''
-    )
-
-    # ========================================================
-    # LEGEND
-    # ========================================================
-
-    legend_width = 170
-
-    legend_x = (
-        final_width
-        - legend_width
-    )
-
-    svg.append(
-        f'''
-<text
-    x="{legend_x - 25}"
-    y="{total_y}"
-    text-anchor="end"
-    class="legend"
->
-    Less
-</text>
-'''
-    )
-
-    for index, color in enumerate(
-        LEVEL_COLORS
-    ):
-
-        x = (
-            legend_x
-            + index * 22
-        )
-
-        svg.append(
-            f'''
-<rect
-    x="{x}"
-    y="{total_y - 13}"
-    width="16"
-    height="16"
-    rx="3"
-    ry="3"
-    fill="{color}"
-/>
-'''
-        )
-
-    svg.append(
-        f'''
-<text
-    x="{legend_x + 5 * 22 + 8}"
-    y="{total_y}"
-    class="legend"
->
-    More
-</text>
-'''
-    )
-
-    # ========================================================
-    # CLOSE SVG
-    # ========================================================
-
-    svg.append(
-        "</svg>"
-    )
-
-    # ========================================================
-    # WRITE FILE
-    # ========================================================
+        return
 
     OUTPUT_FILE.write_text(
-        "\n".join(svg),
+        svg,
         encoding="utf-8"
     )
 
     print()
-    print("==========================================")
-    print(" SUCCESS")
-    print("==========================================")
+    print("SUCCESS!")
     print()
     print(
         f"Output: {OUTPUT_FILE}"
     )
+
     print(
-        f"Username: {username}"
+        f"Canvas: {SVG_WIDTH} x {SVG_HEIGHT}"
     )
+
     print(
-        f"Contributions: {total}"
+        f"Grid: {COLUMNS} weeks x {ROWS} days"
     )
+
     print(
-        f"Weeks: {weeks}"
+        "Background: TRANSPARENT"
     )
-    print()
-    print("Background: TRANSPARENT")
-    print("Border: NONE")
-    print("Terminal frame: NONE")
-    print("Animation: ROW-BY-ROW")
-    print("Direction: LEFT -> RIGHT")
-    print()
-    print("All columns visible.")
+
+    print(
+        "Border: NONE"
+    )
+
+    print(
+        "Data: REAL GITHUB DATA"
+    )
+
+    print(
+        "Animation: REPEATING"
+    )
+
+    print(
+        "Cycle: 3 seconds"
+    )
+
+    print(
+        "Direction: LEFT → RIGHT"
+    )
+
     print()
 
-
-# ============================================================
-# RUN
-# ============================================================
 
 if __name__ == "__main__":
+
     main()
