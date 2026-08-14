@@ -1,11 +1,8 @@
-<p align="center">
-  <img
-    src="./wordmark.svg"
-    width="850"
-    alt="lokanathmeher19 terminal wordmark"
-  />
-</p>
-
+<img
+  src="./wordmark.svg"
+  width="700"
+  alt="lokanathmeher19 terminal wordmark"
+/>
 <br>
 
 <!-- =========================================================
