@@ -1,52 +1,81 @@
+<!-- =========================================================
+     LOKANATH MEHER — GITHUB PROFILE README
+     ========================================================= -->
+
+<!-- ===================== WORDMARK ====================== -->
+
 <p align="center">
   <img
     src="./wordmark.svg"
-    width=600"
+    width="600"
     alt="lokanathmeher19 terminal wordmark"
   />
 </p>
+
+<br>
+
 <!-- =========================================================
      PROFILE
      ========================================================= -->
 
-<table width="100%" border="0" cellspacing="0" cellpadding="4">
-<tr>
-
-<td width="50%" align="center" valign="middle">
-
-<img
-  src="./avi-ascii.svg"
+<table
   width="100%"
-  alt="Lokanath Meher ASCII portrait"
-/>
+  border="0"
+  cellspacing="0"
+  cellpadding="6"
+>
+  <tr>
 
-</td>
+    <!-- ================= LEFT: ASCII PHOTO ================= -->
 
-<td width="50%" align="center" valign="middle">
+    <td
+      width="42%"
+      align="center"
+      valign="middle"
+    >
 
-<img
-  src="./info-card.svg"
-  width="100%"
-  alt="Lokanath Meher profile information"
-/>
+      <img
+        src="./avi-ascii.svg"
+        width="360"
+        alt="Lokanath Meher ASCII portrait"
+      />
 
-</td>
+    </td>
 
-</tr>
+
+    <!-- ================= RIGHT: INFO CARD ================= -->
+
+    <td
+      width="58%"
+      align="center"
+      valign="middle"
+    >
+
+      <img
+        src="./info-card.svg"
+        width="520"
+        alt="Lokanath Meher profile information"
+      />
+
+    </td>
+
+  </tr>
 </table>
 
 <br>
 
 <!-- =========================================================
-     CONTRIBUTIONS
+     CONTRIBUTION HEATMAP
      ========================================================= -->
 
 <p align="center">
+
   <img
     src="./contrib-heatmap.svg"
     width="100%"
     alt="GitHub contribution heatmap"
   />
+
 </p>
 
 <br>
@@ -57,55 +86,77 @@
 
 <h2>🛠️ Tech Stack</h2>
 
-<h3>Languages & Core:</h3>
+<h3>Languages &amp; Core:</h3>
 
 <p>
-  <img src="https://skillicons.dev/icons?i=js,ts,python,java,cpp,html,css" />
+  <img
+    src="https://skillicons.dev/icons?i=js,ts,python,java,cpp,html,css"
+    alt="Languages and Core Technologies"
+  />
 </p>
+
 
 <h3>Frontend:</h3>
 
 <p>
-  <img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,redux,bootstrap,vite" />
+  <img
+    src="https://skillicons.dev/icons?i=react,nextjs,tailwind,redux,bootstrap,vite"
+    alt="Frontend Technologies"
+  />
 </p>
 
-<h3>Backend & Databases:</h3>
+
+<h3>Backend &amp; Databases:</h3>
 
 <p>
-  <img src="https://skillicons.dev/icons?i=nodejs,express,mysql,mongodb,postgresql,firebase" />
+  <img
+    src="https://skillicons.dev/icons?i=nodejs,express,mysql,mongodb,postgresql,firebase"
+    alt="Backend and Database Technologies"
+  />
 </p>
 
-<h3>Tools, Cloud & Security:</h3>
+
+<h3>Tools, Cloud &amp; Security:</h3>
 
 <p>
-  <img src="https://skillicons.dev/icons?i=aws,docker,linux,kali,git,github,vscode,postman" />
+  <img
+    src="https://skillicons.dev/icons?i=aws,docker,linux,kali,git,github,vscode,postman"
+    alt="Tools Cloud and Security Technologies"
+  />
 </p>
 
 <hr>
 
 <br>
 
+<!-- =========================================================
+     CONNECT WITH ME
+     ========================================================= -->
+
 <h2 align="center">Connect With Me</h2>
 
 <p align="center">
 
-<a href="https://github.com/lokanathmeher19">
-<img
-  src="https://img.shields.io/badge/GitHub-lokanathmeher19-181717?style=for-the-badge&amp;logo=github&amp;logoColor=white"
-  alt="GitHub"
-/>
-</a>
+  <a href="https://github.com/lokanathmeher19">
+    <img
+      src="https://img.shields.io/badge/GitHub-lokanathmeher19-181717?style=for-the-badge&amp;logo=github&amp;logoColor=white"
+      alt="GitHub"
+    />
+  </a>
 
-<a href="https://www.linkedin.com/in/lokanath-meher-a79506353/">
-<img
-  src="https://img.shields.io/badge/LinkedIn-Lokanath%20Meher-0A66C2?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white"
-  alt="LinkedIn"
-/>
-</a>
+  &nbsp;
+
+  <a href="https://www.linkedin.com/in/lokanath-meher-a79506353/">
+    <img
+      src="https://img.shields.io/badge/LinkedIn-Lokanath%20Meher-0A66C2?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white"
+      alt="LinkedIn"
+    />
+  </a>
 
 </p>
 
 <br>
+
 <!-- =========================================================
      FOOTER
      ========================================================= -->
