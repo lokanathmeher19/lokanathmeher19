@@ -2,51 +2,45 @@
 
 <svg
     xmlns="http://www.w3.org/2000/svg"
-
-    width="650"
-    height="620"
-
-    viewBox="0 0 650 620"
+    width="480"
+    height="480"
+    viewBox="0 0 480 480"
 >
 
-
-<!-- MAC TERMINAL -->
+<!-- ========================================================
+     MAC TERMINAL
+     ======================================================== -->
 
 <rect
-
     x="8"
     y="8"
-
-    width="634"
-    height="604"
-
+    width="464"
+    height="464"
     rx="15"
-
     fill="#0d1117"
-
     stroke="#30363d"
-
     stroke-width="2"
 />
 
 
-<!-- TITLE BAR -->
+<!-- ========================================================
+     TITLE BAR
+     ======================================================== -->
 
 <path
-
     d="
         M 23
           8
 
-        H 627
+        H 457
 
-        Q 642
+        Q 472
           8
 
-          642
+          472
           23
 
-        V 50
+        V 44
 
         H 8
 
@@ -60,7 +54,6 @@
 
         Z
     "
-
     fill="#161b22"
 />
 
@@ -68,93 +61,72 @@
 <!-- TITLE BORDER -->
 
 <line
-
     x1="8"
-
-    y1="50"
-
-    x2="642"
-
-    y2="50"
-
+    y1="44"
+    x2="472"
+    y2="44"
     stroke="#30363d"
-
     stroke-width="1"
 />
 
 
-<!-- RED -->
+<!-- ========================================================
+     MAC BUTTONS
+     ======================================================== -->
 
 <circle
-    cx="30"
-    cy="28"
-
-    r="5"
-
+    cx="28"
+    cy="26"
+    r="4"
     fill="#ff5f56"
 />
 
-
-<!-- YELLOW -->
-
 <circle
-    cx="48"
-    cy="28"
-
-    r="5"
-
+    cx="45"
+    cy="26"
+    r="4"
     fill="#ffbd2e"
 />
 
-
-<!-- GREEN -->
-
 <circle
-    cx="66"
-    cy="28"
-
-    r="5"
-
+    cx="62"
+    cy="26"
+    r="4"
     fill="#27c93f"
 />
 
 
-<!-- TITLE -->
+<!-- ========================================================
+     TERMINAL TITLE
+     ======================================================== -->
 
 <text
-
-    x="325.0"
-
-    y="32"
-
+    x="240.0"
+    y="30"
     font-family="Consolas, 'Courier New', monospace"
-
-    font-size="8px"
-
+    font-size="7px"
     font-weight="600"
-
     fill="#8b949e"
-
     text-anchor="middle"
-
 >
     lokanath@github: ~
 </text>
 
 
-<!-- STYLE -->
+<!-- ========================================================
+     STYLE
+     ======================================================== -->
 
 <style>
 
 .ascii {
-
     font-family:
         "Courier New",
         "Consolas",
         monospace;
 
     font-size:
-        5.6px;
+        4.20px;
 
     font-weight:
         700;
@@ -164,2929 +136,1990 @@
 
     white-space:
         pre;
-
 }
 
 
 .prompt {
-
     font-family:
         "Courier New",
         "Consolas",
         monospace;
 
     font-size:
-        7px;
+        6px;
 
     fill:
         #8b949e;
-
 }
 
 </style>
 
 
-<!-- ASCII PORTRAIT -->
+<!-- ========================================================
+     ASCII PORTRAIT
+     ======================================================== -->
 
 
     <clipPath id="asciiRow0">
-
         <rect
-            x="43.00"
-            y="66.80"
+            x="30.00"
+            y="59.60"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="0.000s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="72.40"
-
+        x="30.00"
+        y="63.80"
         class="ascii"
-
         clip-path="url(#asciiRow0)"
     >                                                    @B#3AAA23H#@                                                        </text>
 
     <clipPath id="asciiRow1">
-
         <rect
-            x="43.00"
-            y="73.20"
+            x="30.00"
+            y="64.40"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="0.018s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="78.80"
-
+        x="30.00"
+        y="68.60"
         class="ascii"
-
         clip-path="url(#asciiRow1)"
     >                                                @#M2::;,::,::;i;A5h#&amp;@                                                  </text>
 
     <clipPath id="asciiRow2">
-
         <rect
-            x="43.00"
-            y="79.60"
+            x="30.00"
+            y="69.20"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="0.036s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="85.20"
-
+        x="30.00"
+        y="73.40"
         class="ascii"
-
         clip-path="url(#asciiRow2)"
     >                                              &amp;3:::,,. .         .,;i;:AS                                               </text>
 
     <clipPath id="asciiRow3">
-
         <rect
-            x="43.00"
-            y="86.00"
+            x="30.00"
+            y="74.00"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="0.054s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="91.60"
-
+        x="30.00"
+        y="78.20"
         class="ascii"
-
         clip-path="url(#asciiRow3)"
     >                                            @5:,, .                  :,.:5@                                             </text>
 
     <clipPath id="asciiRow4">
-
         <rect
-            x="43.00"
-            y="92.40"
+            x="30.00"
+            y="78.80"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="0.072s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="98.00"
-
+        x="30.00"
+        y="83.00"
         class="ascii"
-
         clip-path="url(#asciiRow4)"
     >                                           @s,:,         .,... .  .   ., ,2                                             </text>
 
     <clipPath id="asciiRow5">
-
         <rect
-            x="43.00"
-            y="98.80"
+            x="30.00"
+            y="83.60"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="0.090s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="104.40"
-
+        x="30.00"
+        y="87.80"
         class="ascii"
-
         clip-path="url(#asciiRow5)"
     >                                          &amp;;,,   .   .           ..  . .. :H                                            </text>
 
     <clipPath id="asciiRow6">
-
         <rect
-            x="43.00"
-            y="105.20"
+            x="30.00"
+            y="88.40"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="0.108s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="110.80"
-
+        x="30.00"
+        y="92.60"
         class="ascii"
-
         clip-path="url(#asciiRow6)"
     >                                          X:.                            ..A                                            </text>
 
     <clipPath id="asciiRow7">
-
         <rect
-            x="43.00"
-            y="111.60"
+            x="30.00"
+            y="93.20"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="0.126s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="117.20"
-
+        x="30.00"
+        y="97.40"
         class="ascii"
-
         clip-path="url(#asciiRow7)"
     >                                         G;   .                            X                                            </text>
 
     <clipPath id="asciiRow8">
-
         <rect
-            x="43.00"
-            y="118.00"
+            x="30.00"
+            y="98.00"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="0.144s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="123.60"
-
+        x="30.00"
+        y="102.20"
         class="ascii"
-
         clip-path="url(#asciiRow8)"
     >                                        9:                                 3                                            </text>
 
     <clipPath id="asciiRow9">
-
         <rect
-            x="43.00"
-            y="124.40"
+            x="30.00"
+            y="102.80"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="0.162s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="130.00"
-
+        x="30.00"
+        y="107.00"
         class="ascii"
-
         clip-path="url(#asciiRow9)"
     >                                        2      .             .             rG                                           </text>
 
     <clipPath id="asciiRow10">
-
         <rect
-            x="43.00"
-            y="130.80"
+            x="30.00"
+            y="107.60"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="0.180s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="136.40"
-
+        x="30.00"
+        y="111.80"
         class="ascii"
-
         clip-path="url(#asciiRow10)"
     >                                        r             .,:;irsXXsri;;;;;:    ,M                                          </text>
 
     <clipPath id="asciiRow11">
-
         <rect
-            x="43.00"
-            y="137.20"
+            x="30.00"
+            y="112.40"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="0.198s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="142.80"
-
+        x="30.00"
+        y="116.60"
         class="ascii"
-
         clip-path="url(#asciiRow11)"
     >                                       &amp;          ,;s2hMMMMMMMMhh322A2h5;    :B                                         </text>
 
     <clipPath id="asciiRow12">
-
         <rect
-            x="43.00"
-            y="143.60"
+            x="30.00"
+            y="117.20"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="0.216s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="149.20"
-
+        x="30.00"
+        y="121.40"
         class="ascii"
-
         clip-path="url(#asciiRow12)"
     >                                       #      .;X5MGS####SGHHHHMMhhhhMhh5.    h                                         </text>
 
     <clipPath id="asciiRow13">
-
         <rect
-            x="43.00"
-            y="150.00"
+            x="30.00"
+            y="122.00"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="0.234s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="155.60"
-
+        x="30.00"
+        y="126.20"
         class="ascii"
-
         clip-path="url(#asciiRow13)"
     >                                       B    :A53MHG######SGGHHHMMMMhhhhMHs    3                                         </text>
 
     <clipPath id="asciiRow14">
-
         <rect
-            x="43.00"
-            y="156.40"
+            x="30.00"
+            y="126.80"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="0.252s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="162.00"
-
+        x="30.00"
+        y="131.00"
         class="ascii"
-
         clip-path="url(#asciiRow14)"
     >                                        X  .2MHHHHS9999###SSSGGHHHMhhhhMG3:.  h                                         </text>
 
     <clipPath id="asciiRow15">
-
         <rect
-            x="43.00"
-            y="162.80"
+            x="30.00"
+            y="131.60"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="0.270s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="168.40"
-
+        x="30.00"
+        y="135.80"
         class="ascii"
-
         clip-path="url(#asciiRow15)"
     >                                        M  :5HMHHGS9BB999##SSGGHHMhh3hhMGMs;. H                                         </text>
 
     <clipPath id="asciiRow16">
-
         <rect
-            x="43.00"
-            y="169.20"
+            x="30.00"
+            y="136.40"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="0.288s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="174.80"
-
+        x="30.00"
+        y="140.60"
         class="ascii"
-
         clip-path="url(#asciiRow16)"
     >                                        S.;r5HHHGGS99B99999#SSGHHMMh3hhMHM5X;,#                                         </text>
 
     <clipPath id="asciiRow17">
-
         <rect
-            x="43.00"
-            y="175.60"
+            x="30.00"
+            y="141.20"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="0.306s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="181.20"
-
+        x="30.00"
+        y="145.40"
         class="ascii"
-
         clip-path="url(#asciiRow17)"
     >                                        @:iX5HHHGGS#9BBBB99###SHHMhh3hhhHHh3s:@                                         </text>
 
     <clipPath id="asciiRow18">
-
         <rect
-            x="43.00"
-            y="182.00"
+            x="30.00"
+            y="146.00"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="0.324s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="187.60"
-
+        x="30.00"
+        y="150.20"
         class="ascii"
-
         clip-path="url(#asciiRow18)"
     >                                         s;2hHHHHGS9BB&amp;B99H5G9#SSGHMhhhhMGGhAs                                          </text>
 
     <clipPath id="asciiRow19">
-
         <rect
-            x="43.00"
-            y="188.40"
+            x="30.00"
+            y="150.80"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="0.342s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="194.00"
-
+        x="30.00"
+        y="155.00"
         class="ascii"
-
         clip-path="url(#asciiRow19)"
     >                                         A;3HHHGS#9&amp;@@@@B93M#B999#SGGHHHMHSG2A                                          </text>
 
     <clipPath id="asciiRow20">
-
         <rect
-            x="43.00"
-            y="194.80"
+            x="30.00"
+            y="155.60"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="0.360s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="200.40"
-
+        x="30.00"
+        y="159.80"
         class="ascii"
-
         clip-path="url(#asciiRow20)"
     >                                         5ihHH##SBB&amp;@@&amp;&amp;&amp;#23M#SGHMh3335HSGGS22                                          </text>
 
     <clipPath id="asciiRow21">
-
         <rect
-            x="43.00"
-            y="201.20"
+            x="30.00"
+            y="160.40"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="0.378s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="206.80"
-
+        x="30.00"
+        y="164.60"
         class="ascii"
-
         clip-path="url(#asciiRow21)"
     >                                         MrhHSMXXXssrs2MGSH5MhAr;.   .::3###2h                                          </text>
 
     <clipPath id="asciiRow22">
-
         <rect
-            x="43.00"
-            y="207.60"
+            x="30.00"
+            y="165.20"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="0.396s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="213.20"
-
+        x="30.00"
+        y="169.40"
         class="ascii"
-
         clip-path="url(#asciiRow22)"
     >                                         BrhHhX25Xr;,::;iXAAs;::,..:isXXs23MX9@@                                        </text>
 
     <clipPath id="asciiRow23">
-
         <rect
-            x="43.00"
-            y="214.00"
+            x="30.00"
+            y="170.00"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="0.414s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="219.60"
-
+        x="30.00"
+        y="174.20"
         class="ascii"
-
         clip-path="url(#asciiRow23)"
     >                                       GHMis5MMMh3M5s;;;:i52s;:,,:ssssX525X,sXss#                                       </text>
 
     <clipPath id="asciiRow24">
-
         <rect
-            x="43.00"
-            y="220.40"
+            x="30.00"
+            y="174.80"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="0.432s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="226.00"
-
+        x="30.00"
+        y="179.00"
         class="ascii"
-
         clip-path="url(#asciiRow24)"
     >                                      BshGAi5MA;;r:. . :siii;;:  i, .i:iAMH5M2h:X                                       </text>
 
     <clipPath id="asciiRow25">
-
         <rect
-            x="43.00"
-            y="226.80"
+            x="30.00"
+            y="179.60"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="0.450s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="232.40"
-
+        x="30.00"
+        y="183.80"
         class="ascii"
-
         clip-path="url(#asciiRow25)"
     >                                      #sM#MAhM5XXhr.;r;sh:X#A:i,s5r,iA2hhHMMMsMXs                                       </text>
 
     <clipPath id="asciiRow26">
-
         <rect
-            x="43.00"
-            y="233.20"
+            x="30.00"
+            y="184.40"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="0.468s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="238.80"
-
+        x="30.00"
+        y="188.60"
         class="ascii"
-
         clip-path="url(#asciiRow26)"
     >                                      #hShA3M#GhMMM32X2G5:@&amp;G:issXAA223MMShSh ;2h                                       </text>
 
     <clipPath id="asciiRow27">
-
         <rect
-            x="43.00"
-            y="239.60"
+            x="30.00"
+            y="189.20"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="0.486s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="245.20"
-
+        x="30.00"
+        y="193.40"
         class="ascii"
-
         clip-path="url(#asciiRow27)"
     >                                      @GMs2H39#SSHM33M#Bi#@9#h:5h32253MHGSh#H;.5#                                       </text>
 
     <clipPath id="asciiRow28">
-
         <rect
-            x="43.00"
-            y="246.00"
+            x="30.00"
+            y="194.00"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="0.504s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="251.60"
-
+        x="30.00"
+        y="198.20"
         class="ascii"
-
         clip-path="url(#asciiRow28)"
     >                                       HShMHMM#9&amp;&amp;&amp;B&amp;@@3M@B9SGAiMSSSSSGGGhH#3:r2@                                       </text>
 
     <clipPath id="asciiRow29">
-
         <rect
-            x="43.00"
-            y="252.40"
+            x="30.00"
+            y="198.80"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="0.522s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="258.00"
-
+        x="30.00"
+        y="203.00"
         class="ascii"
-
         clip-path="url(#asciiRow29)"
     >                                       GSG3h#HMMS#9##S3h&amp;@@&amp;B#HAr23hMMhhMHH#AAh3                                        </text>
 
     <clipPath id="asciiRow30">
-
         <rect
-            x="43.00"
-            y="258.80"
+            x="30.00"
+            y="203.60"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="0.540s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="264.40"
-
+        x="30.00"
+        y="207.80"
         class="ascii"
-
         clip-path="url(#asciiRow30)"
     >                                       @H#M3G##SGHHhh5H@B&amp;@9#SS9MX53hhMHHHHG55hS                                        </text>
 
     <clipPath id="asciiRow31">
-
         <rect
-            x="43.00"
-            y="265.20"
+            x="30.00"
+            y="208.40"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="0.558s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="270.80"
-
+        x="30.00"
+        y="212.60"
         class="ascii"
-
         clip-path="url(#asciiRow31)"
     >                                        G@S5GSS###999B9H22M35Xs5HA3MMMMHHHGM2MM@                                        </text>
 
     <clipPath id="asciiRow32">
-
         <rect
-            x="43.00"
-            y="271.60"
+            x="30.00"
+            y="213.20"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="0.576s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="277.20"
-
+        x="30.00"
+        y="217.40"
         class="ascii"
-
         clip-path="url(#asciiRow32)"
     >                                        @GHAMSG####99&amp;9AiXXsiisX3h3hMMMMHHHhh#@                                         </text>
 
     <clipPath id="asciiRow33">
-
         <rect
-            x="43.00"
-            y="278.00"
+            x="30.00"
+            y="218.00"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="0.594s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="283.60"
-
+        x="30.00"
+        y="222.20"
         class="ascii"
-
         clip-path="url(#asciiRow33)"
     >                                           3hHGSSSS9BBB#M3AAXir2hMMMMhMMMMM5&amp;                                           </text>
 
     <clipPath id="asciiRow34">
-
         <rect
-            x="43.00"
-            y="284.40"
+            x="30.00"
+            y="222.80"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="0.612s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="290.00"
-
+        x="30.00"
+        y="227.00"
         class="ascii"
-
         clip-path="url(#asciiRow34)"
     >                                           S5HGGGGSSHHGH352h5ArX52s2HhhhMMM5                                            </text>
 
     <clipPath id="asciiRow35">
-
         <rect
-            x="43.00"
-            y="290.80"
+            x="30.00"
+            y="227.60"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="0.630s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="296.40"
-
+        x="30.00"
+        y="231.80"
         class="ascii"
-
         clip-path="url(#asciiRow35)"
     >                                           @sHHHHHHAiA5AXXssiiiiri.:5MhhhM5h                                            </text>
 
     <clipPath id="asciiRow36">
-
         <rect
-            x="43.00"
-            y="297.20"
+            x="30.00"
+            y="232.40"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="0.648s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="302.80"
-
+        x="30.00"
+        y="236.60"
         class="ascii"
-
         clip-path="url(#asciiRow36)"
     >                                            55GHMHMr:;is55XsXX2Ar::;XhhMM3X&amp;                                            </text>
 
     <clipPath id="asciiRow37">
-
         <rect
-            x="43.00"
-            y="303.60"
+            x="30.00"
+            y="237.20"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="0.666s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="309.20"
-
+        x="30.00"
+        y="241.40"
         class="ascii"
-
         clip-path="url(#asciiRow37)"
     >                                            &amp;r3HHHhX5HMhMSGGGM353h5XX3h35Ah                                             </text>
 
     <clipPath id="asciiRow38">
-
         <rect
-            x="43.00"
-            y="310.00"
+            x="30.00"
+            y="242.00"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="0.684s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="315.60"
-
+        x="30.00"
+        y="246.20"
         class="ascii"
-
         clip-path="url(#asciiRow38)"
     >                                             Hi2MMh5MHHM5AsriirX25322332sX@                                             </text>
 
     <clipPath id="asciiRow39">
-
         <rect
-            x="43.00"
-            y="316.40"
+            x="30.00"
+            y="246.80"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="0.702s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="322.00"
-
+        x="30.00"
+        y="251.00"
         class="ascii"
-
         clip-path="url(#asciiRow39)"
     >                                              A;23h33hh32r;::;rX2552232rsH                                              </text>
 
     <clipPath id="asciiRow40">
-
         <rect
-            x="43.00"
-            y="322.80"
+            x="30.00"
+            y="251.60"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="0.720s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="328.40"
-
+        x="30.00"
+        y="255.80"
         class="ascii"
-
         clip-path="url(#asciiRow40)"
     >                                             9HX;sX23MMHGSSSHHHHMMh2XXii3G#                                             </text>
 
     <clipPath id="asciiRow41">
-
         <rect
-            x="43.00"
-            y="329.20"
+            x="30.00"
+            y="256.40"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="0.738s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="334.80"
-
+        x="30.00"
+        y="260.60"
         class="ascii"
-
         clip-path="url(#asciiRow41)"
     >                                            &amp;BMMA::;AMGSSSM35hhMMh5Xi,;5Mh##                                            </text>
 
     <clipPath id="asciiRow42">
-
         <rect
-            x="43.00"
-            y="335.60"
+            x="30.00"
+            y="261.20"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="0.756s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="341.20"
-
+        x="30.00"
+        y="265.40"
         class="ascii"
-
         clip-path="url(#asciiRow42)"
     >                                            9#AMM5;.,rA222r:;rsrrr;,.r53M5s@@                                           </text>
 
     <clipPath id="asciiRow43">
-
         <rect
-            x="43.00"
-            y="342.00"
+            x="30.00"
+            y="266.00"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="0.774s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="347.60"
-
+        x="30.00"
+        y="270.20"
         class="ascii"
-
         clip-path="url(#asciiRow43)"
     >                                           S@hXHhM3r,   ..    .    :X225MA.@#                                           </text>
 
     <clipPath id="asciiRow44">
-
         <rect
-            x="43.00"
-            y="348.40"
+            x="30.00"
+            y="270.80"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="0.792s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="354.00"
-
+        x="30.00"
+        y="275.00"
         class="ascii"
-
         clip-path="url(#asciiRow44)"
     >                                          &amp;@@#rHMhh32s,          :XAAA253:;@@S                                          </text>
 
     <clipPath id="asciiRow45">
-
         <rect
-            x="43.00"
-            y="354.80"
+            x="30.00"
+            y="275.60"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="0.810s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="360.40"
-
+        x="30.00"
+        y="279.80"
         class="ascii"
-
         clip-path="url(#asciiRow45)"
     >                                         &amp;9@@@XhHMMh35AX;,.  .:isXAXX252s 3@@@S@                                        </text>
 
     <clipPath id="asciiRow46">
-
         <rect
-            x="43.00"
-            y="361.20"
+            x="30.00"
+            y="280.40"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="0.828s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="366.80"
-
+        x="30.00"
+        y="284.60"
         class="ascii"
-
         clip-path="url(#asciiRow46)"
     >                                      @##@@@@@SsGHHHMh22Xr;::;irsXAA22As.,B@@@@@##@                                     </text>
 
     <clipPath id="asciiRow47">
-
         <rect
-            x="43.00"
-            y="367.60"
+            x="30.00"
+            y="285.20"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="0.846s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="373.20"
-
+        x="30.00"
+        y="289.40"
         class="ascii"
-
         clip-path="url(#asciiRow47)"
     >                                   @#S&amp;@@@@@@@@52GHHHHM32Xri;;rsA2552Ar; M@@@@@@@@@9S&amp;                                  </text>
 
     <clipPath id="asciiRow48">
-
         <rect
-            x="43.00"
-            y="374.00"
+            x="30.00"
+            y="290.00"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="0.864s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="379.60"
-
+        x="30.00"
+        y="294.20"
         class="ascii"
-
         clip-path="url(#asciiRow48)"
     >                                @#S&amp;@@@@@@@@@@@@shGHHHHMh32AXXA25522Asi.A@@@@@@@@@@@@@9SB                               </text>
 
     <clipPath id="asciiRow49">
-
         <rect
-            x="43.00"
-            y="380.40"
+            x="30.00"
+            y="294.80"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="0.882s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="386.00"
-
+        x="30.00"
+        y="299.00"
         class="ascii"
-
         clip-path="url(#asciiRow49)"
     >                              9S&amp;@@@@@@@@@@@@@@@BrMHHMMMhhh32222222Asi;:&amp;@@@@@@@@@@@@@@@@BS&amp;                            </text>
 
     <clipPath id="asciiRow50">
-
         <rect
-            x="43.00"
-            y="386.80"
+            x="30.00"
+            y="299.60"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="0.900s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="392.40"
-
+        x="30.00"
+        y="303.80"
         class="ascii"
-
         clip-path="url(#asciiRow50)"
     >                           BSB@@@@@@@@@@@@@@@@@@@MrMHHMMh3222AAAAAAsrr,M@@@@@@@@@@@@@@@@@@@@9#@                         </text>
 
     <clipPath id="asciiRow51">
-
         <rect
-            x="43.00"
-            y="393.20"
+            x="30.00"
+            y="304.40"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="0.918s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="398.80"
-
+        x="30.00"
+        y="308.60"
         class="ascii"
-
         clip-path="url(#asciiRow51)"
     >                        &amp;S9@@@@@@@@@@@@@@@@@@@@@@@XXhHHHMM32222222Xsris@@@@@@@@@@@@@@@@@@@@@@@@#S&amp;                      </text>
 
     <clipPath id="asciiRow52">
-
         <rect
-            x="43.00"
-            y="399.60"
+            x="30.00"
+            y="309.20"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="0.936s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="405.20"
-
+        x="30.00"
+        y="313.40"
         class="ascii"
-
         clip-path="url(#asciiRow52)"
     >                     &amp;S#@@@@@@@@@@@@@@@@@@@@@@#G9@@i2MHHMMMhh35552XXXrB@@##@@@@@@@@@@@@@@@@@@@@@@@BS&amp;                   </text>
 
     <clipPath id="asciiRow53">
-
         <rect
-            x="43.00"
-            y="406.00"
+            x="30.00"
+            y="314.00"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="0.954s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="411.60"
-
+        x="30.00"
+        y="318.20"
         class="ascii"
-
         clip-path="url(#asciiRow53)"
     >                  &amp;S9@@@@@@@@@@@@@@@@@@@@@@@SGGHM#@#2hGSGHHHHHHMh355A#@@GhHHSB@@@@@@@@@@@@@@@@@@@@@@@##                 </text>
 
     <clipPath id="asciiRow54">
-
         <rect
-            x="43.00"
-            y="412.40"
+            x="30.00"
+            y="318.80"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="0.972s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="418.00"
-
+        x="30.00"
+        y="323.00"
         class="ascii"
-
         clip-path="url(#asciiRow54)"
     >                #S@@@@@@@@@@@@@@@@@@@@@@@@#GGSB&amp;9#@@@#GS#SGS##SSGHHMB@@SG##SGS#@@@@@@@@@@@@@@@@@@@@@@@@BS&amp;              </text>
 
     <clipPath id="asciiRow55">
-
         <rect
-            x="43.00"
-            y="418.80"
+            x="30.00"
+            y="323.60"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="0.990s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="424.40"
-
+        x="30.00"
+        y="327.80"
         class="ascii"
-
         clip-path="url(#asciiRow55)"
     >              SB@@@@@@@@@@@@@@@@@@@@@@@@&amp;BB&amp;@@@@@@@@@@@SGSSS###S#S#@@&amp;99B&amp;&amp;9BB@@@@@@@@@@@@@@@@@@@@@@@@@@@@S             </text>
 
     <clipPath id="asciiRow56">
-
         <rect
-            x="43.00"
-            y="425.20"
+            x="30.00"
+            y="328.40"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="1.008s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="430.80"
-
+        x="30.00"
+        y="332.60"
         class="ascii"
-
         clip-path="url(#asciiRow56)"
     >            @G@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@BGS#S####9@@&amp;&amp;&amp;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@S            </text>
 
     <clipPath id="asciiRow57">
-
         <rect
-            x="43.00"
-            y="431.60"
+            x="30.00"
+            y="333.20"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="1.026s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="437.20"
-
+        x="30.00"
+        y="337.40"
         class="ascii"
-
         clip-path="url(#asciiRow57)"
     >           @S@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@SG#S##&amp;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@S           </text>
 
     <clipPath id="asciiRow58">
-
         <rect
-            x="43.00"
-            y="438.00"
+            x="30.00"
+            y="338.00"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="1.044s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="443.60"
-
+        x="30.00"
+        y="342.20"
         class="ascii"
-
         clip-path="url(#asciiRow58)"
     >           S@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#G#SB@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@S          </text>
 
     <clipPath id="asciiRow59">
-
         <rect
-            x="43.00"
-            y="444.40"
+            x="30.00"
+            y="342.80"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="1.062s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="450.00"
-
+        x="30.00"
+        y="347.00"
         class="ascii"
-
         clip-path="url(#asciiRow59)"
     >          G@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@GMB@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@B         </text>
 
     <clipPath id="asciiRow60">
-
         <rect
-            x="43.00"
-            y="450.80"
+            x="30.00"
+            y="347.60"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="1.080s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="456.40"
-
+        x="30.00"
+        y="351.80"
         class="ascii"
-
         clip-path="url(#asciiRow60)"
     >         B@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#         </text>
 
     <clipPath id="asciiRow61">
-
         <rect
-            x="43.00"
-            y="457.20"
+            x="30.00"
+            y="352.40"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="1.098s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="462.80"
-
+        x="30.00"
+        y="356.60"
         class="ascii"
-
         clip-path="url(#asciiRow61)"
     >         #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@S        </text>
 
     <clipPath id="asciiRow62">
-
         <rect
-            x="43.00"
-            y="463.60"
+            x="30.00"
+            y="357.20"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="1.116s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="469.20"
-
+        x="30.00"
+        y="361.40"
         class="ascii"
-
         clip-path="url(#asciiRow62)"
     >        G@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&amp;@       </text>
 
     <clipPath id="asciiRow63">
-
         <rect
-            x="43.00"
-            y="470.00"
+            x="30.00"
+            y="362.00"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="1.134s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="475.60"
-
+        x="30.00"
+        y="366.20"
         class="ascii"
-
         clip-path="url(#asciiRow63)"
     >       @&amp;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@G       </text>
 
     <clipPath id="asciiRow64">
-
         <rect
-            x="43.00"
-            y="476.40"
+            x="30.00"
+            y="366.80"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="1.152s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="482.00"
-
+        x="30.00"
+        y="371.00"
         class="ascii"
-
         clip-path="url(#asciiRow64)"
     >       G@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@      </text>
 
     <clipPath id="asciiRow65">
-
         <rect
-            x="43.00"
-            y="482.80"
+            x="30.00"
+            y="371.60"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="1.170s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="488.40"
-
+        x="30.00"
+        y="375.80"
         class="ascii"
-
         clip-path="url(#asciiRow65)"
     >      &amp;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@G      </text>
 
     <clipPath id="asciiRow66">
-
         <rect
-            x="43.00"
-            y="489.20"
+            x="30.00"
+            y="376.40"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="1.188s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="494.80"
-
+        x="30.00"
+        y="380.60"
         class="ascii"
-
         clip-path="url(#asciiRow66)"
     >      G@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@     </text>
 
     <clipPath id="asciiRow67">
-
         <rect
-            x="43.00"
-            y="495.60"
+            x="30.00"
+            y="381.20"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="1.206s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="501.20"
-
+        x="30.00"
+        y="385.40"
         class="ascii"
-
         clip-path="url(#asciiRow67)"
     >     @&amp;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@S     </text>
 
     <clipPath id="asciiRow68">
-
         <rect
-            x="43.00"
-            y="502.00"
+            x="30.00"
+            y="386.00"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="1.224s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="507.60"
-
+        x="30.00"
+        y="390.20"
         class="ascii"
-
         clip-path="url(#asciiRow68)"
     >     S@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#     </text>
 
     <clipPath id="asciiRow69">
-
         <rect
-            x="43.00"
-            y="508.40"
+            x="30.00"
+            y="390.80"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="1.242s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="514.00"
-
+        x="30.00"
+        y="395.00"
         class="ascii"
-
         clip-path="url(#asciiRow69)"
     >     S@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&amp;@@@@@@@@@@@@    </text>
 
     <clipPath id="asciiRow70">
-
         <rect
-            x="43.00"
-            y="514.80"
+            x="30.00"
+            y="395.60"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="1.260s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="520.40"
-
+        x="30.00"
+        y="399.80"
         class="ascii"
-
         clip-path="url(#asciiRow70)"
     >    @&amp;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@B@@@@@@@@@@@S    </text>
 
     <clipPath id="asciiRow71">
-
         <rect
-            x="43.00"
-            y="521.20"
+            x="30.00"
+            y="400.40"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="1.278s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="526.80"
-
+        x="30.00"
+        y="404.60"
         class="ascii"
-
         clip-path="url(#asciiRow71)"
     >    #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@B@#@@@@@@@@@@@@S    </text>
 
     <clipPath id="asciiRow72">
-
         <rect
-            x="43.00"
-            y="527.60"
+            x="30.00"
+            y="405.20"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="1.296s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="533.20"
-
+        x="30.00"
+        y="409.40"
         class="ascii"
-
         clip-path="url(#asciiRow72)"
     >    G@@@@@@@@@@@@@@@@@@@B@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&amp;B@@BB&amp;#@@@@@@@@@@@@B    </text>
 
     <clipPath id="asciiRow73">
-
         <rect
-            x="43.00"
-            y="534.00"
+            x="30.00"
+            y="410.00"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="1.314s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="539.60"
-
+        x="30.00"
+        y="414.20"
         class="ascii"
-
         clip-path="url(#asciiRow73)"
     >    S@@@@@@@@@@@@@@@@@@&amp;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&amp;9@S&amp;H@@@@@@@@@@@@@@B   </text>
 
     <clipPath id="asciiRow74">
-
         <rect
-            x="43.00"
-            y="540.40"
+            x="30.00"
+            y="414.80"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="1.332s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="546.00"
-
+        x="30.00"
+        y="419.00"
         class="ascii"
-
         clip-path="url(#asciiRow74)"
     >   @9@@@@@@@@@@@@@@@@&amp;@&amp;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@9&amp;9SG@@@@@@@@@@@@@@S   </text>
 
     <clipPath id="asciiRow75">
-
         <rect
-            x="43.00"
-            y="546.80"
+            x="30.00"
+            y="419.60"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="1.350s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="552.40"
-
+        x="30.00"
+        y="423.80"
         class="ascii"
-
         clip-path="url(#asciiRow75)"
     >   B@@@@@@@@@@@@@@@@@9&amp;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@B9#h@@@@@@@@@@@@@@@G   </text>
 
     <clipPath id="asciiRow76">
-
         <rect
-            x="43.00"
-            y="553.20"
+            x="30.00"
+            y="424.40"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="1.368s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="558.80"
-
+        x="30.00"
+        y="428.60"
         class="ascii"
-
         clip-path="url(#asciiRow76)"
     >   S@@@@@@@@@@@@@@&amp;@@SS@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@BGMS@@@@@@@@@@@@@@@S   </text>
 
     <clipPath id="asciiRow77">
-
         <rect
-            x="43.00"
-            y="559.60"
+            x="30.00"
+            y="429.20"
             width="0"
-            height="8.40"
+            height="6.80"
         >
-
             <animate
                 attributeName="width"
-
                 from="0"
-
-                to="564.00"
-
+                to="420.00"
                 begin="1.386s"
-
                 dur="0.42s"
-
                 fill="freeze"
             />
-
         </rect>
-
     </clipPath>
 
-
     <text
-        x="43.00"
-        y="565.20"
-
+        x="30.00"
+        y="433.40"
         class="ascii"
-
         clip-path="url(#asciiRow77)"
     >   G@@@@@@@@@@@@@@@@@BM#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@HMh@@@@@@@@@@@@@@@@9   </text>
 
 
 
-<!-- TERMINAL PROMPT -->
+<!-- ========================================================
+     TERMINAL PROMPT
+     ======================================================== -->
 
 <text
-
-    x="22"
-
-    y="600"
-
+    x="20"
+    y="462"
     class="prompt"
-
 >
     lokanathmeher19@github:~$ ./portrait.sh
 </text>
