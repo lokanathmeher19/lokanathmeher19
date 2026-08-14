@@ -121,14 +121,6 @@
 </p>
 
 <br>
-
-<p align="center">
-  <code>lokanathmeher19@github ~ $ ./links.sh</code>
-</p>
-
-<p align="center">
-  <b>Building • Learning • Exploring</b>
-
 <!-- =========================================================
      FOOTER
      ========================================================= -->
