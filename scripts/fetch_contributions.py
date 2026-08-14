@@ -1,239 +1,48 @@
 from pathlib import Path
-from datetime import datetime
 import json
-import re
-
+import os
+import sys
 import requests
-from bs4 import BeautifulSoup
 
 
 # ============================================================
-# SETTINGS
+# CONFIG
 # ============================================================
 
 USERNAME = "lokanathmeher19"
 
 ROOT = Path(__file__).resolve().parent.parent
-DATA_DIR = ROOT / "data"
 
-OUTPUT = DATA_DIR / "contributions.json"
+OUTPUT = ROOT / "data" / "contributions.json"
 
-URL = f"https://github.com/users/{USERNAME}/contributions"
-
-HEADERS = {
-    "User-Agent": (
-        "Mozilla/5.0 "
-        "(Windows NT 10.0; Win64; x64) "
-        "AppleWebKit/537.36 "
-        "(KHTML, like Gecko) "
-        "Chrome/151.0 Safari/537.36"
-    )
-}
+GITHUB_API = "https://api.github.com/graphql"
 
 
 # ============================================================
-# FETCH GITHUB PAGE
+# GRAPHQL QUERY
 # ============================================================
 
-def fetch_page():
+QUERY = """
+query($login: String!) {
+  user(login: $login) {
+    login
 
-    print()
-    print("==============================================")
-    print("FETCHING GITHUB CONTRIBUTIONS")
-    print("==============================================")
-    print()
+    contributionsCollection {
+      contributionCalendar {
+        totalContributions
 
-    print(f"Username : {USERNAME}")
-    print(f"URL      : {URL}")
-    print()
-
-    response = requests.get(
-        URL,
-        headers=HEADERS,
-        timeout=30
-    )
-
-    response.raise_for_status()
-
-    print(
-        f"HTTP     : {response.status_code}"
-    )
-
-    return response.text
-
-
-# ============================================================
-# PARSE CONTRIBUTION CELLS
-# ============================================================
-
-def parse_contributions(html):
-
-    soup = BeautifulSoup(
-        html,
-        "html.parser"
-    )
-
-    cells = soup.select(
-        "td.ContributionCalendar-day"
-    )
-
-    print(
-        f"Calendar cells found : {len(cells)}"
-    )
-
-    if not cells:
-
-        # Newer GitHub markup can use
-        # contribution calendar day elements.
-
-        cells = soup.select(
-            "[data-date][data-level]"
-        )
-
-        print(
-            f"Fallback cells found : {len(cells)}"
-        )
-
-    contributions = []
-
-    for cell in cells:
-
-        date_text = cell.get(
-            "data-date"
-        )
-
-        level_text = cell.get(
-            "data-level"
-        )
-
-        if not date_text:
-            continue
-
-        # ----------------------------------------------------
-        # Contribution count
-        # ----------------------------------------------------
-
-        count = 0
-
-        text = cell.get_text(
-            " ",
-            strip=True
-        )
-
-        # Example:
-        #
-        # "5 contributions on March 20th."
-        #
-        # or
-        #
-        # "No contributions on March 20th."
-
-        match = re.search(
-            r"(\d[\d,]*)\s+contribution",
-            text,
-            re.IGNORECASE
-        )
-
-        if match:
-
-            count = int(
-                match.group(1)
-                .replace(",", "")
-            )
-
-        # ----------------------------------------------------
-        # Level
-        # ----------------------------------------------------
-
-        try:
-
-            level = int(
-                level_text
-            )
-
-        except (
-            TypeError,
-            ValueError
-        ):
-
-            level = 0
-
-        contributions.append(
-            {
-                "date": date_text,
-                "count": count,
-                "level": level
-            }
-        )
-
-    # --------------------------------------------------------
-    # Remove duplicate dates
-    # --------------------------------------------------------
-
-    unique = {}
-
-    for item in contributions:
-
-        unique[
-            item["date"]
-        ] = item
-
-    contributions = list(
-        unique.values()
-    )
-
-    # --------------------------------------------------------
-    # Sort by date
-    # --------------------------------------------------------
-
-    contributions.sort(
-        key=lambda x: x["date"]
-    )
-
-    return contributions
-
-
-# ============================================================
-# TOTAL
-# ============================================================
-
-def calculate_total(contributions):
-
-    return sum(
-        item["count"]
-        for item in contributions
-    )
-
-
-# ============================================================
-# SAVE JSON
-# ============================================================
-
-def save_data(
-    contributions,
-    total
-):
-
-    DATA_DIR.mkdir(
-        parents=True,
-        exist_ok=True
-    )
-
-    data = {
-        "username": USERNAME,
-        "generated_at": datetime.utcnow().isoformat()
-        + "Z",
-        "total": total,
-        "days": contributions
+        weeks {
+          contributionDays {
+            date
+            contributionCount
+            contributionLevel
+          }
+        }
+      }
     }
-
-    OUTPUT.write_text(
-        json.dumps(
-            data,
-            indent=2
-        ),
-        encoding="utf-8"
-    )
+  }
+}
+"""
 
 
 # ============================================================
@@ -242,83 +51,145 @@ def save_data(
 
 def main():
 
-    try:
+    token = os.environ.get("GITHUB_TOKEN")
 
-        html = fetch_page()
-
-        contributions = parse_contributions(
-            html
-        )
-
-        if not contributions:
-
-            print()
-            print(
-                "ERROR: No contribution cells found."
-            )
-            print(
-                "GitHub may have changed its HTML."
-            )
-            return
-
-        total = calculate_total(
-            contributions
-        )
-
-        save_data(
-            contributions,
-            total
-        )
+    if not token:
 
         print()
-        print("==============================================")
-        print("SUCCESS")
-        print("==============================================")
+        print("ERROR: GITHUB_TOKEN is not set.")
         print()
+        print("PowerShell:")
+        print('$env:GITHUB_TOKEN="YOUR_GITHUB_TOKEN"')
+        print()
+        sys.exit(1)
+
+    print()
+    print("==========================================")
+    print(" GitHub Contribution Fetcher")
+    print("==========================================")
+    print()
+
+    print(f"Username: {USERNAME}")
+    print("Fetching real GitHub contribution data...")
+    print()
+
+    headers = {
+        "Authorization": f"Bearer {token}",
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+    }
+
+    payload = {
+        "query": QUERY,
+        "variables": {
+            "login": USERNAME
+        }
+    }
+
+    response = requests.post(
+        GITHUB_API,
+        headers=headers,
+        json=payload,
+        timeout=30
+    )
+
+    if response.status_code != 200:
+
         print(
-            f"Days found : {len(contributions)}"
+            f"ERROR: GitHub API returned HTTP {response.status_code}"
         )
-        print(
-            f"Total      : {total}"
-        )
-        print(
-            f"Output     : {OUTPUT}"
-        )
-        print()
 
-        # Show latest 10 days
+        print(response.text)
 
-        print("Latest contribution data:")
-        print("----------------------------------------------")
+        sys.exit(1)
 
-        for item in contributions[-10:]:
+    result = response.json()
 
+    if "errors" in result:
+
+        print("ERROR: GitHub GraphQL API error:")
+
+        for error in result["errors"]:
             print(
-                f"{item['date']}  "
-                f"count={item['count']}  "
-                f"level={item['level']}"
+                error.get(
+                    "message",
+                    "Unknown error"
+                )
             )
 
-        print()
+        sys.exit(1)
 
-    except requests.RequestException as error:
+    user = result["data"]["user"]
 
-        print()
-        print("ERROR: GitHub request failed.")
-        print(error)
-        print()
+    if user is None:
 
-    except Exception as error:
+        print(
+            f"ERROR: GitHub user '{USERNAME}' not found."
+        )
 
-        print()
-        print("ERROR:")
-        print(error)
-        print()
+        sys.exit(1)
 
+    calendar = (
+        user[
+            "contributionsCollection"
+        ][
+            "contributionCalendar"
+        ]
+    )
 
-# ============================================================
-# RUN
-# ============================================================
+    total = calendar["totalContributions"]
+
+    # --------------------------------------------------------
+    # Flatten GitHub calendar
+    # --------------------------------------------------------
+
+    contributions = []
+
+    for week in calendar["weeks"]:
+
+        for day in week["contributionDays"]:
+
+            contributions.append(
+                {
+                    "date": day["date"],
+                    "count": day["contributionCount"],
+                    "level": day["contributionLevel"],
+                }
+            )
+
+    # --------------------------------------------------------
+    # Save data
+    # --------------------------------------------------------
+
+    OUTPUT.parent.mkdir(
+        parents=True,
+        exist_ok=True
+    )
+
+    output_data = {
+        "username": USERNAME,
+        "total_contributions": total,
+        "contributions": contributions
+    }
+
+    OUTPUT.write_text(
+        json.dumps(
+            output_data,
+            indent=2
+        ),
+        encoding="utf-8"
+    )
+
+    print("SUCCESS!")
+    print()
+    print(f"Username: {USERNAME}")
+    print(f"Real contributions: {total}")
+    print(f"Days downloaded: {len(contributions)}")
+    print()
+    print(f"Saved to:")
+    print(OUTPUT)
+    print()
+
 
 if __name__ == "__main__":
     main()
