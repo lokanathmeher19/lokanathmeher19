@@ -8,14 +8,14 @@
 >
 
 <!-- ========================================================
-     MAC TERMINAL
+     TERMINAL CARD
      ======================================================== -->
 
 <rect
-    x="8"
-    y="8"
-    width="464"
-    height="464"
+    x="1"
+    y="1"
+    width="478"
+    height="478"
     rx="15"
     fill="#0d1117"
     stroke="#30363d"
@@ -29,28 +29,28 @@
 
 <path
     d="
-        M 23
-          8
+        M 16
+          1
 
-        H 457
+        H 464
 
-        Q 472
-          8
+        Q 479
+          1
 
-          472
-          23
+          479
+          16
 
-        V 44
+        V 37
 
-        H 8
+        H 1
 
-        V 23
+        V 16
 
-        Q 8
-          8
+        Q 1
+          1
 
-          23
-          8
+          16
+          1
 
         Z
     "
@@ -58,13 +58,15 @@
 />
 
 
-<!-- TITLE BORDER -->
+<!-- ========================================================
+     TITLE SEPARATOR
+     ======================================================== -->
 
 <line
-    x1="8"
-    y1="44"
-    x2="472"
-    y2="44"
+    x1="1"
+    y1="37"
+    x2="479"
+    y2="37"
     stroke="#30363d"
     stroke-width="1"
 />
@@ -75,22 +77,22 @@
      ======================================================== -->
 
 <circle
-    cx="28"
-    cy="26"
+    cx="19"
+    cy="19"
     r="4"
     fill="#ff5f56"
 />
 
 <circle
-    cx="45"
-    cy="26"
+    cx="36"
+    cy="19"
     r="4"
     fill="#ffbd2e"
 />
 
 <circle
-    cx="62"
-    cy="26"
+    cx="53"
+    cy="19"
     r="4"
     fill="#27c93f"
 />
@@ -102,7 +104,7 @@
 
 <text
     x="240.0"
-    y="30"
+    y="23"
     font-family="Consolas, 'Courier New', monospace"
     font-size="7px"
     font-weight="600"
@@ -114,7 +116,7 @@
 
 
 <!-- ========================================================
-     STYLE
+     ASCII STYLE
      ======================================================== -->
 
 <style>
@@ -137,7 +139,6 @@
     white-space:
         pre;
 }
-
 
 .prompt {
     font-family:
@@ -163,7 +164,7 @@
     <clipPath id="asciiRow0">
         <rect
             x="30.00"
-            y="59.60"
+            y="58.60"
             width="0"
             height="6.80"
         >
@@ -180,7 +181,7 @@
 
     <text
         x="30.00"
-        y="63.80"
+        y="62.80"
         class="ascii"
         clip-path="url(#asciiRow0)"
     >                                                    @B#3AAA23H#@                                                        </text>
@@ -188,7 +189,7 @@
     <clipPath id="asciiRow1">
         <rect
             x="30.00"
-            y="64.40"
+            y="63.40"
             width="0"
             height="6.80"
         >
@@ -205,7 +206,7 @@
 
     <text
         x="30.00"
-        y="68.60"
+        y="67.60"
         class="ascii"
         clip-path="url(#asciiRow1)"
     >                                                @#M2::;,::,::;i;A5h#&amp;@                                                  </text>
@@ -213,7 +214,7 @@
     <clipPath id="asciiRow2">
         <rect
             x="30.00"
-            y="69.20"
+            y="68.20"
             width="0"
             height="6.80"
         >
@@ -230,7 +231,7 @@
 
     <text
         x="30.00"
-        y="73.40"
+        y="72.40"
         class="ascii"
         clip-path="url(#asciiRow2)"
     >                                              &amp;3:::,,. .         .,;i;:AS                                               </text>
@@ -238,7 +239,7 @@
     <clipPath id="asciiRow3">
         <rect
             x="30.00"
-            y="74.00"
+            y="73.00"
             width="0"
             height="6.80"
         >
@@ -255,7 +256,7 @@
 
     <text
         x="30.00"
-        y="78.20"
+        y="77.20"
         class="ascii"
         clip-path="url(#asciiRow3)"
     >                                            @5:,, .                  :,.:5@                                             </text>
@@ -263,7 +264,7 @@
     <clipPath id="asciiRow4">
         <rect
             x="30.00"
-            y="78.80"
+            y="77.80"
             width="0"
             height="6.80"
         >
@@ -280,7 +281,7 @@
 
     <text
         x="30.00"
-        y="83.00"
+        y="82.00"
         class="ascii"
         clip-path="url(#asciiRow4)"
     >                                           @s,:,         .,... .  .   ., ,2                                             </text>
@@ -288,7 +289,7 @@
     <clipPath id="asciiRow5">
         <rect
             x="30.00"
-            y="83.60"
+            y="82.60"
             width="0"
             height="6.80"
         >
@@ -305,7 +306,7 @@
 
     <text
         x="30.00"
-        y="87.80"
+        y="86.80"
         class="ascii"
         clip-path="url(#asciiRow5)"
     >                                          &amp;;,,   .   .           ..  . .. :H                                            </text>
@@ -313,7 +314,7 @@
     <clipPath id="asciiRow6">
         <rect
             x="30.00"
-            y="88.40"
+            y="87.40"
             width="0"
             height="6.80"
         >
@@ -330,7 +331,7 @@
 
     <text
         x="30.00"
-        y="92.60"
+        y="91.60"
         class="ascii"
         clip-path="url(#asciiRow6)"
     >                                          X:.                            ..A                                            </text>
@@ -338,7 +339,7 @@
     <clipPath id="asciiRow7">
         <rect
             x="30.00"
-            y="93.20"
+            y="92.20"
             width="0"
             height="6.80"
         >
@@ -355,7 +356,7 @@
 
     <text
         x="30.00"
-        y="97.40"
+        y="96.40"
         class="ascii"
         clip-path="url(#asciiRow7)"
     >                                         G;   .                            X                                            </text>
@@ -363,7 +364,7 @@
     <clipPath id="asciiRow8">
         <rect
             x="30.00"
-            y="98.00"
+            y="97.00"
             width="0"
             height="6.80"
         >
@@ -380,7 +381,7 @@
 
     <text
         x="30.00"
-        y="102.20"
+        y="101.20"
         class="ascii"
         clip-path="url(#asciiRow8)"
     >                                        9:                                 3                                            </text>
@@ -388,7 +389,7 @@
     <clipPath id="asciiRow9">
         <rect
             x="30.00"
-            y="102.80"
+            y="101.80"
             width="0"
             height="6.80"
         >
@@ -405,7 +406,7 @@
 
     <text
         x="30.00"
-        y="107.00"
+        y="106.00"
         class="ascii"
         clip-path="url(#asciiRow9)"
     >                                        2      .             .             rG                                           </text>
@@ -413,7 +414,7 @@
     <clipPath id="asciiRow10">
         <rect
             x="30.00"
-            y="107.60"
+            y="106.60"
             width="0"
             height="6.80"
         >
@@ -430,7 +431,7 @@
 
     <text
         x="30.00"
-        y="111.80"
+        y="110.80"
         class="ascii"
         clip-path="url(#asciiRow10)"
     >                                        r             .,:;irsXXsri;;;;;:    ,M                                          </text>
@@ -438,7 +439,7 @@
     <clipPath id="asciiRow11">
         <rect
             x="30.00"
-            y="112.40"
+            y="111.40"
             width="0"
             height="6.80"
         >
@@ -455,7 +456,7 @@
 
     <text
         x="30.00"
-        y="116.60"
+        y="115.60"
         class="ascii"
         clip-path="url(#asciiRow11)"
     >                                       &amp;          ,;s2hMMMMMMMMhh322A2h5;    :B                                         </text>
@@ -463,7 +464,7 @@
     <clipPath id="asciiRow12">
         <rect
             x="30.00"
-            y="117.20"
+            y="116.20"
             width="0"
             height="6.80"
         >
@@ -480,7 +481,7 @@
 
     <text
         x="30.00"
-        y="121.40"
+        y="120.40"
         class="ascii"
         clip-path="url(#asciiRow12)"
     >                                       #      .;X5MGS####SGHHHHMMhhhhMhh5.    h                                         </text>
@@ -488,7 +489,7 @@
     <clipPath id="asciiRow13">
         <rect
             x="30.00"
-            y="122.00"
+            y="121.00"
             width="0"
             height="6.80"
         >
@@ -505,7 +506,7 @@
 
     <text
         x="30.00"
-        y="126.20"
+        y="125.20"
         class="ascii"
         clip-path="url(#asciiRow13)"
     >                                       B    :A53MHG######SGGHHHMMMMhhhhMHs    3                                         </text>
@@ -513,7 +514,7 @@
     <clipPath id="asciiRow14">
         <rect
             x="30.00"
-            y="126.80"
+            y="125.80"
             width="0"
             height="6.80"
         >
@@ -530,7 +531,7 @@
 
     <text
         x="30.00"
-        y="131.00"
+        y="130.00"
         class="ascii"
         clip-path="url(#asciiRow14)"
     >                                        X  .2MHHHHS9999###SSSGGHHHMhhhhMG3:.  h                                         </text>
@@ -538,7 +539,7 @@
     <clipPath id="asciiRow15">
         <rect
             x="30.00"
-            y="131.60"
+            y="130.60"
             width="0"
             height="6.80"
         >
@@ -555,7 +556,7 @@
 
     <text
         x="30.00"
-        y="135.80"
+        y="134.80"
         class="ascii"
         clip-path="url(#asciiRow15)"
     >                                        M  :5HMHHGS9BB999##SSGGHHMhh3hhMGMs;. H                                         </text>
@@ -563,7 +564,7 @@
     <clipPath id="asciiRow16">
         <rect
             x="30.00"
-            y="136.40"
+            y="135.40"
             width="0"
             height="6.80"
         >
@@ -580,7 +581,7 @@
 
     <text
         x="30.00"
-        y="140.60"
+        y="139.60"
         class="ascii"
         clip-path="url(#asciiRow16)"
     >                                        S.;r5HHHGGS99B99999#SSGHHMMh3hhMHM5X;,#                                         </text>
@@ -588,7 +589,7 @@
     <clipPath id="asciiRow17">
         <rect
             x="30.00"
-            y="141.20"
+            y="140.20"
             width="0"
             height="6.80"
         >
@@ -605,7 +606,7 @@
 
     <text
         x="30.00"
-        y="145.40"
+        y="144.40"
         class="ascii"
         clip-path="url(#asciiRow17)"
     >                                        @:iX5HHHGGS#9BBBB99###SHHMhh3hhhHHh3s:@                                         </text>
@@ -613,7 +614,7 @@
     <clipPath id="asciiRow18">
         <rect
             x="30.00"
-            y="146.00"
+            y="145.00"
             width="0"
             height="6.80"
         >
@@ -630,7 +631,7 @@
 
     <text
         x="30.00"
-        y="150.20"
+        y="149.20"
         class="ascii"
         clip-path="url(#asciiRow18)"
     >                                         s;2hHHHHGS9BB&amp;B99H5G9#SSGHMhhhhMGGhAs                                          </text>
@@ -638,7 +639,7 @@
     <clipPath id="asciiRow19">
         <rect
             x="30.00"
-            y="150.80"
+            y="149.80"
             width="0"
             height="6.80"
         >
@@ -655,7 +656,7 @@
 
     <text
         x="30.00"
-        y="155.00"
+        y="154.00"
         class="ascii"
         clip-path="url(#asciiRow19)"
     >                                         A;3HHHGS#9&amp;@@@@B93M#B999#SGGHHHMHSG2A                                          </text>
@@ -663,7 +664,7 @@
     <clipPath id="asciiRow20">
         <rect
             x="30.00"
-            y="155.60"
+            y="154.60"
             width="0"
             height="6.80"
         >
@@ -680,7 +681,7 @@
 
     <text
         x="30.00"
-        y="159.80"
+        y="158.80"
         class="ascii"
         clip-path="url(#asciiRow20)"
     >                                         5ihHH##SBB&amp;@@&amp;&amp;&amp;#23M#SGHMh3335HSGGS22                                          </text>
@@ -688,7 +689,7 @@
     <clipPath id="asciiRow21">
         <rect
             x="30.00"
-            y="160.40"
+            y="159.40"
             width="0"
             height="6.80"
         >
@@ -705,7 +706,7 @@
 
     <text
         x="30.00"
-        y="164.60"
+        y="163.60"
         class="ascii"
         clip-path="url(#asciiRow21)"
     >                                         MrhHSMXXXssrs2MGSH5MhAr;.   .::3###2h                                          </text>
@@ -713,7 +714,7 @@
     <clipPath id="asciiRow22">
         <rect
             x="30.00"
-            y="165.20"
+            y="164.20"
             width="0"
             height="6.80"
         >
@@ -730,7 +731,7 @@
 
     <text
         x="30.00"
-        y="169.40"
+        y="168.40"
         class="ascii"
         clip-path="url(#asciiRow22)"
     >                                         BrhHhX25Xr;,::;iXAAs;::,..:isXXs23MX9@@                                        </text>
@@ -738,7 +739,7 @@
     <clipPath id="asciiRow23">
         <rect
             x="30.00"
-            y="170.00"
+            y="169.00"
             width="0"
             height="6.80"
         >
@@ -755,7 +756,7 @@
 
     <text
         x="30.00"
-        y="174.20"
+        y="173.20"
         class="ascii"
         clip-path="url(#asciiRow23)"
     >                                       GHMis5MMMh3M5s;;;:i52s;:,,:ssssX525X,sXss#                                       </text>
@@ -763,7 +764,7 @@
     <clipPath id="asciiRow24">
         <rect
             x="30.00"
-            y="174.80"
+            y="173.80"
             width="0"
             height="6.80"
         >
@@ -780,7 +781,7 @@
 
     <text
         x="30.00"
-        y="179.00"
+        y="178.00"
         class="ascii"
         clip-path="url(#asciiRow24)"
     >                                      BshGAi5MA;;r:. . :siii;;:  i, .i:iAMH5M2h:X                                       </text>
@@ -788,7 +789,7 @@
     <clipPath id="asciiRow25">
         <rect
             x="30.00"
-            y="179.60"
+            y="178.60"
             width="0"
             height="6.80"
         >
@@ -805,7 +806,7 @@
 
     <text
         x="30.00"
-        y="183.80"
+        y="182.80"
         class="ascii"
         clip-path="url(#asciiRow25)"
     >                                      #sM#MAhM5XXhr.;r;sh:X#A:i,s5r,iA2hhHMMMsMXs                                       </text>
@@ -813,7 +814,7 @@
     <clipPath id="asciiRow26">
         <rect
             x="30.00"
-            y="184.40"
+            y="183.40"
             width="0"
             height="6.80"
         >
@@ -830,7 +831,7 @@
 
     <text
         x="30.00"
-        y="188.60"
+        y="187.60"
         class="ascii"
         clip-path="url(#asciiRow26)"
     >                                      #hShA3M#GhMMM32X2G5:@&amp;G:issXAA223MMShSh ;2h                                       </text>
@@ -838,7 +839,7 @@
     <clipPath id="asciiRow27">
         <rect
             x="30.00"
-            y="189.20"
+            y="188.20"
             width="0"
             height="6.80"
         >
@@ -855,7 +856,7 @@
 
     <text
         x="30.00"
-        y="193.40"
+        y="192.40"
         class="ascii"
         clip-path="url(#asciiRow27)"
     >                                      @GMs2H39#SSHM33M#Bi#@9#h:5h32253MHGSh#H;.5#                                       </text>
@@ -863,7 +864,7 @@
     <clipPath id="asciiRow28">
         <rect
             x="30.00"
-            y="194.00"
+            y="193.00"
             width="0"
             height="6.80"
         >
@@ -880,7 +881,7 @@
 
     <text
         x="30.00"
-        y="198.20"
+        y="197.20"
         class="ascii"
         clip-path="url(#asciiRow28)"
     >                                       HShMHMM#9&amp;&amp;&amp;B&amp;@@3M@B9SGAiMSSSSSGGGhH#3:r2@                                       </text>
@@ -888,7 +889,7 @@
     <clipPath id="asciiRow29">
         <rect
             x="30.00"
-            y="198.80"
+            y="197.80"
             width="0"
             height="6.80"
         >
@@ -905,7 +906,7 @@
 
     <text
         x="30.00"
-        y="203.00"
+        y="202.00"
         class="ascii"
         clip-path="url(#asciiRow29)"
     >                                       GSG3h#HMMS#9##S3h&amp;@@&amp;B#HAr23hMMhhMHH#AAh3                                        </text>
@@ -913,7 +914,7 @@
     <clipPath id="asciiRow30">
         <rect
             x="30.00"
-            y="203.60"
+            y="202.60"
             width="0"
             height="6.80"
         >
@@ -930,7 +931,7 @@
 
     <text
         x="30.00"
-        y="207.80"
+        y="206.80"
         class="ascii"
         clip-path="url(#asciiRow30)"
     >                                       @H#M3G##SGHHhh5H@B&amp;@9#SS9MX53hhMHHHHG55hS                                        </text>
@@ -938,7 +939,7 @@
     <clipPath id="asciiRow31">
         <rect
             x="30.00"
-            y="208.40"
+            y="207.40"
             width="0"
             height="6.80"
         >
@@ -955,7 +956,7 @@
 
     <text
         x="30.00"
-        y="212.60"
+        y="211.60"
         class="ascii"
         clip-path="url(#asciiRow31)"
     >                                        G@S5GSS###999B9H22M35Xs5HA3MMMMHHHGM2MM@                                        </text>
@@ -963,7 +964,7 @@
     <clipPath id="asciiRow32">
         <rect
             x="30.00"
-            y="213.20"
+            y="212.20"
             width="0"
             height="6.80"
         >
@@ -980,7 +981,7 @@
 
     <text
         x="30.00"
-        y="217.40"
+        y="216.40"
         class="ascii"
         clip-path="url(#asciiRow32)"
     >                                        @GHAMSG####99&amp;9AiXXsiisX3h3hMMMMHHHhh#@                                         </text>
@@ -988,7 +989,7 @@
     <clipPath id="asciiRow33">
         <rect
             x="30.00"
-            y="218.00"
+            y="217.00"
             width="0"
             height="6.80"
         >
@@ -1005,7 +1006,7 @@
 
     <text
         x="30.00"
-        y="222.20"
+        y="221.20"
         class="ascii"
         clip-path="url(#asciiRow33)"
     >                                           3hHGSSSS9BBB#M3AAXir2hMMMMhMMMMM5&amp;                                           </text>
@@ -1013,7 +1014,7 @@
     <clipPath id="asciiRow34">
         <rect
             x="30.00"
-            y="222.80"
+            y="221.80"
             width="0"
             height="6.80"
         >
@@ -1030,7 +1031,7 @@
 
     <text
         x="30.00"
-        y="227.00"
+        y="226.00"
         class="ascii"
         clip-path="url(#asciiRow34)"
     >                                           S5HGGGGSSHHGH352h5ArX52s2HhhhMMM5                                            </text>
@@ -1038,7 +1039,7 @@
     <clipPath id="asciiRow35">
         <rect
             x="30.00"
-            y="227.60"
+            y="226.60"
             width="0"
             height="6.80"
         >
@@ -1055,7 +1056,7 @@
 
     <text
         x="30.00"
-        y="231.80"
+        y="230.80"
         class="ascii"
         clip-path="url(#asciiRow35)"
     >                                           @sHHHHHHAiA5AXXssiiiiri.:5MhhhM5h                                            </text>
@@ -1063,7 +1064,7 @@
     <clipPath id="asciiRow36">
         <rect
             x="30.00"
-            y="232.40"
+            y="231.40"
             width="0"
             height="6.80"
         >
@@ -1080,7 +1081,7 @@
 
     <text
         x="30.00"
-        y="236.60"
+        y="235.60"
         class="ascii"
         clip-path="url(#asciiRow36)"
     >                                            55GHMHMr:;is55XsXX2Ar::;XhhMM3X&amp;                                            </text>
@@ -1088,7 +1089,7 @@
     <clipPath id="asciiRow37">
         <rect
             x="30.00"
-            y="237.20"
+            y="236.20"
             width="0"
             height="6.80"
         >
@@ -1105,7 +1106,7 @@
 
     <text
         x="30.00"
-        y="241.40"
+        y="240.40"
         class="ascii"
         clip-path="url(#asciiRow37)"
     >                                            &amp;r3HHHhX5HMhMSGGGM353h5XX3h35Ah                                             </text>
@@ -1113,7 +1114,7 @@
     <clipPath id="asciiRow38">
         <rect
             x="30.00"
-            y="242.00"
+            y="241.00"
             width="0"
             height="6.80"
         >
@@ -1130,7 +1131,7 @@
 
     <text
         x="30.00"
-        y="246.20"
+        y="245.20"
         class="ascii"
         clip-path="url(#asciiRow38)"
     >                                             Hi2MMh5MHHM5AsriirX25322332sX@                                             </text>
@@ -1138,7 +1139,7 @@
     <clipPath id="asciiRow39">
         <rect
             x="30.00"
-            y="246.80"
+            y="245.80"
             width="0"
             height="6.80"
         >
@@ -1155,7 +1156,7 @@
 
     <text
         x="30.00"
-        y="251.00"
+        y="250.00"
         class="ascii"
         clip-path="url(#asciiRow39)"
     >                                              A;23h33hh32r;::;rX2552232rsH                                              </text>
@@ -1163,7 +1164,7 @@
     <clipPath id="asciiRow40">
         <rect
             x="30.00"
-            y="251.60"
+            y="250.60"
             width="0"
             height="6.80"
         >
@@ -1180,7 +1181,7 @@
 
     <text
         x="30.00"
-        y="255.80"
+        y="254.80"
         class="ascii"
         clip-path="url(#asciiRow40)"
     >                                             9HX;sX23MMHGSSSHHHHMMh2XXii3G#                                             </text>
@@ -1188,7 +1189,7 @@
     <clipPath id="asciiRow41">
         <rect
             x="30.00"
-            y="256.40"
+            y="255.40"
             width="0"
             height="6.80"
         >
@@ -1205,7 +1206,7 @@
 
     <text
         x="30.00"
-        y="260.60"
+        y="259.60"
         class="ascii"
         clip-path="url(#asciiRow41)"
     >                                            &amp;BMMA::;AMGSSSM35hhMMh5Xi,;5Mh##                                            </text>
@@ -1213,7 +1214,7 @@
     <clipPath id="asciiRow42">
         <rect
             x="30.00"
-            y="261.20"
+            y="260.20"
             width="0"
             height="6.80"
         >
@@ -1230,7 +1231,7 @@
 
     <text
         x="30.00"
-        y="265.40"
+        y="264.40"
         class="ascii"
         clip-path="url(#asciiRow42)"
     >                                            9#AMM5;.,rA222r:;rsrrr;,.r53M5s@@                                           </text>
@@ -1238,7 +1239,7 @@
     <clipPath id="asciiRow43">
         <rect
             x="30.00"
-            y="266.00"
+            y="265.00"
             width="0"
             height="6.80"
         >
@@ -1255,7 +1256,7 @@
 
     <text
         x="30.00"
-        y="270.20"
+        y="269.20"
         class="ascii"
         clip-path="url(#asciiRow43)"
     >                                           S@hXHhM3r,   ..    .    :X225MA.@#                                           </text>
@@ -1263,7 +1264,7 @@
     <clipPath id="asciiRow44">
         <rect
             x="30.00"
-            y="270.80"
+            y="269.80"
             width="0"
             height="6.80"
         >
@@ -1280,7 +1281,7 @@
 
     <text
         x="30.00"
-        y="275.00"
+        y="274.00"
         class="ascii"
         clip-path="url(#asciiRow44)"
     >                                          &amp;@@#rHMhh32s,          :XAAA253:;@@S                                          </text>
@@ -1288,7 +1289,7 @@
     <clipPath id="asciiRow45">
         <rect
             x="30.00"
-            y="275.60"
+            y="274.60"
             width="0"
             height="6.80"
         >
@@ -1305,7 +1306,7 @@
 
     <text
         x="30.00"
-        y="279.80"
+        y="278.80"
         class="ascii"
         clip-path="url(#asciiRow45)"
     >                                         &amp;9@@@XhHMMh35AX;,.  .:isXAXX252s 3@@@S@                                        </text>
@@ -1313,7 +1314,7 @@
     <clipPath id="asciiRow46">
         <rect
             x="30.00"
-            y="280.40"
+            y="279.40"
             width="0"
             height="6.80"
         >
@@ -1330,7 +1331,7 @@
 
     <text
         x="30.00"
-        y="284.60"
+        y="283.60"
         class="ascii"
         clip-path="url(#asciiRow46)"
     >                                      @##@@@@@SsGHHHMh22Xr;::;irsXAA22As.,B@@@@@##@                                     </text>
@@ -1338,7 +1339,7 @@
     <clipPath id="asciiRow47">
         <rect
             x="30.00"
-            y="285.20"
+            y="284.20"
             width="0"
             height="6.80"
         >
@@ -1355,7 +1356,7 @@
 
     <text
         x="30.00"
-        y="289.40"
+        y="288.40"
         class="ascii"
         clip-path="url(#asciiRow47)"
     >                                   @#S&amp;@@@@@@@@52GHHHHM32Xri;;rsA2552Ar; M@@@@@@@@@9S&amp;                                  </text>
@@ -1363,7 +1364,7 @@
     <clipPath id="asciiRow48">
         <rect
             x="30.00"
-            y="290.00"
+            y="289.00"
             width="0"
             height="6.80"
         >
@@ -1380,7 +1381,7 @@
 
     <text
         x="30.00"
-        y="294.20"
+        y="293.20"
         class="ascii"
         clip-path="url(#asciiRow48)"
     >                                @#S&amp;@@@@@@@@@@@@shGHHHHMh32AXXA25522Asi.A@@@@@@@@@@@@@9SB                               </text>
@@ -1388,7 +1389,7 @@
     <clipPath id="asciiRow49">
         <rect
             x="30.00"
-            y="294.80"
+            y="293.80"
             width="0"
             height="6.80"
         >
@@ -1405,7 +1406,7 @@
 
     <text
         x="30.00"
-        y="299.00"
+        y="298.00"
         class="ascii"
         clip-path="url(#asciiRow49)"
     >                              9S&amp;@@@@@@@@@@@@@@@BrMHHMMMhhh32222222Asi;:&amp;@@@@@@@@@@@@@@@@BS&amp;                            </text>
@@ -1413,7 +1414,7 @@
     <clipPath id="asciiRow50">
         <rect
             x="30.00"
-            y="299.60"
+            y="298.60"
             width="0"
             height="6.80"
         >
@@ -1430,7 +1431,7 @@
 
     <text
         x="30.00"
-        y="303.80"
+        y="302.80"
         class="ascii"
         clip-path="url(#asciiRow50)"
     >                           BSB@@@@@@@@@@@@@@@@@@@MrMHHMMh3222AAAAAAsrr,M@@@@@@@@@@@@@@@@@@@@9#@                         </text>
@@ -1438,7 +1439,7 @@
     <clipPath id="asciiRow51">
         <rect
             x="30.00"
-            y="304.40"
+            y="303.40"
             width="0"
             height="6.80"
         >
@@ -1455,7 +1456,7 @@
 
     <text
         x="30.00"
-        y="308.60"
+        y="307.60"
         class="ascii"
         clip-path="url(#asciiRow51)"
     >                        &amp;S9@@@@@@@@@@@@@@@@@@@@@@@XXhHHHMM32222222Xsris@@@@@@@@@@@@@@@@@@@@@@@@#S&amp;                      </text>
@@ -1463,7 +1464,7 @@
     <clipPath id="asciiRow52">
         <rect
             x="30.00"
-            y="309.20"
+            y="308.20"
             width="0"
             height="6.80"
         >
@@ -1480,7 +1481,7 @@
 
     <text
         x="30.00"
-        y="313.40"
+        y="312.40"
         class="ascii"
         clip-path="url(#asciiRow52)"
     >                     &amp;S#@@@@@@@@@@@@@@@@@@@@@@#G9@@i2MHHMMMhh35552XXXrB@@##@@@@@@@@@@@@@@@@@@@@@@@BS&amp;                   </text>
@@ -1488,7 +1489,7 @@
     <clipPath id="asciiRow53">
         <rect
             x="30.00"
-            y="314.00"
+            y="313.00"
             width="0"
             height="6.80"
         >
@@ -1505,7 +1506,7 @@
 
     <text
         x="30.00"
-        y="318.20"
+        y="317.20"
         class="ascii"
         clip-path="url(#asciiRow53)"
     >                  &amp;S9@@@@@@@@@@@@@@@@@@@@@@@SGGHM#@#2hGSGHHHHHHMh355A#@@GhHHSB@@@@@@@@@@@@@@@@@@@@@@@##                 </text>
@@ -1513,7 +1514,7 @@
     <clipPath id="asciiRow54">
         <rect
             x="30.00"
-            y="318.80"
+            y="317.80"
             width="0"
             height="6.80"
         >
@@ -1530,7 +1531,7 @@
 
     <text
         x="30.00"
-        y="323.00"
+        y="322.00"
         class="ascii"
         clip-path="url(#asciiRow54)"
     >                #S@@@@@@@@@@@@@@@@@@@@@@@@#GGSB&amp;9#@@@#GS#SGS##SSGHHMB@@SG##SGS#@@@@@@@@@@@@@@@@@@@@@@@@BS&amp;              </text>
@@ -1538,7 +1539,7 @@
     <clipPath id="asciiRow55">
         <rect
             x="30.00"
-            y="323.60"
+            y="322.60"
             width="0"
             height="6.80"
         >
@@ -1555,7 +1556,7 @@
 
     <text
         x="30.00"
-        y="327.80"
+        y="326.80"
         class="ascii"
         clip-path="url(#asciiRow55)"
     >              SB@@@@@@@@@@@@@@@@@@@@@@@@&amp;BB&amp;@@@@@@@@@@@SGSSS###S#S#@@&amp;99B&amp;&amp;9BB@@@@@@@@@@@@@@@@@@@@@@@@@@@@S             </text>
@@ -1563,7 +1564,7 @@
     <clipPath id="asciiRow56">
         <rect
             x="30.00"
-            y="328.40"
+            y="327.40"
             width="0"
             height="6.80"
         >
@@ -1580,7 +1581,7 @@
 
     <text
         x="30.00"
-        y="332.60"
+        y="331.60"
         class="ascii"
         clip-path="url(#asciiRow56)"
     >            @G@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@BGS#S####9@@&amp;&amp;&amp;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@S            </text>
@@ -1588,7 +1589,7 @@
     <clipPath id="asciiRow57">
         <rect
             x="30.00"
-            y="333.20"
+            y="332.20"
             width="0"
             height="6.80"
         >
@@ -1605,7 +1606,7 @@
 
     <text
         x="30.00"
-        y="337.40"
+        y="336.40"
         class="ascii"
         clip-path="url(#asciiRow57)"
     >           @S@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@SG#S##&amp;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@S           </text>
@@ -1613,7 +1614,7 @@
     <clipPath id="asciiRow58">
         <rect
             x="30.00"
-            y="338.00"
+            y="337.00"
             width="0"
             height="6.80"
         >
@@ -1630,7 +1631,7 @@
 
     <text
         x="30.00"
-        y="342.20"
+        y="341.20"
         class="ascii"
         clip-path="url(#asciiRow58)"
     >           S@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#G#SB@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@S          </text>
@@ -1638,7 +1639,7 @@
     <clipPath id="asciiRow59">
         <rect
             x="30.00"
-            y="342.80"
+            y="341.80"
             width="0"
             height="6.80"
         >
@@ -1655,7 +1656,7 @@
 
     <text
         x="30.00"
-        y="347.00"
+        y="346.00"
         class="ascii"
         clip-path="url(#asciiRow59)"
     >          G@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@GMB@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@B         </text>
@@ -1663,7 +1664,7 @@
     <clipPath id="asciiRow60">
         <rect
             x="30.00"
-            y="347.60"
+            y="346.60"
             width="0"
             height="6.80"
         >
@@ -1680,7 +1681,7 @@
 
     <text
         x="30.00"
-        y="351.80"
+        y="350.80"
         class="ascii"
         clip-path="url(#asciiRow60)"
     >         B@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#         </text>
@@ -1688,7 +1689,7 @@
     <clipPath id="asciiRow61">
         <rect
             x="30.00"
-            y="352.40"
+            y="351.40"
             width="0"
             height="6.80"
         >
@@ -1705,7 +1706,7 @@
 
     <text
         x="30.00"
-        y="356.60"
+        y="355.60"
         class="ascii"
         clip-path="url(#asciiRow61)"
     >         #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@S        </text>
@@ -1713,7 +1714,7 @@
     <clipPath id="asciiRow62">
         <rect
             x="30.00"
-            y="357.20"
+            y="356.20"
             width="0"
             height="6.80"
         >
@@ -1730,7 +1731,7 @@
 
     <text
         x="30.00"
-        y="361.40"
+        y="360.40"
         class="ascii"
         clip-path="url(#asciiRow62)"
     >        G@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&amp;@       </text>
@@ -1738,7 +1739,7 @@
     <clipPath id="asciiRow63">
         <rect
             x="30.00"
-            y="362.00"
+            y="361.00"
             width="0"
             height="6.80"
         >
@@ -1755,7 +1756,7 @@
 
     <text
         x="30.00"
-        y="366.20"
+        y="365.20"
         class="ascii"
         clip-path="url(#asciiRow63)"
     >       @&amp;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@G       </text>
@@ -1763,7 +1764,7 @@
     <clipPath id="asciiRow64">
         <rect
             x="30.00"
-            y="366.80"
+            y="365.80"
             width="0"
             height="6.80"
         >
@@ -1780,7 +1781,7 @@
 
     <text
         x="30.00"
-        y="371.00"
+        y="370.00"
         class="ascii"
         clip-path="url(#asciiRow64)"
     >       G@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@      </text>
@@ -1788,7 +1789,7 @@
     <clipPath id="asciiRow65">
         <rect
             x="30.00"
-            y="371.60"
+            y="370.60"
             width="0"
             height="6.80"
         >
@@ -1805,7 +1806,7 @@
 
     <text
         x="30.00"
-        y="375.80"
+        y="374.80"
         class="ascii"
         clip-path="url(#asciiRow65)"
     >      &amp;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@G      </text>
@@ -1813,7 +1814,7 @@
     <clipPath id="asciiRow66">
         <rect
             x="30.00"
-            y="376.40"
+            y="375.40"
             width="0"
             height="6.80"
         >
@@ -1830,7 +1831,7 @@
 
     <text
         x="30.00"
-        y="380.60"
+        y="379.60"
         class="ascii"
         clip-path="url(#asciiRow66)"
     >      G@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@     </text>
@@ -1838,7 +1839,7 @@
     <clipPath id="asciiRow67">
         <rect
             x="30.00"
-            y="381.20"
+            y="380.20"
             width="0"
             height="6.80"
         >
@@ -1855,7 +1856,7 @@
 
     <text
         x="30.00"
-        y="385.40"
+        y="384.40"
         class="ascii"
         clip-path="url(#asciiRow67)"
     >     @&amp;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@S     </text>
@@ -1863,7 +1864,7 @@
     <clipPath id="asciiRow68">
         <rect
             x="30.00"
-            y="386.00"
+            y="385.00"
             width="0"
             height="6.80"
         >
@@ -1880,7 +1881,7 @@
 
     <text
         x="30.00"
-        y="390.20"
+        y="389.20"
         class="ascii"
         clip-path="url(#asciiRow68)"
     >     S@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#     </text>
@@ -1888,7 +1889,7 @@
     <clipPath id="asciiRow69">
         <rect
             x="30.00"
-            y="390.80"
+            y="389.80"
             width="0"
             height="6.80"
         >
@@ -1905,7 +1906,7 @@
 
     <text
         x="30.00"
-        y="395.00"
+        y="394.00"
         class="ascii"
         clip-path="url(#asciiRow69)"
     >     S@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&amp;@@@@@@@@@@@@    </text>
@@ -1913,7 +1914,7 @@
     <clipPath id="asciiRow70">
         <rect
             x="30.00"
-            y="395.60"
+            y="394.60"
             width="0"
             height="6.80"
         >
@@ -1930,7 +1931,7 @@
 
     <text
         x="30.00"
-        y="399.80"
+        y="398.80"
         class="ascii"
         clip-path="url(#asciiRow70)"
     >    @&amp;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@B@@@@@@@@@@@S    </text>
@@ -1938,7 +1939,7 @@
     <clipPath id="asciiRow71">
         <rect
             x="30.00"
-            y="400.40"
+            y="399.40"
             width="0"
             height="6.80"
         >
@@ -1955,7 +1956,7 @@
 
     <text
         x="30.00"
-        y="404.60"
+        y="403.60"
         class="ascii"
         clip-path="url(#asciiRow71)"
     >    #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@B@#@@@@@@@@@@@@S    </text>
@@ -1963,7 +1964,7 @@
     <clipPath id="asciiRow72">
         <rect
             x="30.00"
-            y="405.20"
+            y="404.20"
             width="0"
             height="6.80"
         >
@@ -1980,7 +1981,7 @@
 
     <text
         x="30.00"
-        y="409.40"
+        y="408.40"
         class="ascii"
         clip-path="url(#asciiRow72)"
     >    G@@@@@@@@@@@@@@@@@@@B@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&amp;B@@BB&amp;#@@@@@@@@@@@@B    </text>
@@ -1988,7 +1989,7 @@
     <clipPath id="asciiRow73">
         <rect
             x="30.00"
-            y="410.00"
+            y="409.00"
             width="0"
             height="6.80"
         >
@@ -2005,7 +2006,7 @@
 
     <text
         x="30.00"
-        y="414.20"
+        y="413.20"
         class="ascii"
         clip-path="url(#asciiRow73)"
     >    S@@@@@@@@@@@@@@@@@@&amp;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&amp;9@S&amp;H@@@@@@@@@@@@@@B   </text>
@@ -2013,7 +2014,7 @@
     <clipPath id="asciiRow74">
         <rect
             x="30.00"
-            y="414.80"
+            y="413.80"
             width="0"
             height="6.80"
         >
@@ -2030,7 +2031,7 @@
 
     <text
         x="30.00"
-        y="419.00"
+        y="418.00"
         class="ascii"
         clip-path="url(#asciiRow74)"
     >   @9@@@@@@@@@@@@@@@@&amp;@&amp;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@9&amp;9SG@@@@@@@@@@@@@@S   </text>
@@ -2038,7 +2039,7 @@
     <clipPath id="asciiRow75">
         <rect
             x="30.00"
-            y="419.60"
+            y="418.60"
             width="0"
             height="6.80"
         >
@@ -2055,7 +2056,7 @@
 
     <text
         x="30.00"
-        y="423.80"
+        y="422.80"
         class="ascii"
         clip-path="url(#asciiRow75)"
     >   B@@@@@@@@@@@@@@@@@9&amp;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@B9#h@@@@@@@@@@@@@@@G   </text>
@@ -2063,7 +2064,7 @@
     <clipPath id="asciiRow76">
         <rect
             x="30.00"
-            y="424.40"
+            y="423.40"
             width="0"
             height="6.80"
         >
@@ -2080,7 +2081,7 @@
 
     <text
         x="30.00"
-        y="428.60"
+        y="427.60"
         class="ascii"
         clip-path="url(#asciiRow76)"
     >   S@@@@@@@@@@@@@@&amp;@@SS@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@BGMS@@@@@@@@@@@@@@@S   </text>
@@ -2088,7 +2089,7 @@
     <clipPath id="asciiRow77">
         <rect
             x="30.00"
-            y="429.20"
+            y="428.20"
             width="0"
             height="6.80"
         >
@@ -2105,7 +2106,7 @@
 
     <text
         x="30.00"
-        y="433.40"
+        y="432.40"
         class="ascii"
         clip-path="url(#asciiRow77)"
     >   G@@@@@@@@@@@@@@@@@BM#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@HMh@@@@@@@@@@@@@@@@9   </text>
@@ -2117,8 +2118,8 @@
      ======================================================== -->
 
 <text
-    x="20"
-    y="462"
+    x="11"
+    y="470"
     class="prompt"
 >
     lokanathmeher19@github:~$ ./portrait.sh
