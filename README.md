@@ -1,3 +1,9 @@
+<!-- =========================================================
+     LOKANATH MEHER — GITHUB PROFILE README
+     ========================================================= -->
+
+<!-- ===================== WORDMARK ========================== -->
+
 <p align="center">
   <img
     src="./wordmark.svg"
@@ -8,43 +14,39 @@
 
 <br>
 
-<!-- =========================================================
-     PROFILE
-     ========================================================= -->
+<!-- ===================== PROFILE =========================== -->
 
-<table width="100%" border="0" cellspacing="0" cellpadding="8">
-<tr>
+<table width="100%" border="0" cellspacing="0" cellpadding="6">
+  <tr>
 
-<td width="50%" align="center" valign="middle">
+    <!-- LEFT: ASCII PORTRAIT -->
+    <td width="50%" align="center" valign="middle">
 
-  <img
-    src="./avi-ascii.svg"
-    width="420"
-    height="360"
-    alt="Lokanath Meher ASCII portrait"
-  />
+      <img
+        src="./avi-ascii.svg"
+        width="420"
+        alt="Lokanath Meher ASCII portrait"
+      />
 
-</td>
+    </td>
 
-<td width="50%" align="center" valign="middle">
+    <!-- RIGHT: INFO CARD -->
+    <td width="50%" align="center" valign="middle">
 
-  <img
-    src="./info-card.svg"
-    width="420"
-    height="360"
-    alt="Lokanath Meher profile information"
-  />
+      <img
+        src="./info-card.svg"
+        width="420"
+        alt="Lokanath Meher profile information"
+      />
 
-</td>
+    </td>
 
-</tr>
+  </tr>
 </table>
 
 <br>
 
-<!-- =========================================================
-     CONTRIBUTIONS
-     ========================================================= -->
+<!-- ================= CONTRIBUTIONS ========================= -->
 
 <p align="center">
   <code>lokanathmeher19@github ~ $ ./contributions.sh</code>
@@ -60,9 +62,7 @@
 
 <br>
 
-<!-- =========================================================
-     TECH STACK
-     ========================================================= -->
+<!-- ==================== TECH STACK ========================= -->
 
 <h2 align="center">Tech Stack</h2>
 
@@ -74,7 +74,7 @@
   />
 
   <img
-    src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white"
+    src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white"
     alt="C++"
   />
 
@@ -107,9 +107,7 @@
 
 <br>
 
-<!-- =========================================================
-     CONNECT
-     ========================================================= -->
+<!-- ==================== CONNECT ============================ -->
 
 <h2 align="center">Connect With Me</h2>
 
@@ -133,9 +131,7 @@
 
 <br>
 
-<!-- =========================================================
-     FOOTER
-     ========================================================= -->
+<!-- ====================== FOOTER ========================== -->
 
 <p align="center">
   <code>lokanathmeher19@github ~ $ ./links.sh</code>
