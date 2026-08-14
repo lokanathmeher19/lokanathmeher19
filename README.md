@@ -1,9 +1,3 @@
-<!-- =========================================================
-     LOKANATH MEHER — GITHUB PROFILE README
-     ========================================================= -->
-
-<!-- ===================== WORDMARK ========================== -->
-
 <p align="center">
   <img
     src="./wordmark.svg"
@@ -14,39 +8,27 @@
 
 <br>
 
-<!-- ===================== PROFILE =========================== -->
-
 <table width="100%" border="0" cellspacing="0" cellpadding="6">
   <tr>
-
-    <!-- LEFT: ASCII PORTRAIT -->
     <td width="50%" align="center" valign="middle">
-
       <img
         src="./avi-ascii.svg"
         width="420"
         alt="Lokanath Meher ASCII portrait"
       />
-
     </td>
 
-    <!-- RIGHT: INFO CARD -->
     <td width="50%" align="center" valign="middle">
-
       <img
         src="./info-card.svg"
         width="420"
         alt="Lokanath Meher profile information"
       />
-
     </td>
-
   </tr>
 </table>
 
 <br>
-
-<!-- ================= CONTRIBUTIONS ========================= -->
 
 <p align="center">
   <code>lokanathmeher19@github ~ $ ./contributions.sh</code>
@@ -62,12 +44,9 @@
 
 <br>
 
-<!-- ==================== TECH STACK ========================= -->
-
 <h2 align="center">Tech Stack</h2>
 
 <p align="center">
-
   <img
     src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"
     alt="Python"
@@ -102,17 +81,13 @@
     src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white"
     alt="MongoDB"
   />
-
 </p>
 
 <br>
 
-<!-- ==================== CONNECT ============================ -->
-
 <h2 align="center">Connect With Me</h2>
 
 <p align="center">
-
   <a href="https://github.com/lokanathmeher19">
     <img
       src="https://img.shields.io/badge/GitHub-lokanathmeher19-181717?style=for-the-badge&logo=github&logoColor=white"
@@ -126,12 +101,9 @@
       alt="LinkedIn"
     />
   </a>
-
 </p>
 
 <br>
-
-<!-- ====================== FOOTER ========================== -->
 
 <p align="center">
   <code>lokanathmeher19@github ~ $ ./links.sh</code>
