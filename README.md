@@ -38,24 +38,6 @@
 <br>
 
 <!-- =========================================================
-     CONTRIBUTIONS
-     ========================================================= -->
-
-<p align="center">
-  <code>lokanathmeher19@github ~ $ ./contributions.sh</code>
-</p>
-
-<p align="center">
-  <img
-    src="./contrib-heatmap.svg"
-    width="100%"
-    alt="GitHub contribution heatmap"
-  />
-</p>
-
-<br>
-
-<!-- =========================================================
      TECH STACK
      ========================================================= -->
 
