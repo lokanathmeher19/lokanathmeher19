@@ -1,33 +1,24 @@
-from pathlib import Path
-import json
 import os
-import sys
+import json
 import requests
-
-
-# ============================================================
-# CONFIG
-# ============================================================
+from datetime import datetime, timedelta, timezone
 
 USERNAME = "lokanathmeher19"
 
-ROOT = Path(__file__).resolve().parent.parent
+TOKEN = os.getenv("GITHUB_TOKEN")
 
-OUTPUT = ROOT / "data" / "contributions.json"
+if not TOKEN:
+    raise RuntimeError("GITHUB_TOKEN is not set")
 
-GITHUB_API = "https://api.github.com/graphql"
 
-
-# ============================================================
-# GRAPHQL QUERY
-# ============================================================
+API_URL = "https://api.github.com/graphql"
 
 QUERY = """
-query($login: String!) {
+query($login: String!, $from: DateTime!, $to: DateTime!) {
   user(login: $login) {
     login
 
-    contributionsCollection {
+    contributionsCollection(from: $from, to: $to) {
       contributionCalendar {
         totalContributions
 
@@ -45,103 +36,59 @@ query($login: String!) {
 """
 
 
-# ============================================================
-# MAIN
-# ============================================================
+def fetch_contributions():
 
-def main():
-
-    token = os.environ.get("GITHUB_TOKEN")
-
-    if not token:
-
-        print()
-        print("ERROR: GITHUB_TOKEN is not set.")
-        print()
-        print("PowerShell:")
-        print('$env:GITHUB_TOKEN="YOUR_GITHUB_TOKEN"')
-        print()
-        sys.exit(1)
-
-    print()
-    print("==========================================")
+    print("=" * 42)
     print(" GitHub Contribution Fetcher")
-    print("==========================================")
-    print()
+    print("=" * 42)
 
+    print()
     print(f"Username: {USERNAME}")
-    print("Fetching real GitHub contribution data...")
+    print("Fetching REAL GitHub contribution data...")
     print()
 
-    headers = {
-        "Authorization": f"Bearer {token}",
-        "Content-Type": "application/json",
-        "Accept": "application/json",
+    today = datetime.now(timezone.utc)
+
+    # GitHub profile calendar = approximately one year
+    start = today - timedelta(days=370)
+
+    variables = {
+        "login": USERNAME,
+        "from": start.isoformat(),
+        "to": today.isoformat(),
     }
 
-    payload = {
-        "query": QUERY,
-        "variables": {
-            "login": USERNAME
-        }
+    headers = {
+        "Authorization": f"Bearer {TOKEN}",
+        "Accept": "application/vnd.github+json",
+        "Content-Type": "application/json",
     }
 
     response = requests.post(
-        GITHUB_API,
+        API_URL,
+        json={
+            "query": QUERY,
+            "variables": variables,
+        },
         headers=headers,
-        json=payload,
-        timeout=30
+        timeout=30,
     )
 
-    if response.status_code != 200:
-
-        print(
-            f"ERROR: GitHub API returned HTTP {response.status_code}"
-        )
-
-        print(response.text)
-
-        sys.exit(1)
+    response.raise_for_status()
 
     result = response.json()
 
     if "errors" in result:
-
-        print("ERROR: GitHub GraphQL API error:")
-
-        for error in result["errors"]:
-            print(
-                error.get(
-                    "message",
-                    "Unknown error"
-                )
-            )
-
-        sys.exit(1)
+        print("GitHub GraphQL error:")
+        print(json.dumps(result["errors"], indent=2))
+        raise RuntimeError("GitHub API request failed")
 
     user = result["data"]["user"]
 
     if user is None:
+        raise RuntimeError(f"GitHub user '{USERNAME}' not found")
 
-        print(
-            f"ERROR: GitHub user '{USERNAME}' not found."
-        )
-
-        sys.exit(1)
-
-    calendar = (
-        user[
-            "contributionsCollection"
-        ][
-            "contributionCalendar"
-        ]
-    )
-
-    total = calendar["totalContributions"]
-
-    # --------------------------------------------------------
-    # Flatten GitHub calendar
-    # --------------------------------------------------------
+    calendar = user["contributionsCollection"]["contributionCalendar"]
 
     contributions = []
 
@@ -149,47 +96,44 @@ def main():
 
         for day in week["contributionDays"]:
 
-            contributions.append(
-                {
-                    "date": day["date"],
-                    "count": day["contributionCount"],
-                    "level": day["contributionLevel"],
-                }
-            )
+            contributions.append({
+                "date": day["date"],
+                "count": day["contributionCount"],
+                "level": day["contributionLevel"],
+            })
 
-    # --------------------------------------------------------
-    # Save data
-    # --------------------------------------------------------
-
-    OUTPUT.parent.mkdir(
-        parents=True,
-        exist_ok=True
-    )
-
-    output_data = {
+    data = {
         "username": USERNAME,
-        "total_contributions": total,
-        "contributions": contributions
+        "total_contributions": calendar["totalContributions"],
+        "updated_at": datetime.now(timezone.utc).isoformat(),
+        "contributions": contributions,
     }
 
-    OUTPUT.write_text(
-        json.dumps(
-            output_data,
-            indent=2
-        ),
+    os.makedirs("data", exist_ok=True)
+
+    output_file = "data/contributions.json"
+
+    with open(
+        output_file,
+        "w",
         encoding="utf-8"
-    )
+    ) as file:
+
+        json.dump(
+            data,
+            file,
+            indent=2
+        )
 
     print("SUCCESS!")
     print()
     print(f"Username: {USERNAME}")
-    print(f"Real contributions: {total}")
+    print(f"Real contributions: {calendar['totalContributions']}")
     print(f"Days downloaded: {len(contributions)}")
     print()
     print(f"Saved to:")
-    print(OUTPUT)
-    print()
+    print(os.path.abspath(output_file))
 
 
 if __name__ == "__main__":
-    main()
+    fetch_contributions()
