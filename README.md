@@ -2,110 +2,94 @@
      LOKANATH MEHER — GITHUB PROFILE README
      ========================================================= -->
 
-<p align="center">
+<!-- ==================== WORDMARK ==================== -->
 
+<p align="center">
   <img
     src="./wordmark.svg"
     width="850"
     alt="lokanathmeher19 terminal wordmark"
   />
-
 </p>
 
 <br>
 
-<!-- =========================================================
-     PROFILE SECTION
-     ========================================================= -->
+<!-- ==================== PROFILE ==================== -->
 
 <table width="100%" border="0" cellspacing="0" cellpadding="10">
-<tr>
+  <tr>
 
-<td width="50%" align="center">
+    <td width="50%" align="center">
+      <img
+        src="./avi-ascii.svg"
+        width="100%"
+        alt="ASCII portrait of Lokanath Meher"
+      />
+    </td>
 
-  <img
-    src="./avi-ascii.svg"
-    width="100%"
-    alt="ASCII portrait of Lokanath Meher"
-  />
+    <td width="50%" align="center">
 
-</td>
+      <h2>lokanathmeher19</h2>
 
-<td width="50%" align="center">
+      <p>
+        <b>CSE Student</b>
+      </p>
 
-  <h2>lokanathmeher19</h2>
+      <p>
+        Full-Stack Developer<br>
+        DevOps Enthusiast
+      </p>
 
-  <p>
-    <b>CSE Student</b>
-  </p>
+      <br>
 
-  <p>
-    Full-Stack Developer<br>
-    DevOps Enthusiast
-  </p>
+      <p>
+        <code>lokanathmeher19@github ~ $ whoami</code>
+      </p>
 
-  <br>
+      <p>
+        Python • C++ • JavaScript • React • Node.js
+      </p>
 
-  <p>
-    <code>lokanathmeher19@github ~ $ whoami</code>
-  </p>
+      <p>
+        MySQL • MongoDB • Git • GitHub • Linux
+      </p>
 
-  <p>
-    Python • C++ • JavaScript • React • Node.js
-  </p>
+    </td>
 
-  <p>
-    MySQL • MongoDB • Git • GitHub • Linux
-  </p>
-
-</td>
-
-</tr>
+  </tr>
 </table>
 
 <br>
 
-<!-- =========================================================
-     CONTRIBUTION HEATMAP
-     ========================================================= -->
+<!-- ==================== CONTRIBUTIONS ==================== -->
 
 <p align="center">
-
   <code>lokanathmeher19@github ~ $ ./contributions.sh</code>
-
 </p>
 
 <p align="center">
-
   <img
     src="./contrib-heatmap.svg"
     width="100%"
     alt="GitHub contribution heatmap"
   />
-
 </p>
 
 <br>
 
-<!-- =========================================================
-     INFO CARD
-     ========================================================= -->
+<!-- ==================== INFO CARD ==================== -->
 
 <p align="center">
-
   <img
     src="./info-card.svg"
     width="700"
     alt="Lokananth Meher profile information"
   />
-
 </p>
 
 <br>
 
-<!-- =========================================================
-     TECH STACK
-     ========================================================= -->
+<!-- ==================== TECH STACK ==================== -->
 
 <h2 align="center">Tech Stack</h2>
 
@@ -150,9 +134,7 @@
 
 <br>
 
-<!-- =========================================================
-     CONNECT
-     ========================================================= -->
+<!-- ==================== CONNECT ==================== -->
 
 <h2 align="center">Connect With Me</h2>
 
@@ -176,18 +158,12 @@
 
 <br>
 
-<!-- =========================================================
-     FOOTER
-     ========================================================= -->
+<!-- ==================== FOOTER ==================== -->
 
 <p align="center">
-
   <code>lokanathmeher19@github ~ $ ./links.sh</code>
-
 </p>
 
 <p align="center">
-
   <b>Building • Learning • Exploring</b>
-
 </p>
