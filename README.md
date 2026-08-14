@@ -128,33 +128,6 @@
 
 <p align="center">
   <b>Building • Learning • Exploring</b>
-</p>
-
-<!-- =========================================================
-     CONNECT
-     ========================================================= -->
-
-<h2 align="center">Connect With Me</h2>
-
-<p align="center">
-
-  <a href="https://github.com/lokanathmeher19">
-    <img
-      src="https://img.shields.io/badge/GitHub-lokanathmeher19-181717?style=for-the-badge&amp;logo=github&amp;logoColor=white"
-      alt="GitHub"
-    />
-  </a>
-
-  <a href="https://www.linkedin.com/in/lokanath-meher-a79506353/">
-    <img
-      src="https://img.shields.io/badge/LinkedIn-Lokanath%20Meher-0A66C2?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white"
-      alt="LinkedIn"
-    />
-  </a>
-
-</p>
-
-<br>
 
 <!-- =========================================================
      FOOTER
