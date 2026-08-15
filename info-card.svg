@@ -211,7 +211,7 @@ STACK
     font-size="12"
     fill="#d8dee9"
 >
-Python  •  C++  •  JavaScript  •  React  •  Node.js
+Python  •  C++  •  HTML  •  CSS  •  JavaScript  •  React  •  Node.js
 </text>
 
 
@@ -290,32 +290,6 @@ FOCUS
     fill="#d8dee9"
 >
 Full-Stack Development  •  DevOps
-</text>
-
-
-<!-- ========================================================
-     LOCATION
-     ======================================================== -->
-
-<text
-    x="32"
-    y="478"
-    font-family="Consolas, Courier New, monospace"
-    font-size="13"
-    font-weight="700"
-    fill="#d29922"
->
-LOCATION
-</text>
-
-<text
-    x="130"
-    y="478"
-    font-family="Consolas, Courier New, monospace"
-    font-size="12"
-    fill="#d8dee9"
->
-India
 </text>
 
 
