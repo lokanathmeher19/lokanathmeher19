@@ -14,9 +14,20 @@
 <!-- ========================= PROFILE ========================= -->
 <table width="100%">
 <tr>
-<td width="42%" align="center" valign="middle"><img src="./avi-ascii.svg" width="360" alt="Lokanath Meher ASCII portrait"></td>
-<td width="58%" align="center" valign="middle"><img src="./info-card.svg" width="520" alt="Lokanath Meher profile information"></td>
-</tr>
+<td width="42%" align="center" valign="middle">
+  <img
+    src="./avi-ascii.svg"
+    width="360"
+    alt="Lokanath Meher ASCII portrait"
+  />
+</td>
+<td width="58%" align="center" valign="middle">
+  <img
+    src="./info-card.svg"
+    width="520"
+    alt="Lokanath Meher profile information"
+  />
+</td>
 </table>
 
 <br>
