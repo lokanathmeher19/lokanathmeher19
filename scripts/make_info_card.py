@@ -14,11 +14,11 @@ NAME = "Lokanath Meher"
 USERNAME = "@lokanathmeher19"
 
 ROLE = "CSE Student  •  Full-Stack Developer  •  DevOps Enthusiast"
-STACK = "Python  •  C++  •  JavaScript  •  React  •  Node.js"
+STACK = "Python  •  C++  •  HTML  •  CSS  •  JavaScript  •  React  •  Node.js"
 TOOLS = "Git  •  GitHub  •  VS Code  •  Linux"
 DATABASE = "MySQL  •  MongoDB"
 FOCUS = "Full-Stack Development  •  DevOps"
-LOCATION = "India"
+
 
 
 # ============================================================
@@ -336,32 +336,6 @@ FOCUS
     fill="#d8dee9"
 >
 {esc(FOCUS)}
-</text>
-
-
-<!-- ========================================================
-     LOCATION
-     ======================================================== -->
-
-<text
-    x="32"
-    y="478"
-    font-family="Consolas, Courier New, monospace"
-    font-size="13"
-    font-weight="700"
-    fill="#d29922"
->
-LOCATION
-</text>
-
-<text
-    x="130"
-    y="478"
-    font-family="Consolas, Courier New, monospace"
-    font-size="12"
-    fill="#d8dee9"
->
-{esc(LOCATION)}
 </text>
 
 
