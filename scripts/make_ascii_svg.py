@@ -8,9 +8,7 @@ import html
 # ============================================================
 
 ROOT = Path(__file__).resolve().parent.parent
-DATA_DIR = ROOT / "data"
-
-INPUT = DATA_DIR / "source-prepped.png"
+INPUT = ROOT / "data" / "source-prepped.png"
 OUTPUT = ROOT / "avi-ascii.svg"
 
 
@@ -23,52 +21,67 @@ ASCII_HEIGHT = 78
 
 RAMP = " .,:;irsXA253hMHGS#9B&@"
 
-ALPHA_THRESHOLD = 15
-
 
 # ============================================================
-# SVG / TERMINAL SIZE
+# FINAL SVG SIZE
 # ============================================================
-
-# IMPORTANT:
-# SVG canvas and terminal are almost exactly the same size.
-# This removes the unwanted outer empty space.
 
 SVG_WIDTH = 480
 SVG_HEIGHT = 480
 
-WINDOW_X = 1
-WINDOW_Y = 1
 
-WINDOW_WIDTH = 478
-WINDOW_HEIGHT = 478
+# ============================================================
+# TERMINAL
+# ============================================================
 
-WINDOW_RADIUS = 15
+# IMPORTANT:
+# The terminal occupies the COMPLETE SVG canvas.
 
-TITLE_BAR_HEIGHT = 36
+CARD_X = 0
+CARD_Y = 0
+
+CARD_WIDTH = 480
+CARD_HEIGHT = 480
+
+CARD_RADIUS = 15
+
+TITLE_HEIGHT = 36
 
 
 # ============================================================
 # COLORS
 # ============================================================
 
-BACKGROUND = "#0d1117"
-TITLE_BACKGROUND = "#161b22"
+BG = "#0d1117"
+TITLE_BG = "#161b22"
 BORDER = "#30363d"
 
-TEXT_COLOR = "#d8dee9"
-MUTED_COLOR = "#8b949e"
+TEXT = "#d8dee9"
+MUTED = "#8b949e"
 
 
 # ============================================================
-# ASCII FONT
+# ASCII APPEARANCE
 # ============================================================
 
 FONT_SIZE = 4.2
 CHAR_WIDTH = 3.5
 LINE_HEIGHT = 4.8
 
+
+# ============================================================
+# IMAGE SETTINGS
+# ============================================================
+
 CONTRAST = 1.25
+
+
+# ============================================================
+# ESCAPE
+# ============================================================
+
+def esc(value):
+    return html.escape(value)
 
 
 # ============================================================
@@ -79,22 +92,15 @@ def main():
 
     if not INPUT.exists():
 
-        print()
-        print("ERROR: Image not found:")
-        print(INPUT)
-        print()
-
-        return
+        raise FileNotFoundError(
+            f"Image not found: {INPUT}"
+        )
 
 
     print()
     print("========================================")
-    print("       CREATING ASCII PORTRAIT")
+    print("       ASCII SVG GENERATOR")
     print("========================================")
-    print()
-
-    print(f"Input : {INPUT}")
-    print(f"Output: {OUTPUT}")
     print()
 
 
@@ -111,18 +117,13 @@ def main():
 
     if bbox is None:
 
-        print("ERROR: No visible subject detected.")
+        raise RuntimeError(
+            "No visible subject found in image."
+        )
 
-        return
 
-
-    # Remove transparent borders
+    # Remove transparent padding
     image = image.crop(bbox)
-
-    print(
-        f"Source image: "
-        f"{image.width} x {image.height}"
-    )
 
 
     # ========================================================
@@ -141,8 +142,7 @@ def main():
     # ========================================================
 
     gray = ImageOps.autocontrast(
-        gray,
-        cutoff=0
+        gray
     )
 
     gray = ImageEnhance.Contrast(
@@ -158,7 +158,7 @@ def main():
 
     gray = gray.filter(
         ImageFilter.UnsharpMask(
-            radius=1.1,
+            radius=1,
             percent=150,
             threshold=2
         )
@@ -166,30 +166,27 @@ def main():
 
 
     # ========================================================
-    # RESIZE
+    # RESIZE IMAGE
     # ========================================================
-
-    source_width = gray.width
-    source_height = gray.height
 
     target_height = ASCII_HEIGHT
 
     scale = (
         target_height
-        / source_height
+        / gray.height
     )
 
     target_width = int(
-        source_width
+        gray.width
         * scale
         * 1.72
     )
 
-    max_width = ASCII_WIDTH - 6
 
+    # Keep some horizontal margin
     target_width = min(
         target_width,
-        max_width
+        ASCII_WIDTH - 10
     )
 
 
@@ -214,7 +211,7 @@ def main():
     # ASCII CANVAS
     # ========================================================
 
-    canvas_gray = Image.new(
+    gray_canvas = Image.new(
         "L",
         (
             ASCII_WIDTH,
@@ -223,7 +220,7 @@ def main():
         255
     )
 
-    canvas_alpha = Image.new(
+    alpha_canvas = Image.new(
         "L",
         (
             ASCII_WIDTH,
@@ -237,37 +234,35 @@ def main():
     # CENTER IMAGE
     # ========================================================
 
-    offset_x = (
+    x_offset = (
         ASCII_WIDTH
         - target_width
     ) // 2
 
-    offset_y = 0
 
-
-    canvas_gray.paste(
+    gray_canvas.paste(
         gray,
         (
-            offset_x,
-            offset_y
+            x_offset,
+            0
         )
     )
 
-    canvas_alpha.paste(
+    alpha_canvas.paste(
         alpha,
         (
-            offset_x,
-            offset_y
+            x_offset,
+            0
         )
     )
 
 
     # ========================================================
-    # CONVERT IMAGE TO ASCII
+    # GENERATE ASCII
     # ========================================================
 
-    gray_pixels = canvas_gray.load()
-    alpha_pixels = canvas_alpha.load()
+    pixels = gray_canvas.load()
+    alpha_pixels = alpha_canvas.load()
 
     rows = []
 
@@ -281,54 +276,17 @@ def main():
             a = alpha_pixels[x, y]
 
 
-            # Transparent
-            if a < ALPHA_THRESHOLD:
+            if a < 15:
 
                 row.append(" ")
 
                 continue
 
 
-            brightness = gray_pixels[x, y]
+            brightness = pixels[x, y]
 
 
-            # Smooth transparent edges
-            if a < 220:
-
-                brightness = (
-                    brightness
-                    * (a / 255)
-                    +
-                    255
-                    * (1 - a / 255)
-                )
-
-
-            normalized = (
-                brightness / 255.0
-            )
-
-
-            # Contrast
-            normalized = (
-                normalized - 0.5
-            ) * 1.28 + 0.5
-
-
-            normalized = max(
-                0.0,
-                min(
-                    1.0,
-                    normalized
-                )
-            )
-
-
-            brightness = (
-                normalized * 255
-            )
-
-
+            # Convert brightness to ASCII
             index = int(
                 brightness
                 / 256
@@ -356,49 +314,43 @@ def main():
 
 
     # ========================================================
-    # FIND SUBJECT
+    # FIND SUBJECT BOUNDING BOX
     # ========================================================
 
-    visible_columns = []
+    left = ASCII_WIDTH
+    right = 0
+    top = ASCII_HEIGHT
+    bottom = 0
 
 
-    for x in range(ASCII_WIDTH):
+    for y, row in enumerate(rows):
 
-        for y in range(ASCII_HEIGHT):
+        for x, char in enumerate(row):
 
-            if rows[y][x] != " ":
+            if char != " ":
 
-                visible_columns.append(x)
+                left = min(left, x)
+                right = max(right, x)
 
-                break
-
-
-    if not visible_columns:
-
-        print("ERROR: ASCII subject is empty.")
-
-        return
+                top = min(top, y)
+                bottom = max(bottom, y)
 
 
-    subject_left = min(
-        visible_columns
-    )
+    if left > right:
 
-    subject_right = max(
-        visible_columns
-    )
+        raise RuntimeError(
+            "ASCII image is empty."
+        )
 
+
+    # ========================================================
+    # CENTER SUBJECT HORIZONTALLY
+    # ========================================================
 
     subject_width = (
-        subject_right
-        - subject_left
-        + 1
+        right - left + 1
     )
 
-
-    # ========================================================
-    # CENTER SUBJECT
-    # ========================================================
 
     desired_left = (
         ASCII_WIDTH
@@ -406,30 +358,27 @@ def main():
     ) // 2
 
 
-    shift_x = (
-        desired_left
-        - subject_left
+    shift = (
+        desired_left - left
     )
 
 
-    centered_rows = []
+    new_rows = []
 
 
     for row in rows:
 
-        if shift_x > 0:
+        if shift > 0:
 
             row = (
-                " " * shift_x
-                + row[
-                    :ASCII_WIDTH - shift_x
-                ]
+                " " * shift
+                + row[:ASCII_WIDTH - shift]
             )
 
 
-        elif shift_x < 0:
+        elif shift < 0:
 
-            amount = abs(shift_x)
+            amount = abs(shift)
 
             row = (
                 row[amount:]
@@ -437,16 +386,14 @@ def main():
             )
 
 
-        centered_rows.append(
-            row
-        )
+        new_rows.append(row)
 
 
-    rows = centered_rows
+    rows = new_rows
 
 
     # ========================================================
-    # PORTRAIT DIMENSIONS
+    # SVG ASCII DIMENSIONS
     # ========================================================
 
     portrait_width = (
@@ -461,37 +408,36 @@ def main():
 
 
     # ========================================================
-    # AVAILABLE TERMINAL AREA
+    # AVAILABLE AREA
     # ========================================================
 
-    CONTENT_TOP_MARGIN = 12
-    CONTENT_BOTTOM_MARGIN = 28
+    # Card content starts below title bar.
+    # Keep equal padding around portrait.
 
-    content_top = (
-        TITLE_BAR_HEIGHT
-        + CONTENT_TOP_MARGIN
-    )
+    LEFT_PADDING = 18
+    RIGHT_PADDING = 18
 
-    content_bottom = (
-        WINDOW_HEIGHT
-        - CONTENT_BOTTOM_MARGIN
-    )
-
-    content_height = (
-        content_bottom
-        - content_top
-    )
+    TOP_PADDING = 12
+    BOTTOM_PADDING = 24
 
 
     available_width = (
-        WINDOW_WIDTH - 24
+        CARD_WIDTH
+        - LEFT_PADDING
+        - RIGHT_PADDING
     )
 
-    available_height = content_height
+
+    available_height = (
+        CARD_HEIGHT
+        - TITLE_HEIGHT
+        - TOP_PADDING
+        - BOTTOM_PADDING
+    )
 
 
     # ========================================================
-    # FIT PORTRAIT
+    # SCALE TO FIT
     # ========================================================
 
     scale_x = (
@@ -505,130 +451,124 @@ def main():
     )
 
 
-    fit_scale = min(
-        1.0,
+    scale = min(
         scale_x,
         scale_y
     )
 
 
-    final_portrait_width = (
+    final_width = (
         portrait_width
-        * fit_scale
+        * scale
     )
 
-    final_portrait_height = (
+    final_height = (
         portrait_height
-        * fit_scale
+        * scale
     )
 
 
     # ========================================================
-    # CENTER PORTRAIT IN TERMINAL
+    # CENTER PORTRAIT
     # ========================================================
 
     start_x = (
-        WINDOW_X
+        CARD_X
         + (
-            WINDOW_WIDTH
-            - final_portrait_width
+            CARD_WIDTH
+            - final_width
         ) / 2
     )
 
 
+    content_top = (
+        TITLE_HEIGHT
+        + TOP_PADDING
+    )
+
+
     start_y = (
-        WINDOW_Y
-        + content_top
+        content_top
         + (
-            content_height
-            - final_portrait_height
+            available_height
+            - final_height
         ) / 2
     )
 
 
     final_font_size = (
         FONT_SIZE
-        * fit_scale
+        * scale
     )
 
 
     final_line_height = (
         LINE_HEIGHT
-        * fit_scale
-    )
-
-
-    print()
-    print(
-        f"SVG Canvas : "
-        f"{SVG_WIDTH} x {SVG_HEIGHT}"
-    )
-
-    print(
-        f"Terminal   : "
-        f"{WINDOW_WIDTH} x {WINDOW_HEIGHT}"
-    )
-
-    print(
-        f"Portrait   : "
-        f"{final_portrait_width:.1f} x "
-        f"{final_portrait_height:.1f}"
-    )
-
-    print(
-        f"Scale      : "
-        f"{fit_scale:.3f}"
+        * scale
     )
 
 
     # ========================================================
-    # CREATE ANIMATED ROWS
+    # ANIMATED ROWS
     # ========================================================
 
-    svg_rows = []
+    animated_rows = []
 
 
-    for row_number, row in enumerate(rows):
-
-        safe_row = html.escape(row)
+    for index, row in enumerate(rows):
 
         y = (
             start_y
-            + row_number
+            + index
             * final_line_height
         )
 
 
+        safe_row = esc(row)
+
+
         clip_id = (
-            f"asciiRow{row_number}"
+            f"rowClip{index}"
         )
 
 
         delay = (
-            row_number
-            * 0.018
+            index * 0.018
         )
 
 
-        svg_rows.append(
+        animated_rows.append(
             f"""
     <clipPath id="{clip_id}">
+
         <rect
             x="{start_x:.2f}"
             y="{y - final_font_size:.2f}"
             width="0"
             height="{final_line_height + 2:.2f}"
         >
+
             <animate
                 attributeName="width"
-                from="0"
-                to="{final_portrait_width:.2f}"
+                values="
+                    0;
+                    {final_width:.2f};
+                    {final_width:.2f}
+                "
+                keyTimes="
+                    0;
+                    0.25;
+                    1
+                "
                 begin="{delay:.3f}s"
-                dur="0.42s"
-                fill="freeze"
+                dur="3s"
+                repeatCount="indefinite"
             />
+
         </rect>
+
     </clipPath>
+
 
     <text
         x="{start_x:.2f}"
@@ -641,7 +581,7 @@ def main():
 
 
     # ========================================================
-    # SVG
+    # COMPLETE SVG
     # ========================================================
 
     svg = f"""<?xml version="1.0" encoding="UTF-8"?>
@@ -651,19 +591,57 @@ def main():
     width="{SVG_WIDTH}"
     height="{SVG_HEIGHT}"
     viewBox="0 0 {SVG_WIDTH} {SVG_HEIGHT}"
+    preserveAspectRatio="xMidYMid meet"
 >
+
+<style>
+
+.ascii {{
+    font-family:
+        "Courier New",
+        Consolas,
+        monospace;
+
+    font-size:
+        {final_font_size:.2f}px;
+
+    font-weight:
+        700;
+
+    fill:
+        {TEXT};
+
+    white-space:
+        pre;
+}}
+
+.prompt {{
+    font-family:
+        "Courier New",
+        Consolas,
+        monospace;
+
+    font-size:
+        6px;
+
+    fill:
+        {MUTED};
+}}
+
+</style>
+
 
 <!-- ========================================================
      TERMINAL CARD
      ======================================================== -->
 
 <rect
-    x="{WINDOW_X}"
-    y="{WINDOW_Y}"
-    width="{WINDOW_WIDTH}"
-    height="{WINDOW_HEIGHT}"
-    rx="{WINDOW_RADIUS}"
-    fill="{BACKGROUND}"
+    x="1"
+    y="1"
+    width="478"
+    height="478"
+    rx="{CARD_RADIUS}"
+    fill="{BG}"
     stroke="{BORDER}"
     stroke-width="2"
 />
@@ -675,44 +653,28 @@ def main():
 
 <path
     d="
-        M {WINDOW_X + WINDOW_RADIUS}
-          {WINDOW_Y}
-
-        H {WINDOW_X + WINDOW_WIDTH - WINDOW_RADIUS}
-
-        Q {WINDOW_X + WINDOW_WIDTH}
-          {WINDOW_Y}
-
-          {WINDOW_X + WINDOW_WIDTH}
-          {WINDOW_Y + WINDOW_RADIUS}
-
-        V {WINDOW_Y + TITLE_BAR_HEIGHT}
-
-        H {WINDOW_X}
-
-        V {WINDOW_Y + WINDOW_RADIUS}
-
-        Q {WINDOW_X}
-          {WINDOW_Y}
-
-          {WINDOW_X + WINDOW_RADIUS}
-          {WINDOW_Y}
-
+        M 16 1
+        H 464
+        Q 479 1 479 16
+        V 36
+        H 1
+        V 16
+        Q 1 1 16 1
         Z
     "
-    fill="{TITLE_BACKGROUND}"
+    fill="{TITLE_BG}"
 />
 
 
 <!-- ========================================================
-     TITLE SEPARATOR
+     TITLE LINE
      ======================================================== -->
 
 <line
-    x1="{WINDOW_X}"
-    y1="{WINDOW_Y + TITLE_BAR_HEIGHT}"
-    x2="{WINDOW_X + WINDOW_WIDTH}"
-    y2="{WINDOW_Y + TITLE_BAR_HEIGHT}"
+    x1="1"
+    y1="36"
+    x2="479"
+    y2="36"
     stroke="{BORDER}"
     stroke-width="1"
 />
@@ -723,22 +685,22 @@ def main():
      ======================================================== -->
 
 <circle
-    cx="{WINDOW_X + 18}"
-    cy="{WINDOW_Y + 18}"
+    cx="19"
+    cy="19"
     r="4"
     fill="#ff5f56"
 />
 
 <circle
-    cx="{WINDOW_X + 35}"
-    cy="{WINDOW_Y + 18}"
+    cx="35"
+    cy="19"
     r="4"
     fill="#ffbd2e"
 />
 
 <circle
-    cx="{WINDOW_X + 52}"
-    cy="{WINDOW_Y + 18}"
+    cx="51"
+    cy="19"
     r="4"
     fill="#27c93f"
 />
@@ -749,73 +711,32 @@ def main():
      ======================================================== -->
 
 <text
-    x="{WINDOW_X + WINDOW_WIDTH / 2}"
-    y="{WINDOW_Y + 22}"
-    font-family="Consolas, 'Courier New', monospace"
-    font-size="7px"
-    font-weight="600"
-    fill="{MUTED_COLOR}"
+    x="240"
+    y="22"
     text-anchor="middle"
+    font-family="Consolas, 'Courier New', monospace"
+    font-size="7"
+    font-weight="600"
+    fill="{MUTED}"
 >
     lokanath@github: ~
 </text>
 
 
 <!-- ========================================================
-     ASCII STYLE
-     ======================================================== -->
-
-<style>
-
-.ascii {{
-    font-family:
-        "Courier New",
-        "Consolas",
-        monospace;
-
-    font-size:
-        {final_font_size:.2f}px;
-
-    font-weight:
-        700;
-
-    fill:
-        {TEXT_COLOR};
-
-    white-space:
-        pre;
-}}
-
-.prompt {{
-    font-family:
-        "Courier New",
-        "Consolas",
-        monospace;
-
-    font-size:
-        6px;
-
-    fill:
-        {MUTED_COLOR};
-}}
-
-</style>
-
-
-<!-- ========================================================
      ASCII PORTRAIT
      ======================================================== -->
 
-{''.join(svg_rows)}
+{''.join(animated_rows)}
 
 
 <!-- ========================================================
-     TERMINAL PROMPT
+     PROMPT
      ======================================================== -->
 
 <text
-    x="{WINDOW_X + 10}"
-    y="{WINDOW_Y + WINDOW_HEIGHT - 9}"
+    x="10"
+    y="470"
     class="prompt"
 >
     lokanathmeher19@github:~$ ./portrait.sh
@@ -836,15 +757,42 @@ def main():
     )
 
 
+    # ========================================================
+    # RESULT
+    # ========================================================
+
     print()
     print("========================================")
-    print("       ASCII SVG CREATED SUCCESSFULLY")
+    print("       SUCCESS")
     print("========================================")
     print()
-    print(f"Output: {OUTPUT}")
-    print("Card: FIXED TO SVG CANVAS")
-    print("Portrait: FITTED + CENTERED")
-    print("Animation: ROW-BY-ROW")
+
+    print(
+        f"Output: {OUTPUT}"
+    )
+
+    print(
+        f"SVG: {SVG_WIDTH} x {SVG_HEIGHT}"
+    )
+
+    print(
+        f"Terminal: {CARD_WIDTH} x {CARD_HEIGHT}"
+    )
+
+    print(
+        f"Portrait: {final_width:.1f} x "
+        f"{final_height:.1f}"
+    )
+
+    print(
+        f"Scale: {scale:.3f}"
+    )
+
+    print()
+    print("Terminal fills the SVG canvas.")
+    print("No outer canvas padding.")
+    print("Portrait is centered.")
+    print("Animation repeats every 3 seconds.")
     print()
 
 
