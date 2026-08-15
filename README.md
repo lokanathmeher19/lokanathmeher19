@@ -61,6 +61,52 @@
 
 <br>
 
+<!-- =========================================================
+     GITHUB ANALYTICS
+     ========================================================= -->
+
+<h2>📊 GitHub Analytics</h2>
+
+<p align="center">
+
+  <img
+    src="https://github-readme-stats.vercel.app/api?username=lokanathmeher19&show_icons=true&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=8B949E&icon_color=3FB950&rank_icon=github"
+    alt="GitHub Stats"
+    width="100%"
+  />
+
+</p>
+
+<br>
+
+<p align="center">
+
+  <img
+    src="https://github-readme-activity-graph.vercel.app/graph?username=lokanathmeher19&bg_color=0D1117&color=8B949E&line=58A6FF&point=3FB950&area=true&hide_border=true"
+    alt="GitHub Activity Graph"
+    width="100%"
+  />
+
+</p>
+
+<br>
+
+<p align="center">
+
+  <img
+    src="https://streak-stats.demolab.com/?user=lokanathmeher19&theme=dark&hide_border=true&background=0D1117&ring=58A6FF&fire=F0883E&currStreakLabel=58A6FF&sideLabels=8B949E&currStreakNum=F0F6FC&sideNums=F0F6FC&dates=8B949E"
+    alt="GitHub Streak"
+    width="100%"
+  />
+
+</p>
+
+<br>
+
+<hr>
+
+<br>
+
 <!-- ========================= CONNECT ========================= -->
 
 <h2 align="center">Connect With Me</h2>
