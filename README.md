@@ -68,23 +68,6 @@
 <h2>📊 GitHub Analytics</h2>
 
 <p align="center">
-
-  <img
-    src="https://github-readme-stats.vercel.app/api?username=lokanathmeher19&show_icons=true&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=8B949E&icon_color=3FB950&rank_icon=github"
-    alt="GitHub Stats"
-    width="100%"
-  />
-
-</p>
-
-<br>
-<!-- =========================================================
-     GITHUB ANALYTICS
-     ========================================================= -->
-
-<h2>📊 GitHub Analytics</h2>
-
-<p align="center">
   <img
     src="https://github-readme-activity-graph.vercel.app/graph?username=lokanathmeher19&bg_color=0D1117&color=8B949E&line=58A6FF&point=3FB950&area=true&hide_border=true"
     alt="GitHub Activity Graph"
