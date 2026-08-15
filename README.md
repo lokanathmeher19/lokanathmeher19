@@ -11,11 +11,7 @@
     alt="lokanathmeher19 terminal wordmark"
   />
 </p>
-
-<br>
-
 <!-- ========================= PROFILE ========================= -->
-
 <table width="100%">
 <tr>
 <td width="42%" align="center" valign="middle"><img src="./avi-ascii.svg" width="360" alt="Lokanath Meher ASCII portrait"></td>
