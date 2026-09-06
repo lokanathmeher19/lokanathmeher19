@@ -71,19 +71,11 @@
     y="63"
     class="terminal month"
 >
-    Aug
-</text>
-
-<text
-    x="75"
-    y="63"
-    class="terminal month"
->
     Sep
 </text>
 
 <text
-    x="155"
+    x="135"
     y="63"
     class="terminal month"
 >
@@ -91,7 +83,7 @@
 </text>
 
 <text
-    x="235"
+    x="215"
     y="63"
     class="terminal month"
 >
@@ -99,7 +91,7 @@
 </text>
 
 <text
-    x="335"
+    x="315"
     y="63"
     class="terminal month"
 >
@@ -107,7 +99,7 @@
 </text>
 
 <text
-    x="415"
+    x="395"
     y="63"
     class="terminal month"
 >
@@ -115,7 +107,7 @@
 </text>
 
 <text
-    x="495"
+    x="475"
     y="63"
     class="terminal month"
 >
@@ -123,7 +115,7 @@
 </text>
 
 <text
-    x="575"
+    x="555"
     y="63"
     class="terminal month"
 >
@@ -131,7 +123,7 @@
 </text>
 
 <text
-    x="675"
+    x="655"
     y="63"
     class="terminal month"
 >
@@ -139,7 +131,7 @@
 </text>
 
 <text
-    x="755"
+    x="735"
     y="63"
     class="terminal month"
 >
@@ -147,7 +139,7 @@
 </text>
 
 <text
-    x="855"
+    x="835"
     y="63"
     class="terminal month"
 >
@@ -155,7 +147,7 @@
 </text>
 
 <text
-    x="935"
+    x="915"
     y="63"
     class="terminal month"
 >
@@ -163,11 +155,19 @@
 </text>
 
 <text
-    x="1015"
+    x="995"
     y="63"
     class="terminal month"
 >
     Aug
+</text>
+
+<text
+    x="1095"
+    y="63"
+    class="terminal month"
+>
+    Sep
 </text>
 
 <text
@@ -226,7 +226,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-08-31: 0 contributions</title>
+    <title>2025-09-07: 0 contributions</title>
 </rect>
 
 <rect
@@ -237,7 +237,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-09-07: 0 contributions</title>
+    <title>2025-09-14: 0 contributions</title>
 </rect>
 
 <rect
@@ -248,7 +248,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-09-14: 0 contributions</title>
+    <title>2025-09-21: 0 contributions</title>
 </rect>
 
 <rect
@@ -259,7 +259,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-09-21: 0 contributions</title>
+    <title>2025-09-28: 0 contributions</title>
 </rect>
 
 <rect
@@ -270,7 +270,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-09-28: 0 contributions</title>
+    <title>2025-10-05: 0 contributions</title>
 </rect>
 
 <rect
@@ -281,7 +281,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-10-05: 0 contributions</title>
+    <title>2025-10-12: 0 contributions</title>
 </rect>
 
 <rect
@@ -292,7 +292,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-10-12: 0 contributions</title>
+    <title>2025-10-19: 0 contributions</title>
 </rect>
 
 <rect
@@ -303,7 +303,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-10-19: 0 contributions</title>
+    <title>2025-10-26: 0 contributions</title>
 </rect>
 
 <rect
@@ -314,7 +314,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-10-26: 0 contributions</title>
+    <title>2025-11-02: 0 contributions</title>
 </rect>
 
 <rect
@@ -325,7 +325,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-11-02: 0 contributions</title>
+    <title>2025-11-09: 0 contributions</title>
 </rect>
 
 <rect
@@ -336,7 +336,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-11-09: 0 contributions</title>
+    <title>2025-11-16: 0 contributions</title>
 </rect>
 
 <rect
@@ -347,7 +347,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-11-16: 0 contributions</title>
+    <title>2025-11-23: 0 contributions</title>
 </rect>
 
 <rect
@@ -358,7 +358,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-11-23: 0 contributions</title>
+    <title>2025-11-30: 0 contributions</title>
 </rect>
 
 <rect
@@ -369,7 +369,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-11-30: 0 contributions</title>
+    <title>2025-12-07: 0 contributions</title>
 </rect>
 
 <rect
@@ -380,7 +380,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-12-07: 0 contributions</title>
+    <title>2025-12-14: 0 contributions</title>
 </rect>
 
 <rect
@@ -391,7 +391,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-12-14: 0 contributions</title>
+    <title>2025-12-21: 0 contributions</title>
 </rect>
 
 <rect
@@ -402,7 +402,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-12-21: 0 contributions</title>
+    <title>2025-12-28: 0 contributions</title>
 </rect>
 
 <rect
@@ -413,7 +413,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-12-28: 0 contributions</title>
+    <title>2026-01-04: 0 contributions</title>
 </rect>
 
 <rect
@@ -424,7 +424,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2026-01-04: 0 contributions</title>
+    <title>2026-01-11: 0 contributions</title>
 </rect>
 
 <rect
@@ -435,7 +435,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2026-01-11: 0 contributions</title>
+    <title>2026-01-18: 0 contributions</title>
 </rect>
 
 <rect
@@ -446,7 +446,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2026-01-18: 0 contributions</title>
+    <title>2026-01-25: 0 contributions</title>
 </rect>
 
 <rect
@@ -457,7 +457,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2026-01-25: 0 contributions</title>
+    <title>2026-02-01: 0 contributions</title>
 </rect>
 
 <rect
@@ -468,7 +468,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2026-02-01: 0 contributions</title>
+    <title>2026-02-08: 0 contributions</title>
 </rect>
 
 <rect
@@ -479,7 +479,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2026-02-08: 0 contributions</title>
+    <title>2026-02-15: 0 contributions</title>
 </rect>
 
 <rect
@@ -490,22 +490,11 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2026-02-15: 0 contributions</title>
-</rect>
-
-<rect
-    x="555"
-    y="85"
-    width="16"
-    height="16"
-    rx="4"
-    fill="#161b22"
->
     <title>2026-02-22: 0 contributions</title>
 </rect>
 
 <rect
-    x="575"
+    x="555"
     y="85"
     width="16"
     height="16"
@@ -516,7 +505,7 @@
 </rect>
 
 <rect
-    x="595"
+    x="575"
     y="85"
     width="16"
     height="16"
@@ -527,7 +516,7 @@
 </rect>
 
 <rect
-    x="615"
+    x="595"
     y="85"
     width="16"
     height="16"
@@ -538,7 +527,7 @@
 </rect>
 
 <rect
-    x="635"
+    x="615"
     y="85"
     width="16"
     height="16"
@@ -549,7 +538,7 @@
 </rect>
 
 <rect
-    x="655"
+    x="635"
     y="85"
     width="16"
     height="16"
@@ -560,7 +549,7 @@
 </rect>
 
 <rect
-    x="675"
+    x="655"
     y="85"
     width="16"
     height="16"
@@ -571,7 +560,7 @@
 </rect>
 
 <rect
-    x="695"
+    x="675"
     y="85"
     width="16"
     height="16"
@@ -582,7 +571,7 @@
 </rect>
 
 <rect
-    x="715"
+    x="695"
     y="85"
     width="16"
     height="16"
@@ -593,7 +582,7 @@
 </rect>
 
 <rect
-    x="735"
+    x="715"
     y="85"
     width="16"
     height="16"
@@ -604,7 +593,7 @@
 </rect>
 
 <rect
-    x="755"
+    x="735"
     y="85"
     width="16"
     height="16"
@@ -615,7 +604,7 @@
 </rect>
 
 <rect
-    x="775"
+    x="755"
     y="85"
     width="16"
     height="16"
@@ -626,7 +615,7 @@
 </rect>
 
 <rect
-    x="795"
+    x="775"
     y="85"
     width="16"
     height="16"
@@ -637,7 +626,7 @@
 </rect>
 
 <rect
-    x="815"
+    x="795"
     y="85"
     width="16"
     height="16"
@@ -648,7 +637,7 @@
 </rect>
 
 <rect
-    x="835"
+    x="815"
     y="85"
     width="16"
     height="16"
@@ -659,7 +648,7 @@
 </rect>
 
 <rect
-    x="855"
+    x="835"
     y="85"
     width="16"
     height="16"
@@ -670,7 +659,7 @@
 </rect>
 
 <rect
-    x="875"
+    x="855"
     y="85"
     width="16"
     height="16"
@@ -681,7 +670,7 @@
 </rect>
 
 <rect
-    x="895"
+    x="875"
     y="85"
     width="16"
     height="16"
@@ -692,7 +681,7 @@
 </rect>
 
 <rect
-    x="915"
+    x="895"
     y="85"
     width="16"
     height="16"
@@ -703,7 +692,7 @@
 </rect>
 
 <rect
-    x="935"
+    x="915"
     y="85"
     width="16"
     height="16"
@@ -714,7 +703,7 @@
 </rect>
 
 <rect
-    x="955"
+    x="935"
     y="85"
     width="16"
     height="16"
@@ -725,7 +714,7 @@
 </rect>
 
 <rect
-    x="975"
+    x="955"
     y="85"
     width="16"
     height="16"
@@ -736,7 +725,7 @@
 </rect>
 
 <rect
-    x="995"
+    x="975"
     y="85"
     width="16"
     height="16"
@@ -747,7 +736,7 @@
 </rect>
 
 <rect
-    x="1015"
+    x="995"
     y="85"
     width="16"
     height="16"
@@ -758,7 +747,7 @@
 </rect>
 
 <rect
-    x="1035"
+    x="1015"
     y="85"
     width="16"
     height="16"
@@ -769,7 +758,7 @@
 </rect>
 
 <rect
-    x="1055"
+    x="1035"
     y="85"
     width="16"
     height="16"
@@ -780,7 +769,7 @@
 </rect>
 
 <rect
-    x="1075"
+    x="1055"
     y="85"
     width="16"
     height="16"
@@ -791,7 +780,7 @@
 </rect>
 
 <rect
-    x="1095"
+    x="1075"
     y="85"
     width="16"
     height="16"
@@ -799,6 +788,17 @@
     fill="#0e4429"
 >
     <title>2026-08-30: 6 contributions</title>
+</rect>
+
+<rect
+    x="1095"
+    y="85"
+    width="16"
+    height="16"
+    rx="4"
+    fill="#0e4429"
+>
+    <title>2026-09-06: 1 contributions</title>
 </rect>
 
 </g>
@@ -835,7 +835,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-09-01: 0 contributions</title>
+    <title>2025-09-08: 0 contributions</title>
 </rect>
 
 <rect
@@ -846,7 +846,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-09-08: 0 contributions</title>
+    <title>2025-09-15: 0 contributions</title>
 </rect>
 
 <rect
@@ -857,7 +857,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-09-15: 0 contributions</title>
+    <title>2025-09-22: 0 contributions</title>
 </rect>
 
 <rect
@@ -868,7 +868,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-09-22: 0 contributions</title>
+    <title>2025-09-29: 0 contributions</title>
 </rect>
 
 <rect
@@ -879,7 +879,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-09-29: 0 contributions</title>
+    <title>2025-10-06: 0 contributions</title>
 </rect>
 
 <rect
@@ -890,7 +890,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-10-06: 0 contributions</title>
+    <title>2025-10-13: 0 contributions</title>
 </rect>
 
 <rect
@@ -901,7 +901,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-10-13: 0 contributions</title>
+    <title>2025-10-20: 0 contributions</title>
 </rect>
 
 <rect
@@ -912,7 +912,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-10-20: 0 contributions</title>
+    <title>2025-10-27: 0 contributions</title>
 </rect>
 
 <rect
@@ -923,7 +923,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-10-27: 0 contributions</title>
+    <title>2025-11-03: 0 contributions</title>
 </rect>
 
 <rect
@@ -934,7 +934,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-11-03: 0 contributions</title>
+    <title>2025-11-10: 0 contributions</title>
 </rect>
 
 <rect
@@ -945,7 +945,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-11-10: 0 contributions</title>
+    <title>2025-11-17: 0 contributions</title>
 </rect>
 
 <rect
@@ -956,7 +956,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-11-17: 0 contributions</title>
+    <title>2025-11-24: 0 contributions</title>
 </rect>
 
 <rect
@@ -967,7 +967,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-11-24: 0 contributions</title>
+    <title>2025-12-01: 0 contributions</title>
 </rect>
 
 <rect
@@ -978,7 +978,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-12-01: 0 contributions</title>
+    <title>2025-12-08: 0 contributions</title>
 </rect>
 
 <rect
@@ -989,7 +989,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-12-08: 0 contributions</title>
+    <title>2025-12-15: 0 contributions</title>
 </rect>
 
 <rect
@@ -1000,7 +1000,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-12-15: 0 contributions</title>
+    <title>2025-12-22: 0 contributions</title>
 </rect>
 
 <rect
@@ -1011,7 +1011,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-12-22: 0 contributions</title>
+    <title>2025-12-29: 0 contributions</title>
 </rect>
 
 <rect
@@ -1022,7 +1022,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-12-29: 0 contributions</title>
+    <title>2026-01-05: 0 contributions</title>
 </rect>
 
 <rect
@@ -1033,7 +1033,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2026-01-05: 0 contributions</title>
+    <title>2026-01-12: 0 contributions</title>
 </rect>
 
 <rect
@@ -1044,7 +1044,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2026-01-12: 0 contributions</title>
+    <title>2026-01-19: 0 contributions</title>
 </rect>
 
 <rect
@@ -1055,7 +1055,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2026-01-19: 0 contributions</title>
+    <title>2026-01-26: 0 contributions</title>
 </rect>
 
 <rect
@@ -1066,7 +1066,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2026-01-26: 0 contributions</title>
+    <title>2026-02-02: 0 contributions</title>
 </rect>
 
 <rect
@@ -1077,7 +1077,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2026-02-02: 0 contributions</title>
+    <title>2026-02-09: 0 contributions</title>
 </rect>
 
 <rect
@@ -1088,22 +1088,11 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2026-02-09: 0 contributions</title>
-</rect>
-
-<rect
-    x="535"
-    y="105"
-    width="16"
-    height="16"
-    rx="4"
-    fill="#161b22"
->
     <title>2026-02-16: 0 contributions</title>
 </rect>
 
 <rect
-    x="555"
+    x="535"
     y="105"
     width="16"
     height="16"
@@ -1114,7 +1103,7 @@
 </rect>
 
 <rect
-    x="575"
+    x="555"
     y="105"
     width="16"
     height="16"
@@ -1125,7 +1114,7 @@
 </rect>
 
 <rect
-    x="595"
+    x="575"
     y="105"
     width="16"
     height="16"
@@ -1136,7 +1125,7 @@
 </rect>
 
 <rect
-    x="615"
+    x="595"
     y="105"
     width="16"
     height="16"
@@ -1147,7 +1136,7 @@
 </rect>
 
 <rect
-    x="635"
+    x="615"
     y="105"
     width="16"
     height="16"
@@ -1158,7 +1147,7 @@
 </rect>
 
 <rect
-    x="655"
+    x="635"
     y="105"
     width="16"
     height="16"
@@ -1169,7 +1158,7 @@
 </rect>
 
 <rect
-    x="675"
+    x="655"
     y="105"
     width="16"
     height="16"
@@ -1180,7 +1169,7 @@
 </rect>
 
 <rect
-    x="695"
+    x="675"
     y="105"
     width="16"
     height="16"
@@ -1191,7 +1180,7 @@
 </rect>
 
 <rect
-    x="715"
+    x="695"
     y="105"
     width="16"
     height="16"
@@ -1202,7 +1191,7 @@
 </rect>
 
 <rect
-    x="735"
+    x="715"
     y="105"
     width="16"
     height="16"
@@ -1213,7 +1202,7 @@
 </rect>
 
 <rect
-    x="755"
+    x="735"
     y="105"
     width="16"
     height="16"
@@ -1224,7 +1213,7 @@
 </rect>
 
 <rect
-    x="775"
+    x="755"
     y="105"
     width="16"
     height="16"
@@ -1235,7 +1224,7 @@
 </rect>
 
 <rect
-    x="795"
+    x="775"
     y="105"
     width="16"
     height="16"
@@ -1246,7 +1235,7 @@
 </rect>
 
 <rect
-    x="815"
+    x="795"
     y="105"
     width="16"
     height="16"
@@ -1257,7 +1246,7 @@
 </rect>
 
 <rect
-    x="835"
+    x="815"
     y="105"
     width="16"
     height="16"
@@ -1268,7 +1257,7 @@
 </rect>
 
 <rect
-    x="855"
+    x="835"
     y="105"
     width="16"
     height="16"
@@ -1279,7 +1268,7 @@
 </rect>
 
 <rect
-    x="875"
+    x="855"
     y="105"
     width="16"
     height="16"
@@ -1290,7 +1279,7 @@
 </rect>
 
 <rect
-    x="895"
+    x="875"
     y="105"
     width="16"
     height="16"
@@ -1301,7 +1290,7 @@
 </rect>
 
 <rect
-    x="915"
+    x="895"
     y="105"
     width="16"
     height="16"
@@ -1312,7 +1301,7 @@
 </rect>
 
 <rect
-    x="935"
+    x="915"
     y="105"
     width="16"
     height="16"
@@ -1323,7 +1312,7 @@
 </rect>
 
 <rect
-    x="955"
+    x="935"
     y="105"
     width="16"
     height="16"
@@ -1334,7 +1323,7 @@
 </rect>
 
 <rect
-    x="975"
+    x="955"
     y="105"
     width="16"
     height="16"
@@ -1345,7 +1334,7 @@
 </rect>
 
 <rect
-    x="995"
+    x="975"
     y="105"
     width="16"
     height="16"
@@ -1356,7 +1345,7 @@
 </rect>
 
 <rect
-    x="1015"
+    x="995"
     y="105"
     width="16"
     height="16"
@@ -1367,7 +1356,7 @@
 </rect>
 
 <rect
-    x="1035"
+    x="1015"
     y="105"
     width="16"
     height="16"
@@ -1378,7 +1367,7 @@
 </rect>
 
 <rect
-    x="1055"
+    x="1035"
     y="105"
     width="16"
     height="16"
@@ -1389,7 +1378,7 @@
 </rect>
 
 <rect
-    x="1075"
+    x="1055"
     y="105"
     width="16"
     height="16"
@@ -1400,7 +1389,7 @@
 </rect>
 
 <rect
-    x="1095"
+    x="1075"
     y="105"
     width="16"
     height="16"
@@ -1408,6 +1397,17 @@
     fill="#161b22"
 >
     <title>2026-08-31: 0 contributions</title>
+</rect>
+
+<rect
+    x="1095"
+    y="105"
+    width="16"
+    height="16"
+    rx="4"
+    fill="#161b22"
+>
+    <title>2026-09-07: 0 contributions</title>
 </rect>
 
 </g>
@@ -1444,7 +1444,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-09-02: 0 contributions</title>
+    <title>2025-09-09: 0 contributions</title>
 </rect>
 
 <rect
@@ -1455,7 +1455,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-09-09: 0 contributions</title>
+    <title>2025-09-16: 0 contributions</title>
 </rect>
 
 <rect
@@ -1466,7 +1466,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-09-16: 0 contributions</title>
+    <title>2025-09-23: 0 contributions</title>
 </rect>
 
 <rect
@@ -1477,7 +1477,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-09-23: 0 contributions</title>
+    <title>2025-09-30: 0 contributions</title>
 </rect>
 
 <rect
@@ -1488,7 +1488,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-09-30: 0 contributions</title>
+    <title>2025-10-07: 0 contributions</title>
 </rect>
 
 <rect
@@ -1499,7 +1499,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-10-07: 0 contributions</title>
+    <title>2025-10-14: 0 contributions</title>
 </rect>
 
 <rect
@@ -1510,7 +1510,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-10-14: 0 contributions</title>
+    <title>2025-10-21: 0 contributions</title>
 </rect>
 
 <rect
@@ -1521,7 +1521,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-10-21: 0 contributions</title>
+    <title>2025-10-28: 0 contributions</title>
 </rect>
 
 <rect
@@ -1532,7 +1532,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-10-28: 0 contributions</title>
+    <title>2025-11-04: 0 contributions</title>
 </rect>
 
 <rect
@@ -1543,7 +1543,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-11-04: 0 contributions</title>
+    <title>2025-11-11: 0 contributions</title>
 </rect>
 
 <rect
@@ -1554,7 +1554,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-11-11: 0 contributions</title>
+    <title>2025-11-18: 0 contributions</title>
 </rect>
 
 <rect
@@ -1565,7 +1565,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-11-18: 0 contributions</title>
+    <title>2025-11-25: 0 contributions</title>
 </rect>
 
 <rect
@@ -1576,7 +1576,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-11-25: 0 contributions</title>
+    <title>2025-12-02: 0 contributions</title>
 </rect>
 
 <rect
@@ -1587,7 +1587,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-12-02: 0 contributions</title>
+    <title>2025-12-09: 0 contributions</title>
 </rect>
 
 <rect
@@ -1598,7 +1598,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-12-09: 0 contributions</title>
+    <title>2025-12-16: 0 contributions</title>
 </rect>
 
 <rect
@@ -1609,7 +1609,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-12-16: 0 contributions</title>
+    <title>2025-12-23: 0 contributions</title>
 </rect>
 
 <rect
@@ -1620,7 +1620,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-12-23: 0 contributions</title>
+    <title>2025-12-30: 0 contributions</title>
 </rect>
 
 <rect
@@ -1631,7 +1631,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-12-30: 0 contributions</title>
+    <title>2026-01-06: 0 contributions</title>
 </rect>
 
 <rect
@@ -1642,7 +1642,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2026-01-06: 0 contributions</title>
+    <title>2026-01-13: 0 contributions</title>
 </rect>
 
 <rect
@@ -1653,7 +1653,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2026-01-13: 0 contributions</title>
+    <title>2026-01-20: 0 contributions</title>
 </rect>
 
 <rect
@@ -1664,7 +1664,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2026-01-20: 0 contributions</title>
+    <title>2026-01-27: 0 contributions</title>
 </rect>
 
 <rect
@@ -1675,7 +1675,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2026-01-27: 0 contributions</title>
+    <title>2026-02-03: 0 contributions</title>
 </rect>
 
 <rect
@@ -1686,7 +1686,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2026-02-03: 0 contributions</title>
+    <title>2026-02-10: 0 contributions</title>
 </rect>
 
 <rect
@@ -1697,22 +1697,11 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2026-02-10: 0 contributions</title>
-</rect>
-
-<rect
-    x="535"
-    y="125"
-    width="16"
-    height="16"
-    rx="4"
-    fill="#161b22"
->
     <title>2026-02-17: 0 contributions</title>
 </rect>
 
 <rect
-    x="555"
+    x="535"
     y="125"
     width="16"
     height="16"
@@ -1723,7 +1712,7 @@
 </rect>
 
 <rect
-    x="575"
+    x="555"
     y="125"
     width="16"
     height="16"
@@ -1734,7 +1723,7 @@
 </rect>
 
 <rect
-    x="595"
+    x="575"
     y="125"
     width="16"
     height="16"
@@ -1745,7 +1734,7 @@
 </rect>
 
 <rect
-    x="615"
+    x="595"
     y="125"
     width="16"
     height="16"
@@ -1756,7 +1745,7 @@
 </rect>
 
 <rect
-    x="635"
+    x="615"
     y="125"
     width="16"
     height="16"
@@ -1767,7 +1756,7 @@
 </rect>
 
 <rect
-    x="655"
+    x="635"
     y="125"
     width="16"
     height="16"
@@ -1778,7 +1767,7 @@
 </rect>
 
 <rect
-    x="675"
+    x="655"
     y="125"
     width="16"
     height="16"
@@ -1789,7 +1778,7 @@
 </rect>
 
 <rect
-    x="695"
+    x="675"
     y="125"
     width="16"
     height="16"
@@ -1800,7 +1789,7 @@
 </rect>
 
 <rect
-    x="715"
+    x="695"
     y="125"
     width="16"
     height="16"
@@ -1811,7 +1800,7 @@
 </rect>
 
 <rect
-    x="735"
+    x="715"
     y="125"
     width="16"
     height="16"
@@ -1822,7 +1811,7 @@
 </rect>
 
 <rect
-    x="755"
+    x="735"
     y="125"
     width="16"
     height="16"
@@ -1833,7 +1822,7 @@
 </rect>
 
 <rect
-    x="775"
+    x="755"
     y="125"
     width="16"
     height="16"
@@ -1844,7 +1833,7 @@
 </rect>
 
 <rect
-    x="795"
+    x="775"
     y="125"
     width="16"
     height="16"
@@ -1855,7 +1844,7 @@
 </rect>
 
 <rect
-    x="815"
+    x="795"
     y="125"
     width="16"
     height="16"
@@ -1866,7 +1855,7 @@
 </rect>
 
 <rect
-    x="835"
+    x="815"
     y="125"
     width="16"
     height="16"
@@ -1877,7 +1866,7 @@
 </rect>
 
 <rect
-    x="855"
+    x="835"
     y="125"
     width="16"
     height="16"
@@ -1888,7 +1877,7 @@
 </rect>
 
 <rect
-    x="875"
+    x="855"
     y="125"
     width="16"
     height="16"
@@ -1899,7 +1888,7 @@
 </rect>
 
 <rect
-    x="895"
+    x="875"
     y="125"
     width="16"
     height="16"
@@ -1910,7 +1899,7 @@
 </rect>
 
 <rect
-    x="915"
+    x="895"
     y="125"
     width="16"
     height="16"
@@ -1921,7 +1910,7 @@
 </rect>
 
 <rect
-    x="935"
+    x="915"
     y="125"
     width="16"
     height="16"
@@ -1932,7 +1921,7 @@
 </rect>
 
 <rect
-    x="955"
+    x="935"
     y="125"
     width="16"
     height="16"
@@ -1943,7 +1932,7 @@
 </rect>
 
 <rect
-    x="975"
+    x="955"
     y="125"
     width="16"
     height="16"
@@ -1954,7 +1943,7 @@
 </rect>
 
 <rect
-    x="995"
+    x="975"
     y="125"
     width="16"
     height="16"
@@ -1965,7 +1954,7 @@
 </rect>
 
 <rect
-    x="1015"
+    x="995"
     y="125"
     width="16"
     height="16"
@@ -1976,7 +1965,7 @@
 </rect>
 
 <rect
-    x="1035"
+    x="1015"
     y="125"
     width="16"
     height="16"
@@ -1987,7 +1976,7 @@
 </rect>
 
 <rect
-    x="1055"
+    x="1035"
     y="125"
     width="16"
     height="16"
@@ -1998,7 +1987,7 @@
 </rect>
 
 <rect
-    x="1075"
+    x="1055"
     y="125"
     width="16"
     height="16"
@@ -2009,7 +1998,7 @@
 </rect>
 
 <rect
-    x="1095"
+    x="1075"
     y="125"
     width="16"
     height="16"
@@ -2017,6 +2006,17 @@
     fill="#0e4429"
 >
     <title>2026-09-01: 6 contributions</title>
+</rect>
+
+<rect
+    x="1095"
+    y="125"
+    width="16"
+    height="16"
+    rx="4"
+    fill="#161b22"
+>
+    <title>2026-09-08: 0 contributions</title>
 </rect>
 
 </g>
@@ -2053,7 +2053,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-09-03: 0 contributions</title>
+    <title>2025-09-10: 0 contributions</title>
 </rect>
 
 <rect
@@ -2064,7 +2064,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-09-10: 0 contributions</title>
+    <title>2025-09-17: 0 contributions</title>
 </rect>
 
 <rect
@@ -2075,7 +2075,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-09-17: 0 contributions</title>
+    <title>2025-09-24: 0 contributions</title>
 </rect>
 
 <rect
@@ -2086,7 +2086,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-09-24: 0 contributions</title>
+    <title>2025-10-01: 0 contributions</title>
 </rect>
 
 <rect
@@ -2097,7 +2097,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-10-01: 0 contributions</title>
+    <title>2025-10-08: 0 contributions</title>
 </rect>
 
 <rect
@@ -2108,7 +2108,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-10-08: 0 contributions</title>
+    <title>2025-10-15: 0 contributions</title>
 </rect>
 
 <rect
@@ -2119,7 +2119,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-10-15: 0 contributions</title>
+    <title>2025-10-22: 0 contributions</title>
 </rect>
 
 <rect
@@ -2130,7 +2130,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-10-22: 0 contributions</title>
+    <title>2025-10-29: 0 contributions</title>
 </rect>
 
 <rect
@@ -2141,7 +2141,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-10-29: 0 contributions</title>
+    <title>2025-11-05: 0 contributions</title>
 </rect>
 
 <rect
@@ -2152,7 +2152,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-11-05: 0 contributions</title>
+    <title>2025-11-12: 0 contributions</title>
 </rect>
 
 <rect
@@ -2163,7 +2163,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-11-12: 0 contributions</title>
+    <title>2025-11-19: 0 contributions</title>
 </rect>
 
 <rect
@@ -2174,7 +2174,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-11-19: 0 contributions</title>
+    <title>2025-11-26: 0 contributions</title>
 </rect>
 
 <rect
@@ -2185,7 +2185,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-11-26: 0 contributions</title>
+    <title>2025-12-03: 0 contributions</title>
 </rect>
 
 <rect
@@ -2196,7 +2196,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-12-03: 0 contributions</title>
+    <title>2025-12-10: 0 contributions</title>
 </rect>
 
 <rect
@@ -2207,7 +2207,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-12-10: 0 contributions</title>
+    <title>2025-12-17: 0 contributions</title>
 </rect>
 
 <rect
@@ -2218,7 +2218,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-12-17: 0 contributions</title>
+    <title>2025-12-24: 0 contributions</title>
 </rect>
 
 <rect
@@ -2229,7 +2229,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-12-24: 0 contributions</title>
+    <title>2025-12-31: 0 contributions</title>
 </rect>
 
 <rect
@@ -2240,7 +2240,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-12-31: 0 contributions</title>
+    <title>2026-01-07: 0 contributions</title>
 </rect>
 
 <rect
@@ -2251,7 +2251,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2026-01-07: 0 contributions</title>
+    <title>2026-01-14: 0 contributions</title>
 </rect>
 
 <rect
@@ -2262,7 +2262,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2026-01-14: 0 contributions</title>
+    <title>2026-01-21: 0 contributions</title>
 </rect>
 
 <rect
@@ -2273,7 +2273,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2026-01-21: 0 contributions</title>
+    <title>2026-01-28: 0 contributions</title>
 </rect>
 
 <rect
@@ -2284,7 +2284,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2026-01-28: 0 contributions</title>
+    <title>2026-02-04: 0 contributions</title>
 </rect>
 
 <rect
@@ -2295,22 +2295,11 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2026-02-04: 0 contributions</title>
-</rect>
-
-<rect
-    x="515"
-    y="145"
-    width="16"
-    height="16"
-    rx="4"
-    fill="#161b22"
->
     <title>2026-02-11: 0 contributions</title>
 </rect>
 
 <rect
-    x="535"
+    x="515"
     y="145"
     width="16"
     height="16"
@@ -2321,7 +2310,7 @@
 </rect>
 
 <rect
-    x="555"
+    x="535"
     y="145"
     width="16"
     height="16"
@@ -2332,7 +2321,7 @@
 </rect>
 
 <rect
-    x="575"
+    x="555"
     y="145"
     width="16"
     height="16"
@@ -2343,7 +2332,7 @@
 </rect>
 
 <rect
-    x="595"
+    x="575"
     y="145"
     width="16"
     height="16"
@@ -2354,7 +2343,7 @@
 </rect>
 
 <rect
-    x="615"
+    x="595"
     y="145"
     width="16"
     height="16"
@@ -2365,7 +2354,7 @@
 </rect>
 
 <rect
-    x="635"
+    x="615"
     y="145"
     width="16"
     height="16"
@@ -2376,7 +2365,7 @@
 </rect>
 
 <rect
-    x="655"
+    x="635"
     y="145"
     width="16"
     height="16"
@@ -2387,7 +2376,7 @@
 </rect>
 
 <rect
-    x="675"
+    x="655"
     y="145"
     width="16"
     height="16"
@@ -2398,7 +2387,7 @@
 </rect>
 
 <rect
-    x="695"
+    x="675"
     y="145"
     width="16"
     height="16"
@@ -2409,7 +2398,7 @@
 </rect>
 
 <rect
-    x="715"
+    x="695"
     y="145"
     width="16"
     height="16"
@@ -2420,7 +2409,7 @@
 </rect>
 
 <rect
-    x="735"
+    x="715"
     y="145"
     width="16"
     height="16"
@@ -2431,7 +2420,7 @@
 </rect>
 
 <rect
-    x="755"
+    x="735"
     y="145"
     width="16"
     height="16"
@@ -2442,7 +2431,7 @@
 </rect>
 
 <rect
-    x="775"
+    x="755"
     y="145"
     width="16"
     height="16"
@@ -2453,7 +2442,7 @@
 </rect>
 
 <rect
-    x="795"
+    x="775"
     y="145"
     width="16"
     height="16"
@@ -2464,7 +2453,7 @@
 </rect>
 
 <rect
-    x="815"
+    x="795"
     y="145"
     width="16"
     height="16"
@@ -2475,7 +2464,7 @@
 </rect>
 
 <rect
-    x="835"
+    x="815"
     y="145"
     width="16"
     height="16"
@@ -2486,7 +2475,7 @@
 </rect>
 
 <rect
-    x="855"
+    x="835"
     y="145"
     width="16"
     height="16"
@@ -2497,7 +2486,7 @@
 </rect>
 
 <rect
-    x="875"
+    x="855"
     y="145"
     width="16"
     height="16"
@@ -2508,7 +2497,7 @@
 </rect>
 
 <rect
-    x="895"
+    x="875"
     y="145"
     width="16"
     height="16"
@@ -2519,7 +2508,7 @@
 </rect>
 
 <rect
-    x="915"
+    x="895"
     y="145"
     width="16"
     height="16"
@@ -2530,7 +2519,7 @@
 </rect>
 
 <rect
-    x="935"
+    x="915"
     y="145"
     width="16"
     height="16"
@@ -2541,7 +2530,7 @@
 </rect>
 
 <rect
-    x="955"
+    x="935"
     y="145"
     width="16"
     height="16"
@@ -2552,7 +2541,7 @@
 </rect>
 
 <rect
-    x="975"
+    x="955"
     y="145"
     width="16"
     height="16"
@@ -2563,7 +2552,7 @@
 </rect>
 
 <rect
-    x="995"
+    x="975"
     y="145"
     width="16"
     height="16"
@@ -2574,7 +2563,7 @@
 </rect>
 
 <rect
-    x="1015"
+    x="995"
     y="145"
     width="16"
     height="16"
@@ -2585,7 +2574,7 @@
 </rect>
 
 <rect
-    x="1035"
+    x="1015"
     y="145"
     width="16"
     height="16"
@@ -2596,7 +2585,7 @@
 </rect>
 
 <rect
-    x="1055"
+    x="1035"
     y="145"
     width="16"
     height="16"
@@ -2607,7 +2596,7 @@
 </rect>
 
 <rect
-    x="1075"
+    x="1055"
     y="145"
     width="16"
     height="16"
@@ -2618,7 +2607,7 @@
 </rect>
 
 <rect
-    x="1095"
+    x="1075"
     y="145"
     width="16"
     height="16"
@@ -2626,6 +2615,17 @@
     fill="#0e4429"
 >
     <title>2026-09-02: 2 contributions</title>
+</rect>
+
+<rect
+    x="1095"
+    y="145"
+    width="16"
+    height="16"
+    rx="4"
+    fill="#161b22"
+>
+    <title>2026-09-09: 0 contributions</title>
 </rect>
 
 </g>
@@ -2662,7 +2662,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-09-04: 0 contributions</title>
+    <title>2025-09-11: 0 contributions</title>
 </rect>
 
 <rect
@@ -2673,7 +2673,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-09-11: 0 contributions</title>
+    <title>2025-09-18: 0 contributions</title>
 </rect>
 
 <rect
@@ -2684,7 +2684,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-09-18: 0 contributions</title>
+    <title>2025-09-25: 0 contributions</title>
 </rect>
 
 <rect
@@ -2695,7 +2695,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-09-25: 0 contributions</title>
+    <title>2025-10-02: 0 contributions</title>
 </rect>
 
 <rect
@@ -2706,7 +2706,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-10-02: 0 contributions</title>
+    <title>2025-10-09: 0 contributions</title>
 </rect>
 
 <rect
@@ -2717,7 +2717,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-10-09: 0 contributions</title>
+    <title>2025-10-16: 0 contributions</title>
 </rect>
 
 <rect
@@ -2728,7 +2728,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-10-16: 0 contributions</title>
+    <title>2025-10-23: 0 contributions</title>
 </rect>
 
 <rect
@@ -2739,7 +2739,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-10-23: 0 contributions</title>
+    <title>2025-10-30: 0 contributions</title>
 </rect>
 
 <rect
@@ -2750,7 +2750,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-10-30: 0 contributions</title>
+    <title>2025-11-06: 0 contributions</title>
 </rect>
 
 <rect
@@ -2761,7 +2761,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-11-06: 0 contributions</title>
+    <title>2025-11-13: 0 contributions</title>
 </rect>
 
 <rect
@@ -2772,7 +2772,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-11-13: 0 contributions</title>
+    <title>2025-11-20: 0 contributions</title>
 </rect>
 
 <rect
@@ -2783,7 +2783,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-11-20: 0 contributions</title>
+    <title>2025-11-27: 0 contributions</title>
 </rect>
 
 <rect
@@ -2794,7 +2794,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-11-27: 0 contributions</title>
+    <title>2025-12-04: 0 contributions</title>
 </rect>
 
 <rect
@@ -2805,7 +2805,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-12-04: 0 contributions</title>
+    <title>2025-12-11: 0 contributions</title>
 </rect>
 
 <rect
@@ -2816,7 +2816,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-12-11: 0 contributions</title>
+    <title>2025-12-18: 0 contributions</title>
 </rect>
 
 <rect
@@ -2827,7 +2827,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-12-18: 0 contributions</title>
+    <title>2025-12-25: 0 contributions</title>
 </rect>
 
 <rect
@@ -2838,7 +2838,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-12-25: 0 contributions</title>
+    <title>2026-01-01: 0 contributions</title>
 </rect>
 
 <rect
@@ -2849,7 +2849,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2026-01-01: 0 contributions</title>
+    <title>2026-01-08: 0 contributions</title>
 </rect>
 
 <rect
@@ -2860,7 +2860,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2026-01-08: 0 contributions</title>
+    <title>2026-01-15: 0 contributions</title>
 </rect>
 
 <rect
@@ -2871,7 +2871,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2026-01-15: 0 contributions</title>
+    <title>2026-01-22: 0 contributions</title>
 </rect>
 
 <rect
@@ -2882,7 +2882,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2026-01-22: 0 contributions</title>
+    <title>2026-01-29: 0 contributions</title>
 </rect>
 
 <rect
@@ -2893,7 +2893,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2026-01-29: 0 contributions</title>
+    <title>2026-02-05: 0 contributions</title>
 </rect>
 
 <rect
@@ -2904,22 +2904,11 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2026-02-05: 0 contributions</title>
-</rect>
-
-<rect
-    x="515"
-    y="165"
-    width="16"
-    height="16"
-    rx="4"
-    fill="#161b22"
->
     <title>2026-02-12: 0 contributions</title>
 </rect>
 
 <rect
-    x="535"
+    x="515"
     y="165"
     width="16"
     height="16"
@@ -2930,7 +2919,7 @@
 </rect>
 
 <rect
-    x="555"
+    x="535"
     y="165"
     width="16"
     height="16"
@@ -2941,7 +2930,7 @@
 </rect>
 
 <rect
-    x="575"
+    x="555"
     y="165"
     width="16"
     height="16"
@@ -2952,7 +2941,7 @@
 </rect>
 
 <rect
-    x="595"
+    x="575"
     y="165"
     width="16"
     height="16"
@@ -2963,7 +2952,7 @@
 </rect>
 
 <rect
-    x="615"
+    x="595"
     y="165"
     width="16"
     height="16"
@@ -2974,7 +2963,7 @@
 </rect>
 
 <rect
-    x="635"
+    x="615"
     y="165"
     width="16"
     height="16"
@@ -2985,7 +2974,7 @@
 </rect>
 
 <rect
-    x="655"
+    x="635"
     y="165"
     width="16"
     height="16"
@@ -2996,7 +2985,7 @@
 </rect>
 
 <rect
-    x="675"
+    x="655"
     y="165"
     width="16"
     height="16"
@@ -3007,7 +2996,7 @@
 </rect>
 
 <rect
-    x="695"
+    x="675"
     y="165"
     width="16"
     height="16"
@@ -3018,7 +3007,7 @@
 </rect>
 
 <rect
-    x="715"
+    x="695"
     y="165"
     width="16"
     height="16"
@@ -3029,7 +3018,7 @@
 </rect>
 
 <rect
-    x="735"
+    x="715"
     y="165"
     width="16"
     height="16"
@@ -3040,7 +3029,7 @@
 </rect>
 
 <rect
-    x="755"
+    x="735"
     y="165"
     width="16"
     height="16"
@@ -3051,7 +3040,7 @@
 </rect>
 
 <rect
-    x="775"
+    x="755"
     y="165"
     width="16"
     height="16"
@@ -3062,7 +3051,7 @@
 </rect>
 
 <rect
-    x="795"
+    x="775"
     y="165"
     width="16"
     height="16"
@@ -3073,7 +3062,7 @@
 </rect>
 
 <rect
-    x="815"
+    x="795"
     y="165"
     width="16"
     height="16"
@@ -3084,7 +3073,7 @@
 </rect>
 
 <rect
-    x="835"
+    x="815"
     y="165"
     width="16"
     height="16"
@@ -3095,7 +3084,7 @@
 </rect>
 
 <rect
-    x="855"
+    x="835"
     y="165"
     width="16"
     height="16"
@@ -3106,7 +3095,7 @@
 </rect>
 
 <rect
-    x="875"
+    x="855"
     y="165"
     width="16"
     height="16"
@@ -3117,7 +3106,7 @@
 </rect>
 
 <rect
-    x="895"
+    x="875"
     y="165"
     width="16"
     height="16"
@@ -3128,7 +3117,7 @@
 </rect>
 
 <rect
-    x="915"
+    x="895"
     y="165"
     width="16"
     height="16"
@@ -3139,7 +3128,7 @@
 </rect>
 
 <rect
-    x="935"
+    x="915"
     y="165"
     width="16"
     height="16"
@@ -3150,7 +3139,7 @@
 </rect>
 
 <rect
-    x="955"
+    x="935"
     y="165"
     width="16"
     height="16"
@@ -3161,7 +3150,7 @@
 </rect>
 
 <rect
-    x="975"
+    x="955"
     y="165"
     width="16"
     height="16"
@@ -3172,7 +3161,7 @@
 </rect>
 
 <rect
-    x="995"
+    x="975"
     y="165"
     width="16"
     height="16"
@@ -3183,7 +3172,7 @@
 </rect>
 
 <rect
-    x="1015"
+    x="995"
     y="165"
     width="16"
     height="16"
@@ -3194,7 +3183,7 @@
 </rect>
 
 <rect
-    x="1035"
+    x="1015"
     y="165"
     width="16"
     height="16"
@@ -3205,7 +3194,7 @@
 </rect>
 
 <rect
-    x="1055"
+    x="1035"
     y="165"
     width="16"
     height="16"
@@ -3216,7 +3205,7 @@
 </rect>
 
 <rect
-    x="1075"
+    x="1055"
     y="165"
     width="16"
     height="16"
@@ -3227,7 +3216,7 @@
 </rect>
 
 <rect
-    x="1095"
+    x="1075"
     y="165"
     width="16"
     height="16"
@@ -3235,6 +3224,17 @@
     fill="#0e4429"
 >
     <title>2026-09-03: 4 contributions</title>
+</rect>
+
+<rect
+    x="1095"
+    y="165"
+    width="16"
+    height="16"
+    rx="4"
+    fill="#161b22"
+>
+    <title>2026-09-10: 0 contributions</title>
 </rect>
 
 </g>
@@ -3271,7 +3271,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-09-05: 0 contributions</title>
+    <title>2025-09-12: 0 contributions</title>
 </rect>
 
 <rect
@@ -3282,7 +3282,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-09-12: 0 contributions</title>
+    <title>2025-09-19: 0 contributions</title>
 </rect>
 
 <rect
@@ -3293,7 +3293,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-09-19: 0 contributions</title>
+    <title>2025-09-26: 0 contributions</title>
 </rect>
 
 <rect
@@ -3304,7 +3304,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-09-26: 0 contributions</title>
+    <title>2025-10-03: 0 contributions</title>
 </rect>
 
 <rect
@@ -3315,7 +3315,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-10-03: 0 contributions</title>
+    <title>2025-10-10: 0 contributions</title>
 </rect>
 
 <rect
@@ -3326,7 +3326,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-10-10: 0 contributions</title>
+    <title>2025-10-17: 0 contributions</title>
 </rect>
 
 <rect
@@ -3337,7 +3337,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-10-17: 0 contributions</title>
+    <title>2025-10-24: 0 contributions</title>
 </rect>
 
 <rect
@@ -3348,7 +3348,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-10-24: 0 contributions</title>
+    <title>2025-10-31: 0 contributions</title>
 </rect>
 
 <rect
@@ -3359,7 +3359,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-10-31: 0 contributions</title>
+    <title>2025-11-07: 0 contributions</title>
 </rect>
 
 <rect
@@ -3370,7 +3370,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-11-07: 0 contributions</title>
+    <title>2025-11-14: 0 contributions</title>
 </rect>
 
 <rect
@@ -3381,7 +3381,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-11-14: 0 contributions</title>
+    <title>2025-11-21: 0 contributions</title>
 </rect>
 
 <rect
@@ -3392,7 +3392,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-11-21: 0 contributions</title>
+    <title>2025-11-28: 0 contributions</title>
 </rect>
 
 <rect
@@ -3403,7 +3403,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-11-28: 0 contributions</title>
+    <title>2025-12-05: 0 contributions</title>
 </rect>
 
 <rect
@@ -3414,7 +3414,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-12-05: 0 contributions</title>
+    <title>2025-12-12: 0 contributions</title>
 </rect>
 
 <rect
@@ -3425,7 +3425,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-12-12: 0 contributions</title>
+    <title>2025-12-19: 0 contributions</title>
 </rect>
 
 <rect
@@ -3436,7 +3436,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-12-19: 0 contributions</title>
+    <title>2025-12-26: 0 contributions</title>
 </rect>
 
 <rect
@@ -3447,7 +3447,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-12-26: 0 contributions</title>
+    <title>2026-01-02: 0 contributions</title>
 </rect>
 
 <rect
@@ -3458,7 +3458,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2026-01-02: 0 contributions</title>
+    <title>2026-01-09: 0 contributions</title>
 </rect>
 
 <rect
@@ -3469,7 +3469,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2026-01-09: 0 contributions</title>
+    <title>2026-01-16: 0 contributions</title>
 </rect>
 
 <rect
@@ -3480,7 +3480,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2026-01-16: 0 contributions</title>
+    <title>2026-01-23: 0 contributions</title>
 </rect>
 
 <rect
@@ -3491,7 +3491,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2026-01-23: 0 contributions</title>
+    <title>2026-01-30: 0 contributions</title>
 </rect>
 
 <rect
@@ -3502,7 +3502,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2026-01-30: 0 contributions</title>
+    <title>2026-02-06: 0 contributions</title>
 </rect>
 
 <rect
@@ -3513,22 +3513,11 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2026-02-06: 0 contributions</title>
-</rect>
-
-<rect
-    x="515"
-    y="185"
-    width="16"
-    height="16"
-    rx="4"
-    fill="#161b22"
->
     <title>2026-02-13: 0 contributions</title>
 </rect>
 
 <rect
-    x="535"
+    x="515"
     y="185"
     width="16"
     height="16"
@@ -3539,7 +3528,7 @@
 </rect>
 
 <rect
-    x="555"
+    x="535"
     y="185"
     width="16"
     height="16"
@@ -3550,7 +3539,7 @@
 </rect>
 
 <rect
-    x="575"
+    x="555"
     y="185"
     width="16"
     height="16"
@@ -3561,7 +3550,7 @@
 </rect>
 
 <rect
-    x="595"
+    x="575"
     y="185"
     width="16"
     height="16"
@@ -3572,7 +3561,7 @@
 </rect>
 
 <rect
-    x="615"
+    x="595"
     y="185"
     width="16"
     height="16"
@@ -3583,7 +3572,7 @@
 </rect>
 
 <rect
-    x="635"
+    x="615"
     y="185"
     width="16"
     height="16"
@@ -3594,7 +3583,7 @@
 </rect>
 
 <rect
-    x="655"
+    x="635"
     y="185"
     width="16"
     height="16"
@@ -3605,7 +3594,7 @@
 </rect>
 
 <rect
-    x="675"
+    x="655"
     y="185"
     width="16"
     height="16"
@@ -3616,7 +3605,7 @@
 </rect>
 
 <rect
-    x="695"
+    x="675"
     y="185"
     width="16"
     height="16"
@@ -3627,7 +3616,7 @@
 </rect>
 
 <rect
-    x="715"
+    x="695"
     y="185"
     width="16"
     height="16"
@@ -3638,7 +3627,7 @@
 </rect>
 
 <rect
-    x="735"
+    x="715"
     y="185"
     width="16"
     height="16"
@@ -3649,7 +3638,7 @@
 </rect>
 
 <rect
-    x="755"
+    x="735"
     y="185"
     width="16"
     height="16"
@@ -3660,7 +3649,7 @@
 </rect>
 
 <rect
-    x="775"
+    x="755"
     y="185"
     width="16"
     height="16"
@@ -3671,7 +3660,7 @@
 </rect>
 
 <rect
-    x="795"
+    x="775"
     y="185"
     width="16"
     height="16"
@@ -3682,7 +3671,7 @@
 </rect>
 
 <rect
-    x="815"
+    x="795"
     y="185"
     width="16"
     height="16"
@@ -3693,7 +3682,7 @@
 </rect>
 
 <rect
-    x="835"
+    x="815"
     y="185"
     width="16"
     height="16"
@@ -3704,7 +3693,7 @@
 </rect>
 
 <rect
-    x="855"
+    x="835"
     y="185"
     width="16"
     height="16"
@@ -3715,7 +3704,7 @@
 </rect>
 
 <rect
-    x="875"
+    x="855"
     y="185"
     width="16"
     height="16"
@@ -3726,7 +3715,7 @@
 </rect>
 
 <rect
-    x="895"
+    x="875"
     y="185"
     width="16"
     height="16"
@@ -3737,7 +3726,7 @@
 </rect>
 
 <rect
-    x="915"
+    x="895"
     y="185"
     width="16"
     height="16"
@@ -3748,7 +3737,7 @@
 </rect>
 
 <rect
-    x="935"
+    x="915"
     y="185"
     width="16"
     height="16"
@@ -3759,7 +3748,7 @@
 </rect>
 
 <rect
-    x="955"
+    x="935"
     y="185"
     width="16"
     height="16"
@@ -3770,7 +3759,7 @@
 </rect>
 
 <rect
-    x="975"
+    x="955"
     y="185"
     width="16"
     height="16"
@@ -3781,7 +3770,7 @@
 </rect>
 
 <rect
-    x="995"
+    x="975"
     y="185"
     width="16"
     height="16"
@@ -3792,7 +3781,7 @@
 </rect>
 
 <rect
-    x="1015"
+    x="995"
     y="185"
     width="16"
     height="16"
@@ -3803,7 +3792,7 @@
 </rect>
 
 <rect
-    x="1035"
+    x="1015"
     y="185"
     width="16"
     height="16"
@@ -3814,7 +3803,7 @@
 </rect>
 
 <rect
-    x="1055"
+    x="1035"
     y="185"
     width="16"
     height="16"
@@ -3825,7 +3814,7 @@
 </rect>
 
 <rect
-    x="1075"
+    x="1055"
     y="185"
     width="16"
     height="16"
@@ -3836,7 +3825,7 @@
 </rect>
 
 <rect
-    x="1095"
+    x="1075"
     y="185"
     width="16"
     height="16"
@@ -3844,6 +3833,17 @@
     fill="#26a641"
 >
     <title>2026-09-04: 18 contributions</title>
+</rect>
+
+<rect
+    x="1095"
+    y="185"
+    width="16"
+    height="16"
+    rx="4"
+    fill="#161b22"
+>
+    <title>2026-09-11: 0 contributions</title>
 </rect>
 
 </g>
@@ -3880,7 +3880,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-09-06: 0 contributions</title>
+    <title>2025-09-13: 0 contributions</title>
 </rect>
 
 <rect
@@ -3891,7 +3891,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-09-13: 0 contributions</title>
+    <title>2025-09-20: 0 contributions</title>
 </rect>
 
 <rect
@@ -3902,7 +3902,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-09-20: 0 contributions</title>
+    <title>2025-09-27: 0 contributions</title>
 </rect>
 
 <rect
@@ -3913,7 +3913,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-09-27: 0 contributions</title>
+    <title>2025-10-04: 0 contributions</title>
 </rect>
 
 <rect
@@ -3924,7 +3924,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-10-04: 0 contributions</title>
+    <title>2025-10-11: 0 contributions</title>
 </rect>
 
 <rect
@@ -3935,7 +3935,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-10-11: 0 contributions</title>
+    <title>2025-10-18: 0 contributions</title>
 </rect>
 
 <rect
@@ -3946,7 +3946,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-10-18: 0 contributions</title>
+    <title>2025-10-25: 0 contributions</title>
 </rect>
 
 <rect
@@ -3957,7 +3957,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-10-25: 0 contributions</title>
+    <title>2025-11-01: 0 contributions</title>
 </rect>
 
 <rect
@@ -3968,7 +3968,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-11-01: 0 contributions</title>
+    <title>2025-11-08: 0 contributions</title>
 </rect>
 
 <rect
@@ -3979,7 +3979,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-11-08: 0 contributions</title>
+    <title>2025-11-15: 0 contributions</title>
 </rect>
 
 <rect
@@ -3990,7 +3990,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-11-15: 0 contributions</title>
+    <title>2025-11-22: 0 contributions</title>
 </rect>
 
 <rect
@@ -4001,7 +4001,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-11-22: 0 contributions</title>
+    <title>2025-11-29: 0 contributions</title>
 </rect>
 
 <rect
@@ -4012,7 +4012,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-11-29: 0 contributions</title>
+    <title>2025-12-06: 0 contributions</title>
 </rect>
 
 <rect
@@ -4023,7 +4023,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-12-06: 0 contributions</title>
+    <title>2025-12-13: 0 contributions</title>
 </rect>
 
 <rect
@@ -4034,7 +4034,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-12-13: 0 contributions</title>
+    <title>2025-12-20: 0 contributions</title>
 </rect>
 
 <rect
@@ -4045,7 +4045,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-12-20: 0 contributions</title>
+    <title>2025-12-27: 0 contributions</title>
 </rect>
 
 <rect
@@ -4056,7 +4056,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2025-12-27: 0 contributions</title>
+    <title>2026-01-03: 0 contributions</title>
 </rect>
 
 <rect
@@ -4067,7 +4067,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2026-01-03: 0 contributions</title>
+    <title>2026-01-10: 0 contributions</title>
 </rect>
 
 <rect
@@ -4078,7 +4078,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2026-01-10: 0 contributions</title>
+    <title>2026-01-17: 0 contributions</title>
 </rect>
 
 <rect
@@ -4089,7 +4089,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2026-01-17: 0 contributions</title>
+    <title>2026-01-24: 0 contributions</title>
 </rect>
 
 <rect
@@ -4100,7 +4100,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2026-01-24: 0 contributions</title>
+    <title>2026-01-31: 0 contributions</title>
 </rect>
 
 <rect
@@ -4111,7 +4111,7 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2026-01-31: 0 contributions</title>
+    <title>2026-02-07: 0 contributions</title>
 </rect>
 
 <rect
@@ -4122,22 +4122,11 @@
     rx="4"
     fill="#161b22"
 >
-    <title>2026-02-07: 0 contributions</title>
-</rect>
-
-<rect
-    x="515"
-    y="205"
-    width="16"
-    height="16"
-    rx="4"
-    fill="#161b22"
->
     <title>2026-02-14: 0 contributions</title>
 </rect>
 
 <rect
-    x="535"
+    x="515"
     y="205"
     width="16"
     height="16"
@@ -4148,7 +4137,7 @@
 </rect>
 
 <rect
-    x="555"
+    x="535"
     y="205"
     width="16"
     height="16"
@@ -4159,7 +4148,7 @@
 </rect>
 
 <rect
-    x="575"
+    x="555"
     y="205"
     width="16"
     height="16"
@@ -4170,7 +4159,7 @@
 </rect>
 
 <rect
-    x="595"
+    x="575"
     y="205"
     width="16"
     height="16"
@@ -4181,7 +4170,7 @@
 </rect>
 
 <rect
-    x="615"
+    x="595"
     y="205"
     width="16"
     height="16"
@@ -4192,7 +4181,7 @@
 </rect>
 
 <rect
-    x="635"
+    x="615"
     y="205"
     width="16"
     height="16"
@@ -4203,7 +4192,7 @@
 </rect>
 
 <rect
-    x="655"
+    x="635"
     y="205"
     width="16"
     height="16"
@@ -4214,7 +4203,7 @@
 </rect>
 
 <rect
-    x="675"
+    x="655"
     y="205"
     width="16"
     height="16"
@@ -4225,7 +4214,7 @@
 </rect>
 
 <rect
-    x="695"
+    x="675"
     y="205"
     width="16"
     height="16"
@@ -4236,7 +4225,7 @@
 </rect>
 
 <rect
-    x="715"
+    x="695"
     y="205"
     width="16"
     height="16"
@@ -4247,7 +4236,7 @@
 </rect>
 
 <rect
-    x="735"
+    x="715"
     y="205"
     width="16"
     height="16"
@@ -4258,7 +4247,7 @@
 </rect>
 
 <rect
-    x="755"
+    x="735"
     y="205"
     width="16"
     height="16"
@@ -4269,7 +4258,7 @@
 </rect>
 
 <rect
-    x="775"
+    x="755"
     y="205"
     width="16"
     height="16"
@@ -4280,7 +4269,7 @@
 </rect>
 
 <rect
-    x="795"
+    x="775"
     y="205"
     width="16"
     height="16"
@@ -4291,7 +4280,7 @@
 </rect>
 
 <rect
-    x="815"
+    x="795"
     y="205"
     width="16"
     height="16"
@@ -4302,7 +4291,7 @@
 </rect>
 
 <rect
-    x="835"
+    x="815"
     y="205"
     width="16"
     height="16"
@@ -4313,7 +4302,7 @@
 </rect>
 
 <rect
-    x="855"
+    x="835"
     y="205"
     width="16"
     height="16"
@@ -4324,7 +4313,7 @@
 </rect>
 
 <rect
-    x="875"
+    x="855"
     y="205"
     width="16"
     height="16"
@@ -4335,7 +4324,7 @@
 </rect>
 
 <rect
-    x="895"
+    x="875"
     y="205"
     width="16"
     height="16"
@@ -4346,7 +4335,7 @@
 </rect>
 
 <rect
-    x="915"
+    x="895"
     y="205"
     width="16"
     height="16"
@@ -4357,7 +4346,7 @@
 </rect>
 
 <rect
-    x="935"
+    x="915"
     y="205"
     width="16"
     height="16"
@@ -4368,7 +4357,7 @@
 </rect>
 
 <rect
-    x="955"
+    x="935"
     y="205"
     width="16"
     height="16"
@@ -4379,7 +4368,7 @@
 </rect>
 
 <rect
-    x="975"
+    x="955"
     y="205"
     width="16"
     height="16"
@@ -4390,7 +4379,7 @@
 </rect>
 
 <rect
-    x="995"
+    x="975"
     y="205"
     width="16"
     height="16"
@@ -4401,7 +4390,7 @@
 </rect>
 
 <rect
-    x="1015"
+    x="995"
     y="205"
     width="16"
     height="16"
@@ -4412,7 +4401,7 @@
 </rect>
 
 <rect
-    x="1035"
+    x="1015"
     y="205"
     width="16"
     height="16"
@@ -4423,7 +4412,7 @@
 </rect>
 
 <rect
-    x="1055"
+    x="1035"
     y="205"
     width="16"
     height="16"
@@ -4434,7 +4423,7 @@
 </rect>
 
 <rect
-    x="1075"
+    x="1055"
     y="205"
     width="16"
     height="16"
@@ -4445,7 +4434,7 @@
 </rect>
 
 <rect
-    x="1095"
+    x="1075"
     y="205"
     width="16"
     height="16"
@@ -4455,6 +4444,17 @@
     <title>2026-09-05: 3 contributions</title>
 </rect>
 
+<rect
+    x="1095"
+    y="205"
+    width="16"
+    height="16"
+    rx="4"
+    fill="#161b22"
+>
+    <title>2026-09-12: 0 contributions</title>
+</rect>
+
 </g>
 
 <text
@@ -4462,7 +4462,7 @@
     y="269"
     class="terminal total"
 >
-    650 contributions in the last year
+    651 contributions in the last year
 </text>
 
 <text
